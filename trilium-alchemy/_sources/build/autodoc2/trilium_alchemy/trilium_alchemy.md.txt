@@ -1,0 +1,248 @@
+(trilium_alchemy)=
+# `trilium_alchemy`
+
+```{py:module} trilium_alchemy
+```
+
+```{autodoc2-docstring} trilium_alchemy
+:allowtitles:
+```
+
+```{toctree}
+:hidden:
+
+trilium_alchemy.core
+trilium_alchemy.ext
+trilium_alchemy.sync
+```
+
+### Class index
+
+:::symbol-category
+```{rubric} Imported
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`Session <trilium_alchemy.core.Session>`
+  - {py:obj}`core <trilium_alchemy.core>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.Session
+    :summary:
+    ```
+
+* - {py:obj}`Note <trilium_alchemy.core.note.Note>`
+  - {py:obj}`core.note <trilium_alchemy.core.note>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.Note
+    :summary:
+    ```
+
+* - {py:obj}`Mixin <trilium_alchemy.core.note.Mixin>`
+  - {py:obj}`core.note <trilium_alchemy.core.note>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin
+    :summary:
+    ```
+
+* - {py:obj}`Attribute <trilium_alchemy.core.attribute.Attribute>`
+  - {py:obj}`core.attribute <trilium_alchemy.core.attribute>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute
+    :summary:
+    ```
+
+* - {py:obj}`Label <trilium_alchemy.core.attribute.Label>`
+  - {py:obj}`core.attribute <trilium_alchemy.core.attribute>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label
+    :summary:
+    ```
+
+* - {py:obj}`Relation <trilium_alchemy.core.attribute.Relation>`
+  - {py:obj}`core.attribute <trilium_alchemy.core.attribute>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation
+    :summary:
+    ```
+
+* - {py:obj}`Branch <trilium_alchemy.core.branch.Branch>`
+  - {py:obj}`core.branch <trilium_alchemy.core.branch>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch
+    :summary:
+    ```
+
+* - {py:obj}`Entity <trilium_alchemy.core.entity.Entity>`
+  - {py:obj}`core.entity <trilium_alchemy.core.entity>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.entity.Entity
+    :summary:
+    ```
+
+* - {py:obj}`State <trilium_alchemy.core.entity.State>`
+  - {py:obj}`core.entity <trilium_alchemy.core.entity>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.entity.State
+    :summary:
+    ```
+
+* - {py:obj}`CodeNote <trilium_alchemy.ext.types.CodeNote>`
+  - {py:obj}`ext.types <trilium_alchemy.ext.types>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.CodeNote
+    :summary:
+    ```
+
+* - {py:obj}`JsFrontendNote <trilium_alchemy.ext.types.JsFrontendNote>`
+  - {py:obj}`ext.types <trilium_alchemy.ext.types>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.JsFrontendNote
+    :summary:
+    ```
+
+* - {py:obj}`JsBackendNote <trilium_alchemy.ext.types.JsBackendNote>`
+  - {py:obj}`ext.types <trilium_alchemy.ext.types>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.JsBackendNote
+    :summary:
+    ```
+
+* - {py:obj}`CssNote <trilium_alchemy.ext.types.CssNote>`
+  - {py:obj}`ext.types <trilium_alchemy.ext.types>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.CssNote
+    :summary:
+    ```
+
+* - {py:obj}`Template <trilium_alchemy.ext.helpers.Template>`
+  - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template
+    :summary:
+    ```
+
+* - {py:obj}`WorkspaceTemplate <trilium_alchemy.ext.helpers.WorkspaceTemplate>`
+  - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate
+    :summary:
+    ```
+
+* - {py:obj}`Workspace <trilium_alchemy.ext.helpers.Workspace>`
+  - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.Workspace
+    :summary:
+    ```
+
+* - {py:obj}`AppCss <trilium_alchemy.ext.helpers.AppCss>`
+  - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.AppCss
+    :summary:
+    ```
+
+* - {py:obj}`Theme <trilium_alchemy.ext.helpers.Theme>`
+  - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.Theme
+    :summary:
+    ```
+
+* - {py:obj}`Widget <trilium_alchemy.ext.helpers.Widget>`
+  - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget
+    :summary:
+    ```
+
+* - {py:obj}`FrontendScript <trilium_alchemy.ext.helpers.FrontendScript>`
+  - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.FrontendScript
+    :summary:
+    ```
+
+* - {py:obj}`BackendScript <trilium_alchemy.ext.helpers.BackendScript>`
+  - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BackendScript
+    :summary:
+    ```
+
+* - {py:obj}`BaseSystem <trilium_alchemy.ext.helpers.BaseSystem>`
+  - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem
+    :summary:
+    ```
+
+* - {py:obj}`BaseRootSystem <trilium_alchemy.ext.helpers.BaseRootSystem>`
+  - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem
+    :summary:
+    ```
+
+* - {py:obj}`BaseRoot <trilium_alchemy.ext.helpers.BaseRoot>`
+  - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRoot
+    :summary:
+    ```
+
+````
+
+### Function index
+
+:::symbol-category
+```{rubric} Imported
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`label <trilium_alchemy.core.declarative.label>`
+  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.label
+    :summary:
+    ```
+
+* - {py:obj}`relation <trilium_alchemy.core.declarative.relation>`
+  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.relation
+    :summary:
+    ```
+
+* - {py:obj}`label_def <trilium_alchemy.core.declarative.label_def>`
+  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.label_def
+    :summary:
+    ```
+
+* - {py:obj}`relation_def <trilium_alchemy.core.declarative.relation_def>`
+  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.relation_def
+    :summary:
+    ```
+
+* - {py:obj}`children <trilium_alchemy.core.declarative.children>`
+  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.children
+    :summary:
+    ```
+
+* - {py:obj}`child <trilium_alchemy.core.declarative.child>`
+  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.child
+    :summary:
+    ```
+
+````
+
+### Exception index
+
+:::symbol-category
+```{rubric} Imported
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`ReadOnlyError <trilium_alchemy.core.exceptions.ReadOnlyError>`
+  - {py:obj}`core.exceptions <trilium_alchemy.core.exceptions>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.exceptions.ReadOnlyError
+    :summary:
+    ```
+
+* - {py:obj}`ValidationError <trilium_alchemy.core.exceptions.ValidationError>`
+  - {py:obj}`core.exceptions <trilium_alchemy.core.exceptions>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.exceptions.ValidationError
+    :summary:
+    ```
+
+````

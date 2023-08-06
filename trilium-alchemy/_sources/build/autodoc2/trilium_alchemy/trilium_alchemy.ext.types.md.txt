@@ -1,0 +1,170 @@
+(trilium_alchemy.ext.types)=
+# `types`
+
+```{py:module} trilium_alchemy.ext.types
+```
+
+```{autodoc2-docstring} trilium_alchemy.ext.types
+:allowtitles:
+```
+
+### Class index
+
+:::symbol-category
+```{rubric} Canonical
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`CodeNote <trilium_alchemy.ext.types.CodeNote>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.CodeNote
+    :summary:
+    ```
+
+* - {py:obj}`JsFrontendNote <trilium_alchemy.ext.types.JsFrontendNote>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.JsFrontendNote
+    :summary:
+    ```
+
+* - {py:obj}`JsBackendNote <trilium_alchemy.ext.types.JsBackendNote>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.JsBackendNote
+    :summary:
+    ```
+
+* - {py:obj}`CssNote <trilium_alchemy.ext.types.CssNote>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.CssNote
+    :summary:
+    ```
+
+````
+
+### Symbols
+
+`````{py:class} CodeNote
+:canonical: trilium_alchemy.ext.types.CodeNote
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.Note`
+```{rubric} Aliases:
+```
+`trilium_alchemy.CodeNote`\
+`trilium_alchemy.ext.CodeNote`
+```{autodoc2-docstring} trilium_alchemy.ext.types.CodeNote
+```
+
+````{py:attribute} note_type
+:canonical: trilium_alchemy.ext.types.CodeNote.note_type
+   `"code"`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.ext.types.CodeNote.note_type
+```
+
+````
+
+`````
+
+`````{py:class} JsFrontendNote
+:canonical: trilium_alchemy.ext.types.JsFrontendNote
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.ext.types.CodeNote`
+```{rubric} Aliases:
+```
+`trilium_alchemy.JsFrontendNote`\
+`trilium_alchemy.ext.JsFrontendNote`
+```{autodoc2-docstring} trilium_alchemy.ext.types.JsFrontendNote
+```
+
+````{py:attribute} mime
+:canonical: trilium_alchemy.ext.types.JsFrontendNote.mime
+   `"application/javascript;env=frontend"`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.ext.types.JsFrontendNote.mime
+```
+
+````
+
+````{py:attribute} note_type
+:canonical: trilium_alchemy.ext.types.JsFrontendNote.note_type
+   `"code"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.ext.types.CodeNote`
+```{autodoc2-docstring} trilium_alchemy.ext.types.JsFrontendNote.note_type
+```
+
+````
+
+`````
+
+`````{py:class} JsBackendNote
+:canonical: trilium_alchemy.ext.types.JsBackendNote
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.ext.types.CodeNote`
+```{rubric} Aliases:
+```
+`trilium_alchemy.JsBackendNote`\
+`trilium_alchemy.ext.JsBackendNote`
+```{autodoc2-docstring} trilium_alchemy.ext.types.JsBackendNote
+```
+
+````{py:attribute} mime
+:canonical: trilium_alchemy.ext.types.JsBackendNote.mime
+   `"application/javascript;env=backend"`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.ext.types.JsBackendNote.mime
+```
+
+````
+
+````{py:attribute} note_type
+:canonical: trilium_alchemy.ext.types.JsBackendNote.note_type
+   `"code"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.ext.types.CodeNote`
+```{autodoc2-docstring} trilium_alchemy.ext.types.JsBackendNote.note_type
+```
+
+````
+
+`````
+
+`````{py:class} CssNote
+:canonical: trilium_alchemy.ext.types.CssNote
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.ext.types.CodeNote`
+```{rubric} Aliases:
+```
+`trilium_alchemy.CssNote`\
+`trilium_alchemy.ext.CssNote`
+```{autodoc2-docstring} trilium_alchemy.ext.types.CssNote
+```
+
+````{py:attribute} mime
+:canonical: trilium_alchemy.ext.types.CssNote.mime
+   `"text/css"`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.ext.types.CssNote.mime
+```
+
+````
+
+````{py:attribute} note_type
+:canonical: trilium_alchemy.ext.types.CssNote.note_type
+   `"code"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.ext.types.CodeNote`
+```{autodoc2-docstring} trilium_alchemy.ext.types.CssNote.note_type
+```
+
+````
+
+`````

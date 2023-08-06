@@ -1,0 +1,110 @@
+(trilium_alchemy.core.exceptions)=
+# `exceptions`
+
+```{py:module} trilium_alchemy.core.exceptions
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.exceptions
+:allowtitles:
+```
+
+### Exception index
+
+:::symbol-category
+```{rubric} Canonical
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`ReadOnlyError <trilium_alchemy.core.exceptions.ReadOnlyError>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.exceptions.ReadOnlyError
+    :summary:
+    ```
+
+* - {py:obj}`ValidationError <trilium_alchemy.core.exceptions.ValidationError>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.exceptions.ValidationError
+    :summary:
+    ```
+
+````
+
+### Symbols
+
+`````{py:exception} ReadOnlyError(field, entity)
+:canonical: trilium_alchemy.core.exceptions.ReadOnlyError
+
+```{rubric} Initialization:
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.exceptions.ReadOnlyError.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`Exception`
+```{rubric} Aliases:
+```
+`trilium_alchemy.ReadOnlyError`\
+`trilium_alchemy.core.ReadOnlyError`
+```{autodoc2-docstring} trilium_alchemy.core.exceptions.ReadOnlyError
+```
+
+````{py:method} with_traceback()
+:canonical: trilium_alchemy.core.exceptions.ReadOnlyError.with_traceback
+*Inherited from:* {obj}`.BaseException`
+```{autodoc2-docstring} trilium_alchemy.core.exceptions.ReadOnlyError.with_traceback
+```
+
+````
+
+````{py:class} args
+:canonical: trilium_alchemy.core.exceptions.ReadOnlyError.args
+
+*Inherited from:* {obj}`.BaseException`
+```{autodoc2-docstring} trilium_alchemy.core.exceptions.ReadOnlyError.args
+```
+
+````
+
+`````
+
+`````{py:exception} ValidationError(errors: list[Exception])
+:canonical: trilium_alchemy.core.exceptions.ValidationError
+
+```{rubric} Initialization:
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.exceptions.ValidationError.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`Exception`
+```{rubric} Aliases:
+```
+`trilium_alchemy.ValidationError`\
+`trilium_alchemy.core.ValidationError`
+```{autodoc2-docstring} trilium_alchemy.core.exceptions.ValidationError
+```
+
+````{py:method} with_traceback()
+:canonical: trilium_alchemy.core.exceptions.ValidationError.with_traceback
+*Inherited from:* {obj}`.BaseException`
+```{autodoc2-docstring} trilium_alchemy.core.exceptions.ValidationError.with_traceback
+```
+
+````
+
+````{py:class} args
+:canonical: trilium_alchemy.core.exceptions.ValidationError.args
+
+*Inherited from:* {obj}`.BaseException`
+```{autodoc2-docstring} trilium_alchemy.core.exceptions.ValidationError.args
+```
+
+````
+
+`````

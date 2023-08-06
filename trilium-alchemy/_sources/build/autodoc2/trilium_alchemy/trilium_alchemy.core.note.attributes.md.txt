@@ -1,0 +1,265 @@
+(trilium_alchemy.core.note.attributes)=
+# `attributes`
+
+```{py:module} trilium_alchemy.core.note.attributes
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes
+:allowtitles:
+```
+
+### Class index
+
+:::symbol-category
+```{rubric} Canonical
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`Attributes <trilium_alchemy.core.note.attributes.Attributes>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes
+    :summary:
+    ```
+
+* - {py:obj}`OwnedAttributes <trilium_alchemy.core.note.attributes.OwnedAttributes>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes
+    :summary:
+    ```
+
+* - {py:obj}`InheritedAttributes <trilium_alchemy.core.note.attributes.InheritedAttributes>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedAttributes
+    :summary:
+    ```
+
+````
+
+### Symbols
+
+`````{py:class} Attributes(note)
+:canonical: trilium_alchemy.core.note.attributes.Attributes
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.extension.NoteExtension`\
+{py:obj}`trilium_alchemy.core.note.attributes.NameMap`\
+{py:obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes
+```
+
+````{py:attribute} owned
+:canonical: trilium_alchemy.core.note.attributes.Attributes.owned
+:type: trilium_alchemy.core.note.attributes.OwnedAttributes
+   {obj}`ExtensionDescriptor() <trilium_alchemy.core.entity.ExtensionDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.owned
+```
+
+````
+
+````{py:attribute} inherited
+:canonical: trilium_alchemy.core.note.attributes.Attributes.inherited
+:type: trilium_alchemy.core.note.attributes.InheritedAttributes
+   {obj}`ExtensionDescriptor() <trilium_alchemy.core.entity.ExtensionDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.inherited
+```
+
+````
+
+````{py:method} insert(i: int, value: typing.Any)
+:canonical: trilium_alchemy.core.note.attributes.Attributes.insert
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.insert
+```
+
+````
+
+````{py:method} append(value)
+:canonical: trilium_alchemy.core.note.attributes.Attributes.append
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.append
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.core.note.attributes.Attributes.clear
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.clear
+```
+
+````
+
+````{py:method} reverse()
+:canonical: trilium_alchemy.core.note.attributes.Attributes.reverse
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.reverse
+```
+
+````
+
+````{py:method} extend(values)
+:canonical: trilium_alchemy.core.note.attributes.Attributes.extend
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.extend
+```
+
+````
+
+````{py:method} pop(index=-1)
+:canonical: trilium_alchemy.core.note.attributes.Attributes.pop
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.pop
+```
+
+````
+
+````{py:method} remove(value)
+:canonical: trilium_alchemy.core.note.attributes.Attributes.remove
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.remove
+```
+
+````
+
+````{py:method} index(value, start=0, stop=None)
+:canonical: trilium_alchemy.core.note.attributes.Attributes.index
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.index
+```
+
+````
+
+````{py:method} count(value)
+:canonical: trilium_alchemy.core.note.attributes.Attributes.count
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.count
+```
+
+````
+
+`````
+
+`````{py:class} OwnedAttributes(entity: trilium_alchemy.core.entity.entity.Entity)
+:canonical: trilium_alchemy.core.note.attributes.OwnedAttributes
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.attributes.NameMap`\
+{py:obj}`trilium_alchemy.core.note.extension.List`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes
+```
+
+````{py:method} insert(i: int, value: typing.Any)
+:canonical: trilium_alchemy.core.note.attributes.OwnedAttributes.insert
+*Inherited from:* {obj}`trilium_alchemy.core.note.extension.List`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.insert
+```
+
+````
+
+````{py:method} append(value)
+:canonical: trilium_alchemy.core.note.attributes.OwnedAttributes.append
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.append
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.core.note.attributes.OwnedAttributes.clear
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.clear
+```
+
+````
+
+````{py:method} reverse()
+:canonical: trilium_alchemy.core.note.attributes.OwnedAttributes.reverse
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.reverse
+```
+
+````
+
+````{py:method} extend(values)
+:canonical: trilium_alchemy.core.note.attributes.OwnedAttributes.extend
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.extend
+```
+
+````
+
+````{py:method} pop(index=-1)
+:canonical: trilium_alchemy.core.note.attributes.OwnedAttributes.pop
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.pop
+```
+
+````
+
+````{py:method} remove(value)
+:canonical: trilium_alchemy.core.note.attributes.OwnedAttributes.remove
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.remove
+```
+
+````
+
+````{py:method} index(value, start=0, stop=None)
+:canonical: trilium_alchemy.core.note.attributes.OwnedAttributes.index
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.index
+```
+
+````
+
+````{py:method} count(value)
+:canonical: trilium_alchemy.core.note.attributes.OwnedAttributes.count
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.count
+```
+
+````
+
+`````
+
+`````{py:class} InheritedAttributes(entity: trilium_alchemy.core.entity.entity.Entity)
+:canonical: trilium_alchemy.core.note.attributes.InheritedAttributes
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedAttributes.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.extension.NoteStatefulExtension`\
+{py:obj}`trilium_alchemy.core.note.attributes.NameMap`\
+{py:obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedAttributes
+```
+
+````{py:method} index(value, start=0, stop=None)
+:canonical: trilium_alchemy.core.note.attributes.InheritedAttributes.index
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedAttributes.index
+```
+
+````
+
+````{py:method} count(value)
+:canonical: trilium_alchemy.core.note.attributes.InheritedAttributes.count
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedAttributes.count
+```
+
+````
+
+`````

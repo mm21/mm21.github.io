@@ -1,0 +1,9 @@
+(trilium_alchemy.sync)=
+# `sync`
+
+```{py:module} trilium_alchemy.sync
+```
+
+```{autodoc2-docstring} trilium_alchemy.sync
+:allowtitles:
+```

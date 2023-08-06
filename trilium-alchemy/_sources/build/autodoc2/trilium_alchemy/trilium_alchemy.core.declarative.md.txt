@@ -1,0 +1,126 @@
+(trilium_alchemy.core.declarative)=
+# `declarative`
+
+```{py:module} trilium_alchemy.core.declarative
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.declarative
+:allowtitles:
+```
+
+### Function index
+
+:::symbol-category
+```{rubric} Canonical
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`label <trilium_alchemy.core.declarative.label>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.label
+    :summary:
+    ```
+
+* - {py:obj}`relation <trilium_alchemy.core.declarative.relation>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.relation
+    :summary:
+    ```
+
+* - {py:obj}`label_def <trilium_alchemy.core.declarative.label_def>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.label_def
+    :summary:
+    ```
+
+* - {py:obj}`relation_def <trilium_alchemy.core.declarative.relation_def>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.relation_def
+    :summary:
+    ```
+
+* - {py:obj}`children <trilium_alchemy.core.declarative.children>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.children
+    :summary:
+    ```
+
+* - {py:obj}`child <trilium_alchemy.core.declarative.child>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.child
+    :summary:
+    ```
+
+````
+
+### Symbols
+
+````{py:function} label(name: str, value: str = '', inheritable: bool = False, accumulate: bool = False)
+:canonical: trilium_alchemy.core.declarative.label
+
+```{rubric} Aliases:
+```
+`trilium_alchemy.label`\
+`trilium_alchemy.core.label`
+```{autodoc2-docstring} trilium_alchemy.core.declarative.label
+```
+
+````
+
+````{py:function} relation(name: str, target_cls: typing.Type[trilium_alchemy.core.note.note.Note], inheritable: bool = False, accumulate: bool = False)
+:canonical: trilium_alchemy.core.declarative.relation
+
+```{rubric} Aliases:
+```
+`trilium_alchemy.relation`\
+`trilium_alchemy.core.relation`
+```{autodoc2-docstring} trilium_alchemy.core.declarative.relation
+```
+
+````
+
+````{py:function} label_def(name: str, promoted: bool = True, multi: bool = False, value_type: typing.Literal[text, number, boolean, date, datetime, url] = 'text', inheritable: bool = False, accumulate: bool = False)
+:canonical: trilium_alchemy.core.declarative.label_def
+
+```{rubric} Aliases:
+```
+`trilium_alchemy.label_def`\
+`trilium_alchemy.core.label_def`
+```{autodoc2-docstring} trilium_alchemy.core.declarative.label_def
+```
+
+````
+
+````{py:function} relation_def(name: str, promoted: bool = True, multi: bool = False, inverse: str = None, inheritable: bool = False, accumulate: bool = False)
+:canonical: trilium_alchemy.core.declarative.relation_def
+
+```{rubric} Aliases:
+```
+`trilium_alchemy.relation_def`\
+`trilium_alchemy.core.relation_def`
+```{autodoc2-docstring} trilium_alchemy.core.declarative.relation_def
+```
+
+````
+
+````{py:function} children(*children: typing.Type[trilium_alchemy.core.note.note.Note] | tuple[typing.Type[trilium_alchemy.core.note.note.Note], dict[str, typing.Any]])
+:canonical: trilium_alchemy.core.declarative.children
+
+```{rubric} Aliases:
+```
+`trilium_alchemy.children`\
+`trilium_alchemy.core.children`
+```{autodoc2-docstring} trilium_alchemy.core.declarative.children
+```
+
+````
+
+````{py:function} child(child: typing.Type[trilium_alchemy.core.note.note.Note], prefix: str = '', expanded: bool = False)
+:canonical: trilium_alchemy.core.declarative.child
+
+```{rubric} Aliases:
+```
+`trilium_alchemy.child`\
+`trilium_alchemy.core.child`
+```{autodoc2-docstring} trilium_alchemy.core.declarative.child
+```
+
+````

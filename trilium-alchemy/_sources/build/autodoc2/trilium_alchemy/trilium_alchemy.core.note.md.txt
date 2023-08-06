@@ -1,0 +1,487 @@
+(trilium_alchemy.core.note)=
+# `note`
+
+```{py:module} trilium_alchemy.core.note
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.note
+:allowtitles:
+```
+
+```{toctree}
+:hidden:
+
+trilium_alchemy.core.note.attributes
+trilium_alchemy.core.note.branches
+trilium_alchemy.core.note.content
+```
+
+### Class index
+
+:::symbol-category
+```{rubric} Canonical
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`Note <trilium_alchemy.core.note.Note>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.Note
+    :summary:
+    ```
+
+* - {py:obj}`Mixin <trilium_alchemy.core.note.Mixin>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin
+    :summary:
+    ```
+
+````
+
+### Symbols
+
+`````{py:class} Note(title: str = 'new note', note_type: str = 'text', mime: str = 'text/html', parents: set[trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch] | trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch = None, children: list[trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch] = None, attributes: list[trilium_alchemy.core.attribute.Attribute] = None, content: str | bytes | typing.IO = None, note_id: str = None, template: trilium_alchemy.core.note.note.Note | typing.Type[trilium_alchemy.core.note.note.Note] = None, session: trilium_alchemy.core.session.Session = None, **kwargs)
+:canonical: trilium_alchemy.core.note.Note
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.entity.Entity`\
+{py:obj}`trilium_alchemy.core.note.Mixin`
+```{rubric} Aliases:
+```
+`trilium_alchemy.Note`\
+`trilium_alchemy.core.Note`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note
+```
+
+````{py:attribute} note_id
+:canonical: trilium_alchemy.core.note.Note.note_id
+:type: str | None
+   {obj}`EntityIdDescriptor() <trilium_alchemy.core.entity.EntityIdDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.note_id
+```
+
+````
+
+````{py:attribute} title
+:canonical: trilium_alchemy.core.note.Note.title
+:type: str
+   {obj}`FieldDescriptor() <trilium_alchemy.core.entity.FieldDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.title
+```
+
+````
+
+````{py:attribute} note_type
+:canonical: trilium_alchemy.core.note.Note.note_type
+:type: str
+   {obj}`FieldDescriptor() <trilium_alchemy.core.entity.FieldDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.note_type
+```
+
+````
+
+````{py:attribute} mime
+:canonical: trilium_alchemy.core.note.Note.mime
+:type: str
+   {obj}`FieldDescriptor() <trilium_alchemy.core.entity.FieldDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.mime
+```
+
+````
+
+````{py:attribute} is_protected
+:canonical: trilium_alchemy.core.note.Note.is_protected
+:type: bool
+   {obj}`ReadOnlyFieldDescriptor() <trilium_alchemy.core.entity.ReadOnlyFieldDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.is_protected
+```
+
+````
+
+````{py:attribute} date_created
+:canonical: trilium_alchemy.core.note.Note.date_created
+:type: str
+   {obj}`ReadOnlyFieldDescriptor() <trilium_alchemy.core.entity.ReadOnlyFieldDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.date_created
+```
+
+````
+
+````{py:attribute} date_modified
+:canonical: trilium_alchemy.core.note.Note.date_modified
+:type: str
+   {obj}`ReadOnlyFieldDescriptor() <trilium_alchemy.core.entity.ReadOnlyFieldDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.date_modified
+```
+
+````
+
+````{py:attribute} utc_date_created
+:canonical: trilium_alchemy.core.note.Note.utc_date_created
+:type: str
+   {obj}`ReadOnlyFieldDescriptor() <trilium_alchemy.core.entity.ReadOnlyFieldDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.utc_date_created
+```
+
+````
+
+````{py:attribute} utc_date_modified
+:canonical: trilium_alchemy.core.note.Note.utc_date_modified
+:type: str
+   {obj}`ReadOnlyFieldDescriptor() <trilium_alchemy.core.entity.ReadOnlyFieldDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.utc_date_modified
+```
+
+````
+
+````{py:attribute} attributes
+:canonical: trilium_alchemy.core.note.Note.attributes
+:type: trilium_alchemy.core.note.attributes.Attributes
+   {obj}`ExtensionDescriptor() <trilium_alchemy.core.entity.ExtensionDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.attributes
+```
+
+````
+
+````{py:attribute} branches
+:canonical: trilium_alchemy.core.note.Note.branches
+:type: trilium_alchemy.core.note.branches.Branches
+   {obj}`ExtensionDescriptor() <trilium_alchemy.core.entity.ExtensionDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.branches
+```
+
+````
+
+````{py:attribute} parents
+:canonical: trilium_alchemy.core.note.Note.parents
+:type: trilium_alchemy.core.note.branches.Parents
+   {obj}`ExtensionDescriptor() <trilium_alchemy.core.entity.ExtensionDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.parents
+```
+
+````
+
+````{py:attribute} children
+:canonical: trilium_alchemy.core.note.Note.children
+:type: trilium_alchemy.core.note.branches.Children
+   {obj}`ExtensionDescriptor() <trilium_alchemy.core.entity.ExtensionDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.children
+```
+
+````
+
+````{py:attribute} content
+:canonical: trilium_alchemy.core.note.Note.content
+:type: trilium_alchemy.core.note.content.Content
+   {obj}`ContentDescriptor() <trilium_alchemy.core.note.content.ContentDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.content
+```
+
+````
+
+````{py:attribute} note_id_seed
+:canonical: trilium_alchemy.core.note.Note.note_id_seed
+:type: str
+   `None`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.note_id_seed
+```
+
+````
+
+````{py:attribute} singleton
+:canonical: trilium_alchemy.core.note.Note.singleton
+:type: bool
+   `False`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.singleton
+```
+
+````
+
+````{py:attribute} leaf
+:canonical: trilium_alchemy.core.note.Note.leaf
+   `False`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.leaf
+```
+
+````
+
+````{py:attribute} content_file
+:canonical: trilium_alchemy.core.note.Note.content_file
+:type: str
+   `None`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.content_file
+```
+
+````
+
+````{py:property} is_string
+:canonical: trilium_alchemy.core.note.Note.is_string
+:type: bool
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.is_string
+```
+
+````
+
+````{py:property} state
+:canonical: trilium_alchemy.core.note.Note.state
+:type: trilium_alchemy.core.entity.types.State
+
+*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.state
+```
+
+````
+
+````{py:property} session
+:canonical: trilium_alchemy.core.note.Note.session
+:type: trilium_alchemy.core.session.Session
+
+*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.session
+```
+
+````
+
+````{py:property} str_short
+:canonical: trilium_alchemy.core.note.Note.str_short
+:type: str
+
+*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.str_short
+```
+
+````
+
+````{py:property} str_summary
+:canonical: trilium_alchemy.core.note.Note.str_summary
+:type: str
+
+*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.str_summary
+```
+
+````
+
+````{py:method} export_zip(dest_path: str, export_format: typing.Literal[html, markdown] = 'html')
+:canonical: trilium_alchemy.core.note.Note.export_zip
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.export_zip
+```
+
+````
+
+````{py:method} import_zip(src_path: str)
+:canonical: trilium_alchemy.core.note.Note.import_zip
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.import_zip
+```
+
+````
+
+````{py:method} flush(recursive: bool = False)
+:canonical: trilium_alchemy.core.note.Note.flush
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.flush
+```
+
+````
+
+````{py:method} invalidate() -> None
+:canonical: trilium_alchemy.core.note.Note.invalidate
+*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.invalidate
+```
+
+````
+
+````{py:method} delete() -> None
+:canonical: trilium_alchemy.core.note.Note.delete
+*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.delete
+```
+
+````
+
+````{py:method} init(attributes: list[trilium_alchemy.core.attribute.Attribute], children: list[trilium_alchemy.core.branch.Branch | trilium_alchemy.core.note.note.Note]) -> dict[str, typing.Any] | None
+:canonical: trilium_alchemy.core.note.Note.init
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.init
+```
+
+````
+
+````{py:method} create_declarative_label(name: str, value: str = '', inheritable: bool = False) -> trilium_alchemy.core.attribute.Label
+:canonical: trilium_alchemy.core.note.Note.create_declarative_label
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.create_declarative_label
+```
+
+````
+
+````{py:method} create_declarative_relation(name: str, target: trilium_alchemy.core.note.note.Note, inheritable: bool = False) -> trilium_alchemy.core.attribute.Relation
+:canonical: trilium_alchemy.core.note.Note.create_declarative_relation
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.create_declarative_relation
+```
+
+````
+
+````{py:method} create_declarative_child(child_cls: typing.Type[trilium_alchemy.core.note.note.Note], **kwargs) -> trilium_alchemy.core.branch.Branch
+:canonical: trilium_alchemy.core.note.Note.create_declarative_child
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.create_declarative_child
+```
+
+````
+
+`````
+
+`````{py:class} Mixin()
+:canonical: trilium_alchemy.core.note.Mixin
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`abc.ABC`
+```{rubric} Aliases:
+```
+`trilium_alchemy.Mixin`\
+`trilium_alchemy.core.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin
+```
+
+````{py:attribute} note_id
+:canonical: trilium_alchemy.core.note.Mixin.note_id
+:type: str
+   `None`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.note_id
+```
+
+````
+
+````{py:attribute} note_id_seed
+:canonical: trilium_alchemy.core.note.Mixin.note_id_seed
+:type: str
+   `None`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.note_id_seed
+```
+
+````
+
+````{py:attribute} title
+:canonical: trilium_alchemy.core.note.Mixin.title
+:type: str
+   `None`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.title
+```
+
+````
+
+````{py:attribute} note_type
+:canonical: trilium_alchemy.core.note.Mixin.note_type
+:type: str
+   `"text"`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.note_type
+```
+
+````
+
+````{py:attribute} mime
+:canonical: trilium_alchemy.core.note.Mixin.mime
+:type: str
+   `"text/html"`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.mime
+```
+
+````
+
+````{py:attribute} singleton
+:canonical: trilium_alchemy.core.note.Mixin.singleton
+:type: bool
+   `False`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.singleton
+```
+
+````
+
+````{py:attribute} leaf
+:canonical: trilium_alchemy.core.note.Mixin.leaf
+   `False`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.leaf
+```
+
+````
+
+````{py:attribute} content_file
+:canonical: trilium_alchemy.core.note.Mixin.content_file
+:type: str
+   `None`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.content_file
+```
+
+````
+
+````{py:method} init(attributes: list[trilium_alchemy.core.attribute.Attribute], children: list[trilium_alchemy.core.branch.Branch | trilium_alchemy.core.note.note.Note]) -> dict[str, typing.Any] | None
+:canonical: trilium_alchemy.core.note.Mixin.init
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.init
+```
+
+````
+
+````{py:method} create_declarative_label(name: str, value: str = '', inheritable: bool = False) -> trilium_alchemy.core.attribute.Label
+:canonical: trilium_alchemy.core.note.Mixin.create_declarative_label
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.create_declarative_label
+```
+
+````
+
+````{py:method} create_declarative_relation(name: str, target: trilium_alchemy.core.note.note.Note, inheritable: bool = False) -> trilium_alchemy.core.attribute.Relation
+:canonical: trilium_alchemy.core.note.Mixin.create_declarative_relation
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.create_declarative_relation
+```
+
+````
+
+````{py:method} create_declarative_child(child_cls: typing.Type[trilium_alchemy.core.note.note.Note], **kwargs) -> trilium_alchemy.core.branch.Branch
+:canonical: trilium_alchemy.core.note.Mixin.create_declarative_child
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.create_declarative_child
+```
+
+````
+
+`````

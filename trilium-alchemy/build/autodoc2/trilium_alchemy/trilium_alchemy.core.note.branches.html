@@ -1,0 +1,769 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="content" href="trilium_alchemy.core.note.content.html" /><link rel="prev" title="attributes" href="trilium_alchemy.core.note.attributes.html" />
+        <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.branches.html" />
+
+    <!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
+        <title>branches - TriliumAlchemy</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../../index.html"><div class="brand">TriliumAlchemy</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../../../_static/logo-light.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../../../_static/logo-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">TriliumAlchemy</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/setup.html">Setup</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SDK</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../sdk/guide/index.html">Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Guide</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../sdk/guide/intro.html">Introduction</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../sdk/guide/working-with-notes/index.html">Working with notes</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Working with notes</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../sdk/guide/working-with-notes/sessions.html">Sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../sdk/guide/working-with-notes/notes.html">Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../sdk/guide/working-with-notes/attributes.html">Attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../sdk/guide/working-with-notes/branches.html">Branches</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../sdk/guide/declarative-notes.html">Declarative notes: Notes as code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../sdk/guide/filesystem-notes.html">Filesystem notes: Notes as files (coming soon)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../sdk/guide/extensions.html">Trilium extensions (coming soon)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../sdk/guide/sync.html">Synchronizing notes (coming soon)</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../sdk/examples/index.html">Examples</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Examples</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../sdk/examples/event-tracker.html">Event tracker</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../sdk/tutorials/index.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Tutorials</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../sdk/tutorials/hello-world.html">“Hello, world” note (coming soon)</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../tools/trilium-sync/index.html">Folder sync (coming soon)</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Folder sync (coming soon)</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../tools/trilium-sync/usage.html">Usage (coming soon)</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../../../reference/api.html">API</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of API</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="trilium_alchemy.html"><code class="docutils literal notranslate"><span class="pre">trilium_alchemy</span></code></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" role="switch" type="checkbox"/><label for="toctree-checkbox-7"><div class="visually-hidden">Toggle navigation of trilium_alchemy</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current has-children"><a class="reference internal" href="trilium_alchemy.core.html"><code class="docutils literal notranslate"><span class="pre">core</span></code></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of core</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l4 current has-children"><a class="reference internal" href="trilium_alchemy.core.note.html"><code class="docutils literal notranslate"><span class="pre">note</span></code></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of note</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="trilium_alchemy.core.note.attributes.html"><code class="docutils literal notranslate"><span class="pre">attributes</span></code></a></li>
+<li class="toctree-l5 current current-page"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">branches</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="trilium_alchemy.core.note.content.html"><code class="docutils literal notranslate"><span class="pre">content</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="trilium_alchemy.core.attribute.html"><code class="docutils literal notranslate"><span class="pre">attribute</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="trilium_alchemy.core.branch.html"><code class="docutils literal notranslate"><span class="pre">branch</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="trilium_alchemy.core.declarative.html"><code class="docutils literal notranslate"><span class="pre">declarative</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="trilium_alchemy.core.entity.html"><code class="docutils literal notranslate"><span class="pre">entity</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="trilium_alchemy.core.exceptions.html"><code class="docutils literal notranslate"><span class="pre">exceptions</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="trilium_alchemy.ext.html"><code class="docutils literal notranslate"><span class="pre">ext</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of ext</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="trilium_alchemy.ext.types.html"><code class="docutils literal notranslate"><span class="pre">types</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="trilium_alchemy.ext.helpers.html"><code class="docutils literal notranslate"><span class="pre">helpers</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="trilium_alchemy.sync.html"><code class="docutils literal notranslate"><span class="pre">sync</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/fs-spec.html">Filesystem note spec (coming soon)</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="module-trilium_alchemy.core.note.branches">
+<span id="branches"></span><span id="trilium-alchemy-core-note-branches"></span><h1><code class="docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.branches</span></code><a class="headerlink" href="#module-trilium_alchemy.core.note.branches" title="Permalink to this heading">#</a></h1>
+<section id="class-index">
+<h2>Class index<a class="headerlink" href="#class-index" title="Permalink to this heading">#</a></h2>
+<div class="symbol-category docutils">
+<p class="rubric">Canonical</p>
+</div>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#trilium_alchemy.core.note.branches.Branches" title="trilium_alchemy.core.note.branches.Branches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Branches</span></code></a></p></td>
+<td><p>Interface to a note’s parent and child branches.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#trilium_alchemy.core.note.branches.ParentBranches" title="trilium_alchemy.core.note.branches.ParentBranches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentBranches</span></code></a></p></td>
+<td><p>Interface to a note’s parent branches. Modeled as a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></a>
+as parent branches are not inherently ordered, but serialized by
+<a class="reference external" href="https://docs.python.org/3/library/functions.html#id" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id()</span></code></a> when iterated.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#trilium_alchemy.core.note.branches.ChildBranches" title="trilium_alchemy.core.note.branches.ChildBranches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChildBranches</span></code></a></p></td>
+<td><p>Interface to a note’s child branches. Modeled as a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#trilium_alchemy.core.note.branches.Parents" title="trilium_alchemy.core.note.branches.Parents"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Parents</span></code></a></p></td>
+<td><p>Interface to a note’s parent notes. When adding a parent,
+is an alias of <code class="docutils literal notranslate"><span class="pre">Note.branches.parents</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#trilium_alchemy.core.note.branches.Children" title="trilium_alchemy.core.note.branches.Children"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Children</span></code></a></p></td>
+<td><p>Interface to a note’s child notes. For adding a child,
+is an alias of <code class="docutils literal notranslate"><span class="pre">Note.branches.children</span></code>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="symbols">
+<h2>Symbols<a class="headerlink" href="#symbols" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Branches">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trilium_alchemy.core.note.branches.</span></span><span class="sig-name descname"><span class="pre">Branches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">note</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Branches" title="Permalink to this definition">#</a></dt>
+<dd><p class="rubric">Bases:</p>
+<p><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.extension.NoteExtension</span></code><br />
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.branches.BranchLookup</span></code></p>
+<p>Interface to a note’s parent and child branches.</p>
+<p>Access as <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.branches" title="trilium_alchemy.core.note.Note.branches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.branches</span></code></a>, a descriptor mapping to
+an instance of this class.</p>
+<p>When iterated, yields from parent branches (sorted by
+<a class="reference external" href="https://docs.python.org/3/library/functions.html#id" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id()</span></code></a>) and then child branches.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># add root as parent of note</span>
+<span class="n">note</span> <span class="o">^=</span> <span class="n">session</span><span class="o">.</span><span class="n">root</span>
+
+<span class="c1"># create child note</span>
+<span class="n">note</span> <span class="o">+=</span> <span class="n">Note</span><span class="p">()</span>
+
+<span class="c1"># iterate over branches</span>
+<span class="k">for</span> <span class="n">branch</span> <span class="ow">in</span> <span class="n">note</span><span class="o">.</span><span class="n">branches</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">branch</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Branch(parent=Note(title=root, note_id=root), child=Note(title=new note, note_id=None), prefix=, expanded=False, position=1000000009, branch_id=None)
+Branch(parent=Note(title=new note, note_id=None), child=Note(title=new note, note_id=None), prefix=, expanded=False, position=10, branch_id=None)
+</pre></div>
+</div>
+<p>This object is stateless; <code class="docutils literal notranslate"><span class="pre">Note.branches.parents</span></code> and
+<code class="docutils literal notranslate"><span class="pre">Note.branches.children</span></code> are the sources of truth
+for parent and child branches respectively.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Branches.parents">
+<span class="sig-name descname"><span class="pre">parents</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#trilium_alchemy.core.note.branches.ParentBranches" title="trilium_alchemy.core.note.branches.ParentBranches"><span class="pre">ParentBranches</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.branches.Branches.parents" title="Permalink to this definition">#</a></dt>
+<dd><p><a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.ExtensionDescriptor" title="trilium_alchemy.core.entity.ExtensionDescriptor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExtensionDescriptor()</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Branches.children">
+<span class="sig-name descname"><span class="pre">children</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#trilium_alchemy.core.note.branches.ChildBranches" title="trilium_alchemy.core.note.branches.ChildBranches"><span class="pre">ChildBranches</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.branches.Branches.children" title="Permalink to this definition">#</a></dt>
+<dd><p><a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.ExtensionDescriptor" title="trilium_alchemy.core.entity.ExtensionDescriptor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExtensionDescriptor()</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Branches.lookup">
+<span class="sig-name descname"><span class="pre">lookup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">note</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><span class="pre">Note</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Branches.lookup" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.branches.BranchLookup</span></code></p>
+<p>Lookup a branch given a related <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a>, either parent or child.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ParentBranches">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trilium_alchemy.core.note.branches.</span></span><span class="sig-name descname"><span class="pre">ParentBranches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.Entity" title="trilium_alchemy.core.entity.Entity"><span class="pre">Entity</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ParentBranches" title="Permalink to this definition">#</a></dt>
+<dd><p class="rubric">Bases:</p>
+<p><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.extension.Set</span></code><br />
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.branches.BranchLookup</span></code></p>
+<p>Interface to a note’s parent branches. Modeled as a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#set" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set</span></code></a>
+as parent branches are not inherently ordered, but serialized by
+<a class="reference external" href="https://docs.python.org/3/library/functions.html#id" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id()</span></code></a> when iterated.</p>
+<p>Access as <code class="docutils literal notranslate"><span class="pre">Note.branches.parents</span></code>, a descriptor mapping to
+an instance of this class.</p>
+<p>When a <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a> is added, a parent <a class="reference internal" href="trilium_alchemy.core.branch.html#trilium_alchemy.core.branch.Branch" title="trilium_alchemy.core.branch.Branch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Branch</span></code></a> is automatically
+created.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ParentBranches.add">
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ParentBranches.add" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.extension.Set</span></code></p>
+<p>Add an element.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ParentBranches.discard">
+<span class="sig-name descname"><span class="pre">discard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ParentBranches.discard" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.extension.Set</span></code></p>
+<p>Remove an element.  Do not raise an exception if absent.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ParentBranches.remove">
+<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ParentBranches.remove" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSet" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSet</span></code></a></p>
+<p>Remove an element. If not a member, raise a KeyError.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ParentBranches.pop">
+<span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ParentBranches.pop" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSet" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSet</span></code></a></p>
+<p>Return the popped value.  Raise KeyError if empty.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ParentBranches.clear">
+<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ParentBranches.clear" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSet" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSet</span></code></a></p>
+<p>This is slow (creates N new iterators!) but effective.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ParentBranches.isdisjoint">
+<span class="sig-name descname"><span class="pre">isdisjoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ParentBranches.isdisjoint" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Set" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.Set</span></code></a></p>
+<p>Return True if two sets have a null intersection.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ParentBranches.lookup">
+<span class="sig-name descname"><span class="pre">lookup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">note</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><span class="pre">Note</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ParentBranches.lookup" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.branches.BranchLookup</span></code></p>
+<p>Lookup a branch given a related <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a>, either parent or child.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ChildBranches">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trilium_alchemy.core.note.branches.</span></span><span class="sig-name descname"><span class="pre">ChildBranches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.Entity" title="trilium_alchemy.core.entity.Entity"><span class="pre">Entity</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ChildBranches" title="Permalink to this definition">#</a></dt>
+<dd><p class="rubric">Bases:</p>
+<p><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.extension.List</span></code><br />
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.branches.BranchLookup</span></code></p>
+<p>Interface to a note’s child branches. Modeled as a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code></a>.</p>
+<p>Access as <code class="docutils literal notranslate"><span class="pre">Note.branches.children</span></code>, a descriptor mapping to
+an instance of this class.</p>
+<p>When a <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a> is added, a child <a class="reference internal" href="trilium_alchemy.core.branch.html#trilium_alchemy.core.branch.Branch" title="trilium_alchemy.core.branch.Branch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Branch</span></code></a> is automatically
+created.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ChildBranches.insert">
+<span class="sig-name descname"><span class="pre">insert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ChildBranches.insert" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.extension.List</span></code></p>
+<p>S.insert(index, value) – insert value before index</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ChildBranches.append">
+<span class="sig-name descname"><span class="pre">append</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ChildBranches.append" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a></p>
+<p>S.append(value) – append value to the end of the sequence</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ChildBranches.clear">
+<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ChildBranches.clear" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a></p>
+<p>S.clear() -&gt; None – remove all items from S</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ChildBranches.reverse">
+<span class="sig-name descname"><span class="pre">reverse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ChildBranches.reverse" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a></p>
+<p>S.reverse() – reverse <em>IN PLACE</em></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ChildBranches.extend">
+<span class="sig-name descname"><span class="pre">extend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ChildBranches.extend" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a></p>
+<p>S.extend(iterable) – extend sequence by appending elements from the iterable</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ChildBranches.pop">
+<span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ChildBranches.pop" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a></p>
+<p>S.pop([index]) -&gt; item – remove and return item at index (default last).
+Raise IndexError if list is empty or index is out of range.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ChildBranches.remove">
+<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ChildBranches.remove" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a></p>
+<p>S.remove(value) – remove first occurrence of value.
+Raise ValueError if the value is not present.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ChildBranches.index">
+<span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ChildBranches.index" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.Sequence</span></code></a></p>
+<p>S.index(value, [start, [stop]]) -&gt; integer – return first index of value.
+Raises ValueError if the value is not present.</p>
+<p>Supporting start and stop arguments is optional, but
+recommended.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ChildBranches.count">
+<span class="sig-name descname"><span class="pre">count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ChildBranches.count" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.Sequence</span></code></a></p>
+<p>S.count(value) -&gt; integer – return number of occurrences of value</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.ChildBranches.lookup">
+<span class="sig-name descname"><span class="pre">lookup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">note</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><span class="pre">Note</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.ChildBranches.lookup" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.branches.BranchLookup</span></code></p>
+<p>Lookup a branch given a related <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a>, either parent or child.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Parents">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trilium_alchemy.core.note.branches.</span></span><span class="sig-name descname"><span class="pre">Parents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.Entity" title="trilium_alchemy.core.entity.Entity"><span class="pre">Entity</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Parents" title="Permalink to this definition">#</a></dt>
+<dd><p class="rubric">Bases:</p>
+<p><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.extension.NoteExtension</span></code><br />
+<a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSet" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSet</span></code></a></p>
+<p>Interface to a note’s parent notes. When adding a parent,
+is an alias of <code class="docutils literal notranslate"><span class="pre">Note.branches.parents</span></code>.</p>
+<p>Access as <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.parents" title="trilium_alchemy.core.note.Note.parents"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.parents</span></code></a>, a descriptor mapping to
+an instance of this class.</p>
+<p>This object is stateless; <code class="docutils literal notranslate"><span class="pre">Note.branches.parents</span></code> is the source of
+truth for parent branches.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Parents.add">
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Parents.add" title="Permalink to this definition">#</a></dt>
+<dd><p>Add an element.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Parents.discard">
+<span class="sig-name descname"><span class="pre">discard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Parents.discard" title="Permalink to this definition">#</a></dt>
+<dd><p>Remove an element.  Do not raise an exception if absent.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Parents.remove">
+<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Parents.remove" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSet" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSet</span></code></a></p>
+<p>Remove an element. If not a member, raise a KeyError.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Parents.pop">
+<span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Parents.pop" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSet" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSet</span></code></a></p>
+<p>Return the popped value.  Raise KeyError if empty.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Parents.clear">
+<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Parents.clear" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSet" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSet</span></code></a></p>
+<p>This is slow (creates N new iterators!) but effective.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Parents.isdisjoint">
+<span class="sig-name descname"><span class="pre">isdisjoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Parents.isdisjoint" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Set" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.Set</span></code></a></p>
+<p>Return True if two sets have a null intersection.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Children">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trilium_alchemy.core.note.branches.</span></span><span class="sig-name descname"><span class="pre">Children</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.Entity" title="trilium_alchemy.core.entity.Entity"><span class="pre">Entity</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Children" title="Permalink to this definition">#</a></dt>
+<dd><p class="rubric">Bases:</p>
+<p><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.extension.NoteExtension</span></code><br />
+<a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a></p>
+<p>Interface to a note’s child notes. For adding a child,
+is an alias of <code class="docutils literal notranslate"><span class="pre">Note.branches.children</span></code>.</p>
+<p>Access as <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.parents" title="trilium_alchemy.core.note.Note.parents"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.parents</span></code></a>, a descriptor mapping to
+an instance of this class.</p>
+<p>This object is stateless; <code class="docutils literal notranslate"><span class="pre">Note.branches.children</span></code> is the source of
+truth for child branches.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Children.insert">
+<span class="sig-name descname"><span class="pre">insert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Children.insert" title="Permalink to this definition">#</a></dt>
+<dd><p>S.insert(index, value) – insert value before index</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Children.append">
+<span class="sig-name descname"><span class="pre">append</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Children.append" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a></p>
+<p>S.append(value) – append value to the end of the sequence</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Children.clear">
+<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Children.clear" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a></p>
+<p>S.clear() -&gt; None – remove all items from S</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Children.reverse">
+<span class="sig-name descname"><span class="pre">reverse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Children.reverse" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a></p>
+<p>S.reverse() – reverse <em>IN PLACE</em></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Children.extend">
+<span class="sig-name descname"><span class="pre">extend</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Children.extend" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a></p>
+<p>S.extend(iterable) – extend sequence by appending elements from the iterable</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Children.pop">
+<span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Children.pop" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a></p>
+<p>S.pop([index]) -&gt; item – remove and return item at index (default last).
+Raise IndexError if list is empty or index is out of range.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Children.remove">
+<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Children.remove" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.MutableSequence</span></code></a></p>
+<p>S.remove(value) – remove first occurrence of value.
+Raise ValueError if the value is not present.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Children.index">
+<span class="sig-name descname"><span class="pre">index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Children.index" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.Sequence</span></code></a></p>
+<p>S.index(value, [start, [stop]]) -&gt; integer – return first index of value.
+Raises ValueError if the value is not present.</p>
+<p>Supporting start and stop arguments is optional, but
+recommended.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.branches.Children.count">
+<span class="sig-name descname"><span class="pre">count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.branches.Children.count" title="Permalink to this definition">#</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">collections.abc.Sequence</span></code></a></p>
+<p>S.count(value) -&gt; integer – return number of occurrences of value</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="trilium_alchemy.core.note.content.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title"><code class="docutils literal notranslate"><span class="pre">content</span></code></div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="trilium_alchemy.core.note.attributes.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title"><code class="docutils literal notranslate"><span class="pre">attributes</span></code></div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023, mm21
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">branches</span></code></a><ul>
+<li><a class="reference internal" href="#class-index">Class index</a></li>
+<li><a class="reference internal" href="#symbols">Symbols</a><ul>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Branches"><code class="docutils literal notranslate"><span class="pre">Branches</span></code></a><ul>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Branches.parents"><code class="docutils literal notranslate"><span class="pre">parents</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Branches.children"><code class="docutils literal notranslate"><span class="pre">children</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Branches.lookup"><code class="docutils literal notranslate"><span class="pre">lookup()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ParentBranches"><code class="docutils literal notranslate"><span class="pre">ParentBranches</span></code></a><ul>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ParentBranches.add"><code class="docutils literal notranslate"><span class="pre">add()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ParentBranches.discard"><code class="docutils literal notranslate"><span class="pre">discard()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ParentBranches.remove"><code class="docutils literal notranslate"><span class="pre">remove()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ParentBranches.pop"><code class="docutils literal notranslate"><span class="pre">pop()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ParentBranches.clear"><code class="docutils literal notranslate"><span class="pre">clear()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ParentBranches.isdisjoint"><code class="docutils literal notranslate"><span class="pre">isdisjoint()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ParentBranches.lookup"><code class="docutils literal notranslate"><span class="pre">lookup()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ChildBranches"><code class="docutils literal notranslate"><span class="pre">ChildBranches</span></code></a><ul>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ChildBranches.insert"><code class="docutils literal notranslate"><span class="pre">insert()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ChildBranches.append"><code class="docutils literal notranslate"><span class="pre">append()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ChildBranches.clear"><code class="docutils literal notranslate"><span class="pre">clear()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ChildBranches.reverse"><code class="docutils literal notranslate"><span class="pre">reverse()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ChildBranches.extend"><code class="docutils literal notranslate"><span class="pre">extend()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ChildBranches.pop"><code class="docutils literal notranslate"><span class="pre">pop()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ChildBranches.remove"><code class="docutils literal notranslate"><span class="pre">remove()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ChildBranches.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ChildBranches.count"><code class="docutils literal notranslate"><span class="pre">count()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.ChildBranches.lookup"><code class="docutils literal notranslate"><span class="pre">lookup()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Parents"><code class="docutils literal notranslate"><span class="pre">Parents</span></code></a><ul>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Parents.add"><code class="docutils literal notranslate"><span class="pre">add()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Parents.discard"><code class="docutils literal notranslate"><span class="pre">discard()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Parents.remove"><code class="docutils literal notranslate"><span class="pre">remove()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Parents.pop"><code class="docutils literal notranslate"><span class="pre">pop()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Parents.clear"><code class="docutils literal notranslate"><span class="pre">clear()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Parents.isdisjoint"><code class="docutils literal notranslate"><span class="pre">isdisjoint()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Children"><code class="docutils literal notranslate"><span class="pre">Children</span></code></a><ul>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Children.insert"><code class="docutils literal notranslate"><span class="pre">insert()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Children.append"><code class="docutils literal notranslate"><span class="pre">append()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Children.clear"><code class="docutils literal notranslate"><span class="pre">clear()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Children.reverse"><code class="docutils literal notranslate"><span class="pre">reverse()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Children.extend"><code class="docutils literal notranslate"><span class="pre">extend()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Children.pop"><code class="docutils literal notranslate"><span class="pre">pop()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Children.remove"><code class="docutils literal notranslate"><span class="pre">remove()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Children.index"><code class="docutils literal notranslate"><span class="pre">index()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.branches.Children.count"><code class="docutils literal notranslate"><span class="pre">count()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/scripts/furo.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/custom.js"></script>
+    </body>
+</html>

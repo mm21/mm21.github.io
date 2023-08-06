@@ -1,0 +1,286 @@
+(trilium_alchemy.core.entity)=
+# `entity`
+
+```{py:module} trilium_alchemy.core.entity
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.entity
+:allowtitles:
+```
+
+### Class index
+
+:::symbol-category
+```{rubric} Canonical
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`Entity <trilium_alchemy.core.entity.Entity>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.entity.Entity
+    :summary:
+    ```
+
+* - {py:obj}`State <trilium_alchemy.core.entity.State>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.entity.State
+    :summary:
+    ```
+
+* - {py:obj}`EntityIdDescriptor <trilium_alchemy.core.entity.EntityIdDescriptor>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.entity.EntityIdDescriptor
+    :summary:
+    ```
+
+* - {py:obj}`FieldDescriptor <trilium_alchemy.core.entity.FieldDescriptor>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.entity.FieldDescriptor
+    :summary:
+    ```
+
+* - {py:obj}`ReadOnlyFieldDescriptor <trilium_alchemy.core.entity.ReadOnlyFieldDescriptor>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.entity.ReadOnlyFieldDescriptor
+    :summary:
+    ```
+
+* - {py:obj}`ReadOnlyDescriptor <trilium_alchemy.core.entity.ReadOnlyDescriptor>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.entity.ReadOnlyDescriptor
+    :summary:
+    ```
+
+* - {py:obj}`WriteThroughDescriptor <trilium_alchemy.core.entity.WriteThroughDescriptor>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.entity.WriteThroughDescriptor
+    :summary:
+    ```
+
+* - {py:obj}`WriteOnceDescriptor <trilium_alchemy.core.entity.WriteOnceDescriptor>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.entity.WriteOnceDescriptor
+    :summary:
+    ```
+
+* - {py:obj}`ExtensionDescriptor <trilium_alchemy.core.entity.ExtensionDescriptor>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.entity.ExtensionDescriptor
+    :summary:
+    ```
+
+````
+
+### Symbols
+
+`````{py:class} Entity(entity_id: str | None = None, session: trilium_alchemy.core.session.Session = None, model_backing: trilium_alchemy.core.entity.entity.ModelT | None = None, create: bool | None = None)
+:canonical: trilium_alchemy.core.entity.Entity
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.Entity.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`typing.Generic`\
+{py:obj}`abc.ABC`\
+{py:obj}`trilium_alchemy.core.entity.model.ModelContainer`
+```{rubric} Aliases:
+```
+`trilium_alchemy.Entity`\
+`trilium_alchemy.core.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.entity.Entity
+```
+
+````{py:property} state
+:canonical: trilium_alchemy.core.entity.Entity.state
+:type: trilium_alchemy.core.entity.types.State
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.Entity.state
+```
+
+````
+
+````{py:property} session
+:canonical: trilium_alchemy.core.entity.Entity.session
+:type: trilium_alchemy.core.session.Session
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.Entity.session
+```
+
+````
+
+````{py:property} str_short
+:canonical: trilium_alchemy.core.entity.Entity.str_short
+:type: str
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.Entity.str_short
+```
+
+````
+
+````{py:property} str_summary
+:canonical: trilium_alchemy.core.entity.Entity.str_summary
+:type: str
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.Entity.str_summary
+```
+
+````
+
+````{py:method} flush() -> None
+:canonical: trilium_alchemy.core.entity.Entity.flush
+```{autodoc2-docstring} trilium_alchemy.core.entity.Entity.flush
+```
+
+````
+
+````{py:method} invalidate() -> None
+:canonical: trilium_alchemy.core.entity.Entity.invalidate
+```{autodoc2-docstring} trilium_alchemy.core.entity.Entity.invalidate
+```
+
+````
+
+````{py:method} delete() -> None
+:canonical: trilium_alchemy.core.entity.Entity.delete
+```{autodoc2-docstring} trilium_alchemy.core.entity.Entity.delete
+```
+
+````
+
+`````
+
+`````{py:class} State
+:canonical: trilium_alchemy.core.entity.State
+
+```{rubric} Bases:
+```
+{py:obj}`enum.Enum`
+```{rubric} Aliases:
+```
+`trilium_alchemy.State`\
+`trilium_alchemy.core.State`
+```{autodoc2-docstring} trilium_alchemy.core.entity.State
+```
+
+````{py:attribute} CLEAN
+:canonical: trilium_alchemy.core.entity.State.CLEAN
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.State.CLEAN
+```
+
+````
+
+````{py:attribute} CREATE
+:canonical: trilium_alchemy.core.entity.State.CREATE
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.State.CREATE
+```
+
+````
+
+````{py:attribute} UPDATE
+:canonical: trilium_alchemy.core.entity.State.UPDATE
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.State.UPDATE
+```
+
+````
+
+````{py:attribute} DELETE
+:canonical: trilium_alchemy.core.entity.State.DELETE
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.State.DELETE
+```
+
+````
+
+````{py:method} name()
+:canonical: trilium_alchemy.core.entity.State.name
+*Inherited from:* {obj}`enum.Enum`
+```{autodoc2-docstring} trilium_alchemy.core.entity.State.name
+```
+
+````
+
+````{py:method} value()
+:canonical: trilium_alchemy.core.entity.State.value
+*Inherited from:* {obj}`enum.Enum`
+```{autodoc2-docstring} trilium_alchemy.core.entity.State.value
+```
+
+````
+
+`````
+
+````{py:class} EntityIdDescriptor
+:canonical: trilium_alchemy.core.entity.EntityIdDescriptor
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.EntityIdDescriptor
+```
+
+````
+
+````{py:class} FieldDescriptor(field: str)
+:canonical: trilium_alchemy.core.entity.FieldDescriptor
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.FieldDescriptor.__init__
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.FieldDescriptor
+```
+
+````
+
+````{py:class} ReadOnlyFieldDescriptor(field: str)
+:canonical: trilium_alchemy.core.entity.ReadOnlyFieldDescriptor
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.ReadOnlyFieldDescriptor.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.entity.FieldDescriptor`
+```{autodoc2-docstring} trilium_alchemy.core.entity.ReadOnlyFieldDescriptor
+```
+
+````
+
+````{py:class} ReadOnlyDescriptor(attr: str, allow_none_cb: str | None = None)
+:canonical: trilium_alchemy.core.entity.ReadOnlyDescriptor
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.ReadOnlyDescriptor.__init__
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.ReadOnlyDescriptor
+```
+
+````
+
+````{py:class} WriteThroughDescriptor(attr: str, attr_attr: str, field: str)
+:canonical: trilium_alchemy.core.entity.WriteThroughDescriptor
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.WriteThroughDescriptor.__init__
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.WriteThroughDescriptor
+```
+
+````
+
+````{py:class} WriteOnceDescriptor(attr: str, validator: typing.Callable = None)
+:canonical: trilium_alchemy.core.entity.WriteOnceDescriptor
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.WriteOnceDescriptor.__init__
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.WriteOnceDescriptor
+```
+
+````
+
+````{py:class} ExtensionDescriptor(attr: str)
+:canonical: trilium_alchemy.core.entity.ExtensionDescriptor
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.ExtensionDescriptor.__init__
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.ExtensionDescriptor
+```
+
+````

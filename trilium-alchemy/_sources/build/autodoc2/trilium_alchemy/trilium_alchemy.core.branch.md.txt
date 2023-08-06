@@ -1,0 +1,181 @@
+(trilium_alchemy.core.branch)=
+# `branch`
+
+```{py:module} trilium_alchemy.core.branch
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.branch
+:allowtitles:
+```
+
+### Class index
+
+:::symbol-category
+```{rubric} Canonical
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`Branch <trilium_alchemy.core.branch.Branch>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch
+    :summary:
+    ```
+
+````
+
+### Symbols
+
+`````{py:class} Branch(parent: trilium_alchemy.core.note.Note = None, child: trilium_alchemy.core.note.Note = None, prefix: str = '', expanded: bool = False, session: trilium_alchemy.core.session.Session = None, **kwargs)
+:canonical: trilium_alchemy.core.branch.Branch
+
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.entity.Entity`
+```{rubric} Aliases:
+```
+`trilium_alchemy.Branch`\
+`trilium_alchemy.core.Branch`
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch
+```
+
+````{py:attribute} branch_id
+:canonical: trilium_alchemy.core.branch.Branch.branch_id
+:type: str
+   {obj}`EntityIdDescriptor() <trilium_alchemy.core.entity.EntityIdDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.branch_id
+```
+
+````
+
+````{py:attribute} parent
+:canonical: trilium_alchemy.core.branch.Branch.parent
+:type: trilium_alchemy.core.note.Note
+   {obj}`WriteOnceDescriptor() <trilium_alchemy.core.entity.WriteOnceDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.parent
+```
+
+````
+
+````{py:attribute} child
+:canonical: trilium_alchemy.core.branch.Branch.child
+:type: trilium_alchemy.core.note.Note
+   {obj}`WriteOnceDescriptor() <trilium_alchemy.core.entity.WriteOnceDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.child
+```
+
+````
+
+````{py:attribute} prefix
+:canonical: trilium_alchemy.core.branch.Branch.prefix
+:type: str
+   {obj}`FieldDescriptor() <trilium_alchemy.core.entity.FieldDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.prefix
+```
+
+````
+
+````{py:attribute} expanded
+:canonical: trilium_alchemy.core.branch.Branch.expanded
+:type: bool
+   {obj}`FieldDescriptor() <trilium_alchemy.core.entity.FieldDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.expanded
+```
+
+````
+
+````{py:attribute} utc_date_modified
+:canonical: trilium_alchemy.core.branch.Branch.utc_date_modified
+:type: str
+   {obj}`ReadOnlyFieldDescriptor() <trilium_alchemy.core.entity.ReadOnlyFieldDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.utc_date_modified
+```
+
+````
+
+````{py:attribute} position
+:canonical: trilium_alchemy.core.branch.Branch.position
+:type: int
+   {obj}`ReadOnlyDescriptor() <trilium_alchemy.core.entity.ReadOnlyDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.position
+```
+
+````
+
+````{py:property} state
+:canonical: trilium_alchemy.core.branch.Branch.state
+:type: trilium_alchemy.core.entity.types.State
+
+*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.state
+```
+
+````
+
+````{py:property} session
+:canonical: trilium_alchemy.core.branch.Branch.session
+:type: trilium_alchemy.core.session.Session
+
+*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.session
+```
+
+````
+
+````{py:property} str_short
+:canonical: trilium_alchemy.core.branch.Branch.str_short
+:type: str
+
+*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.str_short
+```
+
+````
+
+````{py:property} str_summary
+:canonical: trilium_alchemy.core.branch.Branch.str_summary
+:type: str
+
+*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.str_summary
+```
+
+````
+
+````{py:method} flush() -> None
+:canonical: trilium_alchemy.core.branch.Branch.flush
+*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.flush
+```
+
+````
+
+````{py:method} invalidate() -> None
+:canonical: trilium_alchemy.core.branch.Branch.invalidate
+*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.invalidate
+```
+
+````
+
+````{py:method} delete() -> None
+:canonical: trilium_alchemy.core.branch.Branch.delete
+*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.delete
+```
+
+````
+
+`````

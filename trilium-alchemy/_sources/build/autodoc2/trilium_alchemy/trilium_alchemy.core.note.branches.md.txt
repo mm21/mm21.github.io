@@ -1,0 +1,405 @@
+(trilium_alchemy.core.note.branches)=
+# `branches`
+
+```{py:module} trilium_alchemy.core.note.branches
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.note.branches
+:allowtitles:
+```
+
+### Class index
+
+:::symbol-category
+```{rubric} Canonical
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`Branches <trilium_alchemy.core.note.branches.Branches>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.branches.Branches
+    :summary:
+    ```
+
+* - {py:obj}`ParentBranches <trilium_alchemy.core.note.branches.ParentBranches>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches
+    :summary:
+    ```
+
+* - {py:obj}`ChildBranches <trilium_alchemy.core.note.branches.ChildBranches>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches
+    :summary:
+    ```
+
+* - {py:obj}`Parents <trilium_alchemy.core.note.branches.Parents>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.branches.Parents
+    :summary:
+    ```
+
+* - {py:obj}`Children <trilium_alchemy.core.note.branches.Children>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.branches.Children
+    :summary:
+    ```
+
+````
+
+### Symbols
+
+`````{py:class} Branches(note)
+:canonical: trilium_alchemy.core.note.branches.Branches
+
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Branches.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.extension.NoteExtension`\
+{py:obj}`trilium_alchemy.core.note.branches.BranchLookup`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Branches
+```
+
+````{py:attribute} parents
+:canonical: trilium_alchemy.core.note.branches.Branches.parents
+:type: trilium_alchemy.core.note.branches.ParentBranches
+   {obj}`ExtensionDescriptor() <trilium_alchemy.core.entity.ExtensionDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Branches.parents
+```
+
+````
+
+````{py:attribute} children
+:canonical: trilium_alchemy.core.note.branches.Branches.children
+:type: trilium_alchemy.core.note.branches.ChildBranches
+   {obj}`ExtensionDescriptor() <trilium_alchemy.core.entity.ExtensionDescriptor>`
+
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Branches.children
+```
+
+````
+
+````{py:method} lookup(note: trilium_alchemy.Note)
+:canonical: trilium_alchemy.core.note.branches.Branches.lookup
+*Inherited from:* {obj}`trilium_alchemy.core.note.branches.BranchLookup`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Branches.lookup
+```
+
+````
+
+`````
+
+`````{py:class} ParentBranches(entity: trilium_alchemy.core.entity.entity.Entity)
+:canonical: trilium_alchemy.core.note.branches.ParentBranches
+
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.extension.Set`\
+{py:obj}`trilium_alchemy.core.note.branches.BranchLookup`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches
+```
+
+````{py:method} add(value: typing.Any)
+:canonical: trilium_alchemy.core.note.branches.ParentBranches.add
+*Inherited from:* {obj}`trilium_alchemy.core.note.extension.Set`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches.add
+```
+
+````
+
+````{py:method} discard(value: typing.Any)
+:canonical: trilium_alchemy.core.note.branches.ParentBranches.discard
+*Inherited from:* {obj}`trilium_alchemy.core.note.extension.Set`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches.discard
+```
+
+````
+
+````{py:method} remove(value)
+:canonical: trilium_alchemy.core.note.branches.ParentBranches.remove
+*Inherited from:* {obj}`collections.abc.MutableSet`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches.remove
+```
+
+````
+
+````{py:method} pop()
+:canonical: trilium_alchemy.core.note.branches.ParentBranches.pop
+*Inherited from:* {obj}`collections.abc.MutableSet`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches.pop
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.core.note.branches.ParentBranches.clear
+*Inherited from:* {obj}`collections.abc.MutableSet`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches.clear
+```
+
+````
+
+````{py:method} isdisjoint(other)
+:canonical: trilium_alchemy.core.note.branches.ParentBranches.isdisjoint
+*Inherited from:* {obj}`collections.abc.Set`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches.isdisjoint
+```
+
+````
+
+````{py:method} lookup(note: trilium_alchemy.Note)
+:canonical: trilium_alchemy.core.note.branches.ParentBranches.lookup
+*Inherited from:* {obj}`trilium_alchemy.core.note.branches.BranchLookup`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches.lookup
+```
+
+````
+
+`````
+
+`````{py:class} ChildBranches(entity: trilium_alchemy.core.entity.entity.Entity)
+:canonical: trilium_alchemy.core.note.branches.ChildBranches
+
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.extension.List`\
+{py:obj}`trilium_alchemy.core.note.branches.BranchLookup`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches
+```
+
+````{py:method} insert(i: int, value: typing.Any)
+:canonical: trilium_alchemy.core.note.branches.ChildBranches.insert
+*Inherited from:* {obj}`trilium_alchemy.core.note.extension.List`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.insert
+```
+
+````
+
+````{py:method} append(value)
+:canonical: trilium_alchemy.core.note.branches.ChildBranches.append
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.append
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.core.note.branches.ChildBranches.clear
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.clear
+```
+
+````
+
+````{py:method} reverse()
+:canonical: trilium_alchemy.core.note.branches.ChildBranches.reverse
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.reverse
+```
+
+````
+
+````{py:method} extend(values)
+:canonical: trilium_alchemy.core.note.branches.ChildBranches.extend
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.extend
+```
+
+````
+
+````{py:method} pop(index=-1)
+:canonical: trilium_alchemy.core.note.branches.ChildBranches.pop
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.pop
+```
+
+````
+
+````{py:method} remove(value)
+:canonical: trilium_alchemy.core.note.branches.ChildBranches.remove
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.remove
+```
+
+````
+
+````{py:method} index(value, start=0, stop=None)
+:canonical: trilium_alchemy.core.note.branches.ChildBranches.index
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.index
+```
+
+````
+
+````{py:method} count(value)
+:canonical: trilium_alchemy.core.note.branches.ChildBranches.count
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.count
+```
+
+````
+
+````{py:method} lookup(note: trilium_alchemy.Note)
+:canonical: trilium_alchemy.core.note.branches.ChildBranches.lookup
+*Inherited from:* {obj}`trilium_alchemy.core.note.branches.BranchLookup`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.lookup
+```
+
+````
+
+`````
+
+`````{py:class} Parents(entity: trilium_alchemy.core.entity.entity.Entity)
+:canonical: trilium_alchemy.core.note.branches.Parents
+
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Parents.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.extension.NoteExtension`\
+{py:obj}`collections.abc.MutableSet`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Parents
+```
+
+````{py:method} add(value: typing.Any)
+:canonical: trilium_alchemy.core.note.branches.Parents.add
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Parents.add
+```
+
+````
+
+````{py:method} discard(value: typing.Any)
+:canonical: trilium_alchemy.core.note.branches.Parents.discard
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Parents.discard
+```
+
+````
+
+````{py:method} remove(value)
+:canonical: trilium_alchemy.core.note.branches.Parents.remove
+*Inherited from:* {obj}`collections.abc.MutableSet`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Parents.remove
+```
+
+````
+
+````{py:method} pop()
+:canonical: trilium_alchemy.core.note.branches.Parents.pop
+*Inherited from:* {obj}`collections.abc.MutableSet`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Parents.pop
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.core.note.branches.Parents.clear
+*Inherited from:* {obj}`collections.abc.MutableSet`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Parents.clear
+```
+
+````
+
+````{py:method} isdisjoint(other)
+:canonical: trilium_alchemy.core.note.branches.Parents.isdisjoint
+*Inherited from:* {obj}`collections.abc.Set`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Parents.isdisjoint
+```
+
+````
+
+`````
+
+`````{py:class} Children(entity: trilium_alchemy.core.entity.entity.Entity)
+:canonical: trilium_alchemy.core.note.branches.Children
+
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Children.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.extension.NoteExtension`\
+{py:obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Children
+```
+
+````{py:method} insert(i: int, value: typing.Any)
+:canonical: trilium_alchemy.core.note.branches.Children.insert
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Children.insert
+```
+
+````
+
+````{py:method} append(value)
+:canonical: trilium_alchemy.core.note.branches.Children.append
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Children.append
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.core.note.branches.Children.clear
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Children.clear
+```
+
+````
+
+````{py:method} reverse()
+:canonical: trilium_alchemy.core.note.branches.Children.reverse
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Children.reverse
+```
+
+````
+
+````{py:method} extend(values)
+:canonical: trilium_alchemy.core.note.branches.Children.extend
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Children.extend
+```
+
+````
+
+````{py:method} pop(index=-1)
+:canonical: trilium_alchemy.core.note.branches.Children.pop
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Children.pop
+```
+
+````
+
+````{py:method} remove(value)
+:canonical: trilium_alchemy.core.note.branches.Children.remove
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Children.remove
+```
+
+````
+
+````{py:method} index(value, start=0, stop=None)
+:canonical: trilium_alchemy.core.note.branches.Children.index
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Children.index
+```
+
+````
+
+````{py:method} count(value)
+:canonical: trilium_alchemy.core.note.branches.Children.count
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Children.count
+```
+
+````
+
+`````

@@ -1,0 +1,62 @@
+(trilium_alchemy.core.note.content)=
+# `content`
+
+```{py:module} trilium_alchemy.core.note.content
+```
+
+```{autodoc2-docstring} trilium_alchemy.core.note.content
+:allowtitles:
+```
+
+### Class index
+
+:::symbol-category
+```{rubric} Canonical
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`Content <trilium_alchemy.core.note.content.Content>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.content.Content
+    :summary:
+    ```
+
+* - {py:obj}`ContentDescriptor <trilium_alchemy.core.note.content.ContentDescriptor>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.content.ContentDescriptor
+    :summary:
+    ```
+
+````
+
+### Symbols
+
+````{py:class} Content(entity: trilium_alchemy.core.entity.Entity)
+:canonical: trilium_alchemy.core.note.content.Content
+
+```{autodoc2-docstring} trilium_alchemy.core.note.content.Content.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.extension.NoteStatefulExtension`
+```{autodoc2-docstring} trilium_alchemy.core.note.content.Content
+```
+
+````
+
+````{py:class} ContentDescriptor(attr: str)
+:canonical: trilium_alchemy.core.note.content.ContentDescriptor
+
+```{autodoc2-docstring} trilium_alchemy.core.note.content.ContentDescriptor.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.entity.ExtensionDescriptor`
+```{autodoc2-docstring} trilium_alchemy.core.note.content.ContentDescriptor
+```
+
+````
