@@ -265,7 +265,7 @@
           <section id="event-tracker">
 <span id="id1"></span><h1>Event tracker<a class="headerlink" href="#event-tracker" title="Permalink to this heading">#</a></h1>
 <p>See <code class="docutils literal notranslate"><span class="pre">trilium-alchemy/example/event-tracker</span></code> for a fully featured showcase of both declarative and imperative approaches. An installation script is provided.</p>
-<p>This provides a complete example of using declarative notes to design a note tree for event tracking with Trilium. It can be synchronized to a destination note identified by label <code class="docutils literal notranslate"><span class="pre">#lifeTrackerRoot</span></code>. Eventually sync functionality will be provided by a CLI.</p>
+<p>This provides a complete example of using declarative notes to design a note tree for event tracking with Trilium.</p>
 <p>First, clone the repo and navigate to it:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/mm21/trilium-alchemy.git
 <span class="nb">cd</span><span class="w"> </span>trilium-alchemy/example/event-tracker
@@ -276,6 +276,10 @@
 </pre></div>
 </div>
 <p>A note must be designated with label <code class="docutils literal notranslate"><span class="pre">#eventTrackerRoot</span></code> to be the hierarchy root. Alternatively, you can pass <code class="docutils literal notranslate"><span class="pre">--root</span></code> to install it to your root note.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Eventually sync functionality will be provided by a CLI to provide equivalent functionality as the install script.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Any existing children the destination note will be deleted. Therefore you may want to install it in an empty subtree so as to not tamper with your existing notes.</p>
