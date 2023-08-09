@@ -615,8 +615,13 @@ values.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="trilium_alchemy.core.note.Note.flush">
-<span class="sig-name descname"><span class="pre">flush</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">recursive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.11)"><span class="pre">False</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.Note.flush" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">flush</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.Note.flush" title="Permalink to this definition">#</a></dt>
 <dd><p>Flush note along with its attributes.</p>
+<div class="admonition-todo admonition" id="id2">
+<p class="admonition-title">Todo</p>
+<p>Remove <code class="docutils literal notranslate"><span class="pre">recursive</span></code> kwarg. It will cache the entire subtree which is
+likely unexpected; use <a class="reference internal" href="trilium_alchemy.core.html#trilium_alchemy.core.Session.flush" title="trilium_alchemy.core.Session.flush"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Session.flush</span></code></a> instead.</p>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -710,7 +715,7 @@ corresponding branch.</p>
 subclass is also a valid <a class="reference internal" href="#trilium_alchemy.core.note.Mixin" title="trilium_alchemy.core.note.Mixin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mixin</span></code></a> and can use the same semantics
 to set attributes/children/fields.</p>
 </div>
-<div class="admonition-todo admonition" id="id2">
+<div class="admonition-todo admonition" id="id3">
 <p class="admonition-title">Todo</p>
 <p>Add <code class="code docutils literal highlight highlight-python"><span class="n">auto_mime</span><span class="o">=</span><span class="kc">True</span></code> to also set <code class="docutils literal notranslate"><span class="pre">mime</span></code> using <code class="docutils literal notranslate"><span class="pre">magic</span></code> package
 (or do so automatically if <a class="reference internal" href="#trilium_alchemy.core.note.Mixin.content_file" title="trilium_alchemy.core.note.Mixin.content_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mixin.content_file</span></code></a> set, but

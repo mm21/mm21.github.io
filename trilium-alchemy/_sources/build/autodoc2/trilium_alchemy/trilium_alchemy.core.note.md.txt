@@ -304,7 +304,7 @@ trilium_alchemy.core.note.content
 
 ````
 
-````{py:method} flush(recursive: bool = False)
+````{py:method} flush(**kwargs)
 :canonical: trilium_alchemy.core.note.Note.flush
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.flush
 ```
