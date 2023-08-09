@@ -190,7 +190,7 @@ trilium_alchemy.core.note.content
 
 ````{py:attribute} content
 :canonical: trilium_alchemy.core.note.Note.content
-:type: trilium_alchemy.core.note.content.Content
+:type: str | bytes
    {obj}`ContentDescriptor() <trilium_alchemy.core.note.content.ContentDescriptor>`
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.content

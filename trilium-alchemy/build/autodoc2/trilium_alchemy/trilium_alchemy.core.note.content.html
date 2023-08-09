@@ -273,7 +273,7 @@
 <table class="autosummary longtable docutils align-left">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#trilium_alchemy.core.note.content.Content" title="trilium_alchemy.core.note.content.Content"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Content</span></code></a></p></td>
-<td><p>Interface to a note’s content.</p></td>
+<td><p>Interface to note’s content.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#trilium_alchemy.core.note.content.ContentDescriptor" title="trilium_alchemy.core.note.content.ContentDescriptor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ContentDescriptor</span></code></a></p></td>
 <td><p>Override <code class="docutils literal notranslate"><span class="pre">ExtensionDescriptor.__get__</span></code> to return the content itself
@@ -290,7 +290,7 @@ via <code class="docutils literal notranslate"><span class="pre">Content._get</s
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trilium_alchemy.core.note.content.</span></span><span class="sig-name descname"><span class="pre">Content</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.Entity" title="trilium_alchemy.core.entity.Entity"><span class="pre">Entity</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.content.Content" title="Permalink to this definition">#</a></dt>
 <dd><p class="rubric">Bases:</p>
 <p><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.extension.NoteStatefulExtension</span></code></p>
-<p>Interface to a note’s content.</p>
+<p>Interface to note’s content.</p>
 <p>Access as <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.content" title="trilium_alchemy.core.note.Note.content"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.content</span></code></a>, a descriptor mapping to
 an instance of this class.</p>
 <p>The expected type depends on <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.is_string" title="trilium_alchemy.core.note.Note.is_string"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.is_string</span></code></a>:</p>

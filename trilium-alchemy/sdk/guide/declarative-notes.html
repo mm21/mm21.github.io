@@ -387,9 +387,14 @@
 </pre></div>
 </div>
 </section>
+<section id="passing-note-id">
+<h3>Passing <code class="docutils literal notranslate"><span class="pre">note_id</span></code><a class="headerlink" href="#passing-note-id" title="Permalink to this heading">#</a></h3>
+<p>When <code class="docutils literal notranslate"><span class="pre">note_id</span></code> is passed in the constructor of a <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a> subclass, it’s similarly considered a singleton.</p>
+</section>
 <section id="child-of-singleton">
 <h3>Child of singleton<a class="headerlink" href="#child-of-singleton" title="Permalink to this heading">#</a></h3>
-<p>Every child of a singleton note is required to also have a deterministic <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.note_id" title="trilium_alchemy.core.note.Note.note_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.note_id</span></code></a>. Therefore a unique <code class="docutils literal notranslate"><span class="pre">note_id</span></code> is generated for children of singletons, even if they don’t satisfy any of the above criteria.</p>
+<p>Every child of a singleton note is required to also have a deterministic <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.note_id" title="trilium_alchemy.core.note.Note.note_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.note_id</span></code></a>. Therefore a <code class="docutils literal notranslate"><span class="pre">note_id</span></code> is generated for children of singletons, even if they don’t satisfy any of the above criteria.</p>
+<p>This is recursive, so an entire note tree specified by <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a> subclasses will be instantiated with a deterministic <code class="docutils literal notranslate"><span class="pre">note_id</span></code> if the root satisfies any of the above criteria.</p>
 </section>
 </section>
 <section id="adding-relations">
@@ -417,7 +422,7 @@
 </section>
 <section id="leaf-notes">
 <span id="id2"></span><h2>Leaf notes<a class="headerlink" href="#leaf-notes" title="Permalink to this heading">#</a></h2>
-<p>If you design a note hierarchy using this approach, you might want to designate some “folder” notes to hold user-maintained notes. In this case they can’t have any declarative children added by <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.html#trilium_alchemy.core.declarative.children" title="trilium_alchemy.core.declarative.children"><code class="xref py py-obj docutils literal notranslate"><span class="pre">children</span></code></a> or <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.html#trilium_alchemy.core.declarative.child" title="trilium_alchemy.core.declarative.child"><code class="xref py py-obj docutils literal notranslate"><span class="pre">child</span></code></a>.</p>
+<p>If you design a note hierarchy using this approach, you might want to designate some “folder” notes to hold user-maintained notes. Set <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.leaf" title="trilium_alchemy.core.note.Note.leaf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.leaf</span></code></a> or <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Mixin.leaf" title="trilium_alchemy.core.note.Mixin.leaf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mixin.leaf</span></code></a> to indicate this, in which case using <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.html#trilium_alchemy.core.declarative.children" title="trilium_alchemy.core.declarative.children"><code class="xref py py-obj docutils literal notranslate"><span class="pre">children</span></code></a> or <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.html#trilium_alchemy.core.declarative.child" title="trilium_alchemy.core.declarative.child"><code class="xref py py-obj docutils literal notranslate"><span class="pre">child</span></code></a> will raise an exception.</p>
 <p>For example, this would be necessary for a list of contacts:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;sorted&quot;</span><span class="p">)</span>
 <span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;iconClass&quot;</span><span class="p">,</span> <span class="s2">&quot;bx bx-group&quot;</span><span class="p">)</span>
@@ -498,6 +503,7 @@
 <li><a class="reference internal" href="#setting-singleton">Setting <code class="docutils literal notranslate"><span class="pre">singleton</span></code></a></li>
 <li><a class="reference internal" href="#setting-note-id-seed">Setting <code class="docutils literal notranslate"><span class="pre">note_id_seed</span></code></a></li>
 <li><a class="reference internal" href="#setting-note-id">Setting <code class="docutils literal notranslate"><span class="pre">note_id</span></code></a></li>
+<li><a class="reference internal" href="#passing-note-id">Passing <code class="docutils literal notranslate"><span class="pre">note_id</span></code></a></li>
 <li><a class="reference internal" href="#child-of-singleton">Child of singleton</a></li>
 </ul>
 </li>
