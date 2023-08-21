@@ -41,7 +41,7 @@ trilium_alchemy.core.note.content
 
 ### Symbols
 
-`````{py:class} Note(title: str = 'new note', note_type: str = 'text', mime: str = 'text/html', parents: set[trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch] | trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch = None, children: list[trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch] = None, attributes: list[trilium_alchemy.core.attribute.Attribute] = None, content: str | bytes | typing.IO = None, note_id: str = None, template: trilium_alchemy.core.note.note.Note | typing.Type[trilium_alchemy.core.note.note.Note] = None, session: trilium_alchemy.core.session.Session = None, **kwargs)
+`````{py:class} Note(title: str = 'new note', note_type: str = 'text', mime: str = 'text/html', parents: collections.abc.Iterable[trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch] | trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch = None, children: collections.abc.Iterable[trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch] = None, attributes: collections.abc.Iterable[trilium_alchemy.core.attribute.Attribute] = None, content: str | bytes | typing.IO = None, note_id: str = None, template: trilium_alchemy.core.note.note.Note | typing.Type[trilium_alchemy.core.note.note.Note] = None, session: trilium_alchemy.core.session.Session = None, **kwargs)
 :canonical: trilium_alchemy.core.note.Note
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.__init__
@@ -50,7 +50,8 @@ trilium_alchemy.core.note.content
 ```{rubric} Bases:
 ```
 {py:obj}`trilium_alchemy.core.entity.Entity`\
-{py:obj}`trilium_alchemy.core.note.Mixin`
+{py:obj}`trilium_alchemy.core.note.Mixin`\
+{py:obj}`collections.abc.MutableMapping`
 ```{rubric} Aliases:
 ```
 `trilium_alchemy.Note`\
@@ -200,7 +201,7 @@ trilium_alchemy.core.note.content
 
 ````{py:attribute} note_id_seed
 :canonical: trilium_alchemy.core.note.Note.note_id_seed
-:type: str
+:type: str | None
    `None`{l=python}
 
 *Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
@@ -232,7 +233,7 @@ trilium_alchemy.core.note.content
 
 ````{py:attribute} content_file
 :canonical: trilium_alchemy.core.note.Note.content_file
-:type: str
+:type: str | None
    `None`{l=python}
 
 *Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
@@ -304,7 +305,7 @@ trilium_alchemy.core.note.content
 
 ````
 
-````{py:method} flush(**kwargs)
+````{py:method} flush()
 :canonical: trilium_alchemy.core.note.Note.flush
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.flush
 ```
@@ -359,6 +360,78 @@ trilium_alchemy.core.note.content
 
 ````
 
+````{py:method} pop(key, default=__marker)
+:canonical: trilium_alchemy.core.note.Note.pop
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.pop
+```
+
+````
+
+````{py:method} popitem()
+:canonical: trilium_alchemy.core.note.Note.popitem
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.popitem
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.core.note.Note.clear
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.clear
+```
+
+````
+
+````{py:method} update(other=(), /, **kwds)
+:canonical: trilium_alchemy.core.note.Note.update
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.update
+```
+
+````
+
+````{py:method} setdefault(key, default=None)
+:canonical: trilium_alchemy.core.note.Note.setdefault
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.setdefault
+```
+
+````
+
+````{py:method} get(key, default=None)
+:canonical: trilium_alchemy.core.note.Note.get
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.get
+```
+
+````
+
+````{py:method} keys()
+:canonical: trilium_alchemy.core.note.Note.keys
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.keys
+```
+
+````
+
+````{py:method} items()
+:canonical: trilium_alchemy.core.note.Note.items
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.items
+```
+
+````
+
+````{py:method} values()
+:canonical: trilium_alchemy.core.note.Note.values
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.values
+```
+
+````
+
 `````
 
 `````{py:class} Mixin()
@@ -379,7 +452,7 @@ trilium_alchemy.core.note.content
 
 ````{py:attribute} note_id
 :canonical: trilium_alchemy.core.note.Mixin.note_id
-:type: str
+:type: str | None
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.note_id
@@ -389,7 +462,7 @@ trilium_alchemy.core.note.content
 
 ````{py:attribute} note_id_seed
 :canonical: trilium_alchemy.core.note.Mixin.note_id_seed
-:type: str
+:type: str | None
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.note_id_seed
@@ -399,7 +472,7 @@ trilium_alchemy.core.note.content
 
 ````{py:attribute} title
 :canonical: trilium_alchemy.core.note.Mixin.title
-:type: str
+:type: str | None
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.title
@@ -448,7 +521,7 @@ trilium_alchemy.core.note.content
 
 ````{py:attribute} content_file
 :canonical: trilium_alchemy.core.note.Mixin.content_file
-:type: str
+:type: str | None
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.content_file

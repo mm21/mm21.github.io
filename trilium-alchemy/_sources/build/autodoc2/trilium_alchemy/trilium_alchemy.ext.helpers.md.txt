@@ -121,6 +121,78 @@
 
 ````
 
+````{py:method} pop(key, default=__marker)
+:canonical: trilium_alchemy.ext.helpers.Template.pop
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template.pop
+```
+
+````
+
+````{py:method} popitem()
+:canonical: trilium_alchemy.ext.helpers.Template.popitem
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template.popitem
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.ext.helpers.Template.clear
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template.clear
+```
+
+````
+
+````{py:method} update(other=(), /, **kwds)
+:canonical: trilium_alchemy.ext.helpers.Template.update
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template.update
+```
+
+````
+
+````{py:method} setdefault(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.Template.setdefault
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template.setdefault
+```
+
+````
+
+````{py:method} get(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.Template.get
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template.get
+```
+
+````
+
+````{py:method} keys()
+:canonical: trilium_alchemy.ext.helpers.Template.keys
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template.keys
+```
+
+````
+
+````{py:method} items()
+:canonical: trilium_alchemy.ext.helpers.Template.items
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template.items
+```
+
+````
+
+````{py:method} values()
+:canonical: trilium_alchemy.ext.helpers.Template.values
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template.values
+```
+
+````
+
 `````
 
 `````{py:class} WorkspaceTemplate
@@ -162,6 +234,78 @@
 :classmethod:
 *Inherited from:* {obj}`trilium_alchemy.ext.helpers.BaseTemplate`
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate.instance
+```
+
+````
+
+````{py:method} pop(key, default=__marker)
+:canonical: trilium_alchemy.ext.helpers.WorkspaceTemplate.pop
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate.pop
+```
+
+````
+
+````{py:method} popitem()
+:canonical: trilium_alchemy.ext.helpers.WorkspaceTemplate.popitem
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate.popitem
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.ext.helpers.WorkspaceTemplate.clear
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate.clear
+```
+
+````
+
+````{py:method} update(other=(), /, **kwds)
+:canonical: trilium_alchemy.ext.helpers.WorkspaceTemplate.update
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate.update
+```
+
+````
+
+````{py:method} setdefault(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.WorkspaceTemplate.setdefault
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate.setdefault
+```
+
+````
+
+````{py:method} get(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.WorkspaceTemplate.get
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate.get
+```
+
+````
+
+````{py:method} keys()
+:canonical: trilium_alchemy.ext.helpers.WorkspaceTemplate.keys
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate.keys
+```
+
+````
+
+````{py:method} items()
+:canonical: trilium_alchemy.ext.helpers.WorkspaceTemplate.items
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate.items
+```
+
+````
+
+````{py:method} values()
+:canonical: trilium_alchemy.ext.helpers.WorkspaceTemplate.values
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate.values
 ```
 
 ````
@@ -212,6 +356,78 @@
 
 ````
 
+````{py:method} pop(key, default=__marker)
+:canonical: trilium_alchemy.ext.helpers.Workspace.pop
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Workspace.pop
+```
+
+````
+
+````{py:method} popitem()
+:canonical: trilium_alchemy.ext.helpers.Workspace.popitem
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Workspace.popitem
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.ext.helpers.Workspace.clear
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Workspace.clear
+```
+
+````
+
+````{py:method} update(other=(), /, **kwds)
+:canonical: trilium_alchemy.ext.helpers.Workspace.update
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Workspace.update
+```
+
+````
+
+````{py:method} setdefault(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.Workspace.setdefault
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Workspace.setdefault
+```
+
+````
+
+````{py:method} get(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.Workspace.get
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Workspace.get
+```
+
+````
+
+````{py:method} keys()
+:canonical: trilium_alchemy.ext.helpers.Workspace.keys
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Workspace.keys
+```
+
+````
+
+````{py:method} items()
+:canonical: trilium_alchemy.ext.helpers.Workspace.items
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Workspace.items
+```
+
+````
+
+````{py:method} values()
+:canonical: trilium_alchemy.ext.helpers.Workspace.values
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Workspace.values
+```
+
+````
+
 `````
 
 `````{py:class} AppCss
@@ -252,6 +468,78 @@
 
 *Inherited from:* {obj}`trilium_alchemy.ext.types.CodeNote`
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.AppCss.note_type
+```
+
+````
+
+````{py:method} pop(key, default=__marker)
+:canonical: trilium_alchemy.ext.helpers.AppCss.pop
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.AppCss.pop
+```
+
+````
+
+````{py:method} popitem()
+:canonical: trilium_alchemy.ext.helpers.AppCss.popitem
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.AppCss.popitem
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.ext.helpers.AppCss.clear
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.AppCss.clear
+```
+
+````
+
+````{py:method} update(other=(), /, **kwds)
+:canonical: trilium_alchemy.ext.helpers.AppCss.update
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.AppCss.update
+```
+
+````
+
+````{py:method} setdefault(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.AppCss.setdefault
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.AppCss.setdefault
+```
+
+````
+
+````{py:method} get(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.AppCss.get
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.AppCss.get
+```
+
+````
+
+````{py:method} keys()
+:canonical: trilium_alchemy.ext.helpers.AppCss.keys
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.AppCss.keys
+```
+
+````
+
+````{py:method} items()
+:canonical: trilium_alchemy.ext.helpers.AppCss.items
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.AppCss.items
+```
+
+````
+
+````{py:method} values()
+:canonical: trilium_alchemy.ext.helpers.AppCss.values
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.AppCss.values
 ```
 
 ````
@@ -310,6 +598,78 @@
 
 ````
 
+````{py:method} pop(key, default=__marker)
+:canonical: trilium_alchemy.ext.helpers.Theme.pop
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Theme.pop
+```
+
+````
+
+````{py:method} popitem()
+:canonical: trilium_alchemy.ext.helpers.Theme.popitem
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Theme.popitem
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.ext.helpers.Theme.clear
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Theme.clear
+```
+
+````
+
+````{py:method} update(other=(), /, **kwds)
+:canonical: trilium_alchemy.ext.helpers.Theme.update
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Theme.update
+```
+
+````
+
+````{py:method} setdefault(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.Theme.setdefault
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Theme.setdefault
+```
+
+````
+
+````{py:method} get(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.Theme.get
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Theme.get
+```
+
+````
+
+````{py:method} keys()
+:canonical: trilium_alchemy.ext.helpers.Theme.keys
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Theme.keys
+```
+
+````
+
+````{py:method} items()
+:canonical: trilium_alchemy.ext.helpers.Theme.items
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Theme.items
+```
+
+````
+
+````{py:method} values()
+:canonical: trilium_alchemy.ext.helpers.Theme.values
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Theme.values
+```
+
+````
+
 `````
 
 `````{py:class} Widget
@@ -324,6 +684,15 @@
 `trilium_alchemy.ext.Widget`
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget
 ```
+
+````{py:attribute} singleton
+:canonical: trilium_alchemy.ext.helpers.Widget.singleton
+   `True`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget.singleton
+```
+
+````
 
 ````{py:attribute} mime
 :canonical: trilium_alchemy.ext.helpers.Widget.mime
@@ -341,6 +710,78 @@
 
 *Inherited from:* {obj}`trilium_alchemy.ext.types.CodeNote`
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget.note_type
+```
+
+````
+
+````{py:method} pop(key, default=__marker)
+:canonical: trilium_alchemy.ext.helpers.Widget.pop
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget.pop
+```
+
+````
+
+````{py:method} popitem()
+:canonical: trilium_alchemy.ext.helpers.Widget.popitem
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget.popitem
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.ext.helpers.Widget.clear
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget.clear
+```
+
+````
+
+````{py:method} update(other=(), /, **kwds)
+:canonical: trilium_alchemy.ext.helpers.Widget.update
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget.update
+```
+
+````
+
+````{py:method} setdefault(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.Widget.setdefault
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget.setdefault
+```
+
+````
+
+````{py:method} get(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.Widget.get
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget.get
+```
+
+````
+
+````{py:method} keys()
+:canonical: trilium_alchemy.ext.helpers.Widget.keys
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget.keys
+```
+
+````
+
+````{py:method} items()
+:canonical: trilium_alchemy.ext.helpers.Widget.items
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget.items
+```
+
+````
+
+````{py:method} values()
+:canonical: trilium_alchemy.ext.helpers.Widget.values
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget.values
 ```
 
 ````
@@ -390,6 +831,78 @@
 
 ````
 
+````{py:method} pop(key, default=__marker)
+:canonical: trilium_alchemy.ext.helpers.FrontendScript.pop
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.FrontendScript.pop
+```
+
+````
+
+````{py:method} popitem()
+:canonical: trilium_alchemy.ext.helpers.FrontendScript.popitem
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.FrontendScript.popitem
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.ext.helpers.FrontendScript.clear
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.FrontendScript.clear
+```
+
+````
+
+````{py:method} update(other=(), /, **kwds)
+:canonical: trilium_alchemy.ext.helpers.FrontendScript.update
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.FrontendScript.update
+```
+
+````
+
+````{py:method} setdefault(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.FrontendScript.setdefault
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.FrontendScript.setdefault
+```
+
+````
+
+````{py:method} get(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.FrontendScript.get
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.FrontendScript.get
+```
+
+````
+
+````{py:method} keys()
+:canonical: trilium_alchemy.ext.helpers.FrontendScript.keys
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.FrontendScript.keys
+```
+
+````
+
+````{py:method} items()
+:canonical: trilium_alchemy.ext.helpers.FrontendScript.items
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.FrontendScript.items
+```
+
+````
+
+````{py:method} values()
+:canonical: trilium_alchemy.ext.helpers.FrontendScript.values
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.FrontendScript.values
+```
+
+````
+
 `````
 
 `````{py:class} BackendScript
@@ -431,6 +944,78 @@
 
 *Inherited from:* {obj}`trilium_alchemy.ext.types.CodeNote`
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BackendScript.note_type
+```
+
+````
+
+````{py:method} pop(key, default=__marker)
+:canonical: trilium_alchemy.ext.helpers.BackendScript.pop
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BackendScript.pop
+```
+
+````
+
+````{py:method} popitem()
+:canonical: trilium_alchemy.ext.helpers.BackendScript.popitem
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BackendScript.popitem
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.ext.helpers.BackendScript.clear
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BackendScript.clear
+```
+
+````
+
+````{py:method} update(other=(), /, **kwds)
+:canonical: trilium_alchemy.ext.helpers.BackendScript.update
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BackendScript.update
+```
+
+````
+
+````{py:method} setdefault(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.BackendScript.setdefault
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BackendScript.setdefault
+```
+
+````
+
+````{py:method} get(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.BackendScript.get
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BackendScript.get
+```
+
+````
+
+````{py:method} keys()
+:canonical: trilium_alchemy.ext.helpers.BackendScript.keys
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BackendScript.keys
+```
+
+````
+
+````{py:method} items()
+:canonical: trilium_alchemy.ext.helpers.BackendScript.items
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BackendScript.items
+```
+
+````
+
+````{py:method} values()
+:canonical: trilium_alchemy.ext.helpers.BackendScript.values
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BackendScript.values
 ```
 
 ````
@@ -496,6 +1081,78 @@
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.scripts
+```
+
+````
+
+````{py:method} pop(key, default=__marker)
+:canonical: trilium_alchemy.ext.helpers.BaseSystem.pop
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.pop
+```
+
+````
+
+````{py:method} popitem()
+:canonical: trilium_alchemy.ext.helpers.BaseSystem.popitem
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.popitem
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.ext.helpers.BaseSystem.clear
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.clear
+```
+
+````
+
+````{py:method} update(other=(), /, **kwds)
+:canonical: trilium_alchemy.ext.helpers.BaseSystem.update
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.update
+```
+
+````
+
+````{py:method} setdefault(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.BaseSystem.setdefault
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.setdefault
+```
+
+````
+
+````{py:method} get(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.BaseSystem.get
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.get
+```
+
+````
+
+````{py:method} keys()
+:canonical: trilium_alchemy.ext.helpers.BaseSystem.keys
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.keys
+```
+
+````
+
+````{py:method} items()
+:canonical: trilium_alchemy.ext.helpers.BaseSystem.items
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.items
+```
+
+````
+
+````{py:method} values()
+:canonical: trilium_alchemy.ext.helpers.BaseSystem.values
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.values
 ```
 
 ````
@@ -580,6 +1237,78 @@
 
 ````
 
+````{py:method} pop(key, default=__marker)
+:canonical: trilium_alchemy.ext.helpers.BaseRootSystem.pop
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem.pop
+```
+
+````
+
+````{py:method} popitem()
+:canonical: trilium_alchemy.ext.helpers.BaseRootSystem.popitem
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem.popitem
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.ext.helpers.BaseRootSystem.clear
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem.clear
+```
+
+````
+
+````{py:method} update(other=(), /, **kwds)
+:canonical: trilium_alchemy.ext.helpers.BaseRootSystem.update
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem.update
+```
+
+````
+
+````{py:method} setdefault(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.BaseRootSystem.setdefault
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem.setdefault
+```
+
+````
+
+````{py:method} get(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.BaseRootSystem.get
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem.get
+```
+
+````
+
+````{py:method} keys()
+:canonical: trilium_alchemy.ext.helpers.BaseRootSystem.keys
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem.keys
+```
+
+````
+
+````{py:method} items()
+:canonical: trilium_alchemy.ext.helpers.BaseRootSystem.items
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem.items
+```
+
+````
+
+````{py:method} values()
+:canonical: trilium_alchemy.ext.helpers.BaseRootSystem.values
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem.values
+```
+
+````
+
 `````
 
 `````{py:class} BaseRoot
@@ -610,6 +1339,78 @@
    {obj}`BaseRootSystem <trilium_alchemy.ext.helpers.BaseRootSystem>`
 
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRoot.system
+```
+
+````
+
+````{py:method} pop(key, default=__marker)
+:canonical: trilium_alchemy.ext.helpers.BaseRoot.pop
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRoot.pop
+```
+
+````
+
+````{py:method} popitem()
+:canonical: trilium_alchemy.ext.helpers.BaseRoot.popitem
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRoot.popitem
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.ext.helpers.BaseRoot.clear
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRoot.clear
+```
+
+````
+
+````{py:method} update(other=(), /, **kwds)
+:canonical: trilium_alchemy.ext.helpers.BaseRoot.update
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRoot.update
+```
+
+````
+
+````{py:method} setdefault(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.BaseRoot.setdefault
+*Inherited from:* {obj}`collections.abc.MutableMapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRoot.setdefault
+```
+
+````
+
+````{py:method} get(key, default=None)
+:canonical: trilium_alchemy.ext.helpers.BaseRoot.get
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRoot.get
+```
+
+````
+
+````{py:method} keys()
+:canonical: trilium_alchemy.ext.helpers.BaseRoot.keys
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRoot.keys
+```
+
+````
+
+````{py:method} items()
+:canonical: trilium_alchemy.ext.helpers.BaseRoot.items
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRoot.items
+```
+
+````
+
+````{py:method} values()
+:canonical: trilium_alchemy.ext.helpers.BaseRoot.values
+*Inherited from:* {obj}`collections.abc.Mapping`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRoot.values
 ```
 
 ````
