@@ -137,7 +137,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -168,7 +168,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">SDK</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../sdk/guide/index.html">Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Guide</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sdk/guide/index.html">User guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of User guide</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../sdk/guide/intro.html">Introduction</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../sdk/guide/working-with-notes/index.html">Working with notes</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Working with notes</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../sdk/guide/working-with-notes/sessions.html">Sessions</a></li>
@@ -229,6 +229,12 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="fs-spec.html">Filesystem note spec (coming soon)</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev/guide.html">Developer guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/design/index.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/roadmap.html">Roadmap</a></li>
+</ul>
 
 </div>
 </div>
@@ -256,7 +262,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -273,44 +279,6 @@
 </ul>
 <p>Auto-generated code documentation is enabled by the <a class="reference external" href="https://sphinx-autodoc2.readthedocs.io/en/latest/">autodoc2</a> Sphinx extension, a new and innovative documentation generator.</p>
 <p>Custom templating and Sphinx doctree handling were developed to produce this API documentation. These will eventually be spun off into a separate project for reuse.</p>
-<section id="todo-list">
-<h2>Todo list<a class="headerlink" href="#todo-list" title="Permalink to this heading">#</a></h2>
-<div class="admonition-todo admonition">
-<p class="admonition-title">Todo</p>
-<p>Configuration of <a class="reference internal" href="trilium_alchemy.core.html#trilium_alchemy.core.Session" title="trilium_alchemy.core.Session"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Session</span></code></a> to ignore changes to
-<a class="reference internal" href="trilium_alchemy.core.branch.html#trilium_alchemy.core.branch.Branch.expanded" title="trilium_alchemy.core.branch.Branch.expanded"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Branch.expanded</span></code></a> as this is mostly a UI concept. It can be clobbered
-as children of <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a> subclasses force setting <a class="reference internal" href="trilium_alchemy.core.branch.html#trilium_alchemy.core.branch.Branch.expanded" title="trilium_alchemy.core.branch.Branch.expanded"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Branch.expanded</span></code></a>.</p>
-</div>
-<p class="todo-source"><a class="reference internal" href="../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.html#id1"><em>original entry</em></a></p>
-<div class="admonition-todo admonition">
-<p class="admonition-title">Todo</p>
-<p>Add <code class="code docutils literal highlight highlight-python"><span class="n">auto_mime</span><span class="o">=</span><span class="kc">True</span></code> to also set <code class="docutils literal notranslate"><span class="pre">mime</span></code> using <code class="docutils literal notranslate"><span class="pre">magic</span></code> package
-(or do so automatically if <a class="reference internal" href="#trilium_alchemy.core.note.Mixin.content_file" title="trilium_alchemy.core.note.Mixin.content_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mixin.content_file</span></code></a> set, but
-<a class="reference internal" href="#trilium_alchemy.core.note.Mixin.mime" title="trilium_alchemy.core.note.Mixin.mime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mixin.mime</span></code></a> not set)</p>
-</div>
-<p class="todo-source"><a class="reference internal" href="../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#id2"><em>original entry</em></a></p>
-<div class="admonition-todo admonition">
-<p class="admonition-title">Todo</p>
-<p>Add <code class="docutils literal notranslate"><span class="pre">Attributes.labels</span></code>, <code class="docutils literal notranslate"><span class="pre">Attributes.relations</span></code> with same interface
-as <a class="reference internal" href="#trilium_alchemy.core.note.attributes.Attributes" title="trilium_alchemy.core.note.attributes.Attributes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Attributes</span></code></a>, filtered by attribute type</p>
-</div>
-<p class="todo-source"><a class="reference internal" href="../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.attributes.html#id2"><em>original entry</em></a></p>
-<div class="admonition-todo admonition">
-<p class="admonition-title">Todo</p>
-<p>Helper <code class="docutils literal notranslate"><span class="pre">Note.file</span></code> to set content from file, automatically
-setting <code class="docutils literal notranslate"><span class="pre">mime</span></code> and <code class="docutils literal notranslate"><span class="pre">#originalFilename</span></code>.</p>
-<p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">note</span><span class="o">.</span><span class="n">file</span> <span class="o">=</span> <span class="s2">&quot;assets/my_content.html&quot;</span>
-</pre></div>
-</div>
-</div>
-<p class="todo-source"><a class="reference internal" href="../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.content.html#id2"><em>original entry</em></a></p>
-<div class="admonition-todo admonition">
-<p class="admonition-title">Todo</p>
-<p>Add a flag to set <a class="reference internal" href="../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Mixin.note_id_seed" title="trilium_alchemy.core.note.Mixin.note_id_seed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mixin.note_id_seed</span></code></a> from class name (user guarantees uniqueness of class names)</p>
-</div>
-<p class="todo-source"><a class="reference internal" href="../sdk/guide/declarative-notes.html#id1"><em>original entry</em></a></p>
-</section>
 </section>
 
         </article>
@@ -356,27 +324,8 @@ setting <code class="docutils literal notranslate"><span class="pre">mime</span>
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">API</a><ul>
-<li><a class="reference internal" href="#todo-list">Todo list</a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>

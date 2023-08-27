@@ -223,6 +223,7 @@ trilium_alchemy.core.note.content
 
 ````{py:attribute} leaf
 :canonical: trilium_alchemy.core.note.Note.leaf
+:type: bool
    `False`{l=python}
 
 *Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
@@ -512,6 +513,7 @@ trilium_alchemy.core.note.content
 
 ````{py:attribute} leaf
 :canonical: trilium_alchemy.core.note.Mixin.leaf
+:type: bool
    `False`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.leaf
