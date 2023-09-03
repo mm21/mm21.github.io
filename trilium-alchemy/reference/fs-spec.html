@@ -7,7 +7,7 @@
         <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/reference/fs-spec.html" />
 
     <!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
-        <title>Filesystem note spec (coming soon) - TriliumAlchemy</title>
+        <title>Filesystem note specification (in progress) - TriliumAlchemy</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -137,7 +137,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -227,7 +227,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Filesystem note spec (coming soon)</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Filesystem note specification (in progress)</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Development</span></p>
 <ul>
@@ -262,15 +262,149 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <section id="filesystem-note-spec-coming-soon">
-<span id="fs-spec"></span><h1>Filesystem note spec (coming soon)<a class="headerlink" href="#filesystem-note-spec-coming-soon" title="Permalink to this heading">#</a></h1>
-<p>A specification for a Trilium note tree captured by a filesystem. See <a class="reference internal" href="../sdk/guide/filesystem-notes.html#filesystem-notes"><span class="std std-ref">Filesystem notes: Notes as files (coming soon)</span></a>.</p>
+          <section id="filesystem-note-specification-in-progress">
+<span id="fs-spec"></span><h1>Filesystem note specification (in progress)<a class="headerlink" href="#filesystem-note-specification-in-progress" title="Permalink to this heading">#</a></h1>
+<p>This describes a specification for a Trilium note tree captured by a filesystem. See <a class="reference internal" href="../sdk/guide/filesystem-notes.html#filesystem-notes"><span class="std std-ref">Filesystem notes: Notes as files (coming soon)</span></a> for a tutorial-style discussion of this concept.</p>
+<p>In general, this specification is similar to Trilium’s .zip export format. However there are key differences, as this specification is designed to be manually maintainable. It’s human-friendly rather than machine-friendly, and a little more work is required to parse this format as a result.</p>
+<section id="reserved-folder-and-file-names">
+<h2>Reserved folder and file names<a class="headerlink" href="#reserved-folder-and-file-names" title="Permalink to this heading">#</a></h2>
+<p>Folder and file names beginning with <code class="docutils literal notranslate"><span class="pre">!</span></code> are reserved for system use.</p>
+</section>
+<section id="sync-context">
+<h2>Sync context<a class="headerlink" href="#sync-context" title="Permalink to this heading">#</a></h2>
+<p>The <strong>sync context</strong> is comprised of a number of <strong>sync mappings</strong> along with a <strong>sync state</strong>. It has a root folder, <strong>sync root</strong>, on the filesystem.</p>
+<section id="sync-endpoints">
+<h3>Sync endpoints<a class="headerlink" href="#sync-endpoints" title="Permalink to this heading">#</a></h3>
+<p>A <strong>sync endpoint</strong> specifies a note subtree which can be synchronized. It may be any of the following:</p>
+<ul class="simple">
+<li><p>A note belonging to a Trilium instance, specified by connection info and <code class="docutils literal notranslate"><span class="pre">noteId</span></code> or a label (e.g. <code class="docutils literal notranslate"><span class="pre">#myRoot</span></code>)</p></li>
+<li><p>A folder on the local filesystem (<strong>sync root</strong> or a subdirectory thereof)</p></li>
+</ul>
+</section>
+<section id="sync-mappings">
+<h3>Sync mappings<a class="headerlink" href="#sync-mappings" title="Permalink to this heading">#</a></h3>
+<p>A <strong>sync mapping</strong> specifies a mapping between multiple <strong>sync endpoint</strong>s. It has an associated <strong>sync mode</strong>:</p>
+<ul class="simple">
+<li><p><strong>Mirror</strong>: Map source to destination endpoint, overwriting the destination state to match the source</p></li>
+<li><p><strong>Resolve</strong>: Resolve changes in all endpoints compared to the last sync operation</p></li>
+</ul>
+</section>
+<section id="sync-state">
+<h3>Sync state<a class="headerlink" href="#sync-state" title="Permalink to this heading">#</a></h3>
+<p>For mappings with mode <strong>resolve</strong>, the combined metadata (including content signatures) from the last sync operation is required to persist from one invocation to the next. This is known as the <strong>sync state</strong>. It will be stored in text format, tentatively called <code class="docutils literal notranslate"><span class="pre">!sync.json</span></code> (not unlike Trilium’s zip format <code class="docutils literal notranslate"><span class="pre">!!!meta.json</span></code>). It is not expected to be maintained manually, but stored as text to be readily usable in version control.</p>
+</section>
+</section>
+<section id="notes-as-folders">
+<h2>Notes as folders<a class="headerlink" href="#notes-as-folders" title="Permalink to this heading">#</a></h2>
+<p>Every folder maps to a note in Trilium. Child files and folders are treated as child notes.</p>
+</section>
+<section id="notes-as-files">
+<h2>Notes as files<a class="headerlink" href="#notes-as-files" title="Permalink to this heading">#</a></h2>
+<p>A file with name not beginning with <code class="docutils literal notranslate"><span class="pre">!</span></code> is considered a child of the note represented by the parent folder.</p>
+<p>A folder with the same name as this file with a single <code class="docutils literal notranslate"><span class="pre">!</span></code> prepended is reserved to contain children of the note represented by this file. For example, children of <code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">world.md</span></code> are stored in the folder <code class="docutils literal notranslate"><span class="pre">!Hello</span> <span class="pre">world.md</span></code>.</p>
+<section id="originalfilename-label">
+<h3><code class="docutils literal notranslate"><span class="pre">#originalFilename</span></code> label<a class="headerlink" href="#originalfilename-label" title="Permalink to this heading">#</a></h3>
+<p>The label <code class="docutils literal notranslate"><span class="pre">#originalFilename</span></code> is automatically maintained for file-based notes. When a note with this label is synced from Trilium to a folder, it’s replicated as a file-based note using this filename.</p>
+<p>Therefore this label must generally be unique for each child of a given parent note. If there are multiple notes with the same value of <code class="docutils literal notranslate"><span class="pre">#originalFilename</span></code> belonging to the same parent, the sync invocation will fail.</p>
+<p>The filename of the file-based note and <code class="docutils literal notranslate"><span class="pre">#originalFilename</span></code> label are automatically kept in sync.</p>
+</section>
+</section>
+<section id="metadata">
+<h2>Metadata<a class="headerlink" href="#metadata" title="Permalink to this heading">#</a></h2>
+<p>Note metadata is stored in YAML format. Placement of the YAML document depends on note type and sync configuration.</p>
+<section id="yaml-source">
+<h3>YAML source<a class="headerlink" href="#yaml-source" title="Permalink to this heading">#</a></h3>
+<section id="folder-notes-meta-yaml">
+<h4>Folder notes: <code class="docutils literal notranslate"><span class="pre">!meta.yaml</span></code><a class="headerlink" href="#folder-notes-meta-yaml" title="Permalink to this heading">#</a></h4>
+<p>For folder-based notes, metadata is provided in <code class="docutils literal notranslate"><span class="pre">!meta.yaml</span></code>.</p>
+</section>
+<section id="file-notes-meta-yaml">
+<h4>File notes: <code class="docutils literal notranslate"><span class="pre">*.!meta.yaml</span></code><a class="headerlink" href="#file-notes-meta-yaml" title="Permalink to this heading">#</a></h4>
+<p>For file-based notes, metadata is provided alongside the file. The name of the metadata file is the name of the file suffixed with <code class="docutils literal notranslate"><span class="pre">.!meta.yaml</span></code>.</p>
+</section>
+<section id="markdown-notes-frontmatter">
+<h4>Markdown notes: Frontmatter<a class="headerlink" href="#markdown-notes-frontmatter" title="Permalink to this heading">#</a></h4>
+<p>For <code class="docutils literal notranslate"><span class="pre">*.md</span></code> file-based notes, frontmatter can be utilized to provide a more concise representation of the note if <code class="docutils literal notranslate"><span class="pre">*.!meta.yaml</span></code> is not provided. This may be optionally disabled, either globally or per note (mechanism TBD).</p>
+</section>
+</section>
+<section id="fields-title-type-mime">
+<h3>Fields (title/type/mime)<a class="headerlink" href="#fields-title-type-mime" title="Permalink to this heading">#</a></h3>
+<p>Unless explicitly provided in the metadata, title is derived based on how the note is specified:</p>
+<ul class="simple">
+<li><p>Folder note: folder name</p></li>
+<li><p>File note: <strong>base name</strong> of the file (e.g. <code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">world.md</span></code> would have the title <code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">world</span></code>).</p></li>
+</ul>
+<p>For simplicity, multiple child notes with the same title are currently not allowed. There may be a future mechanism to accommodate this, e.g. appending title with a suffix like <code class="docutils literal notranslate"><span class="pre">!2</span></code>.</p>
+<p>For file-based notes, <code class="docutils literal notranslate"><span class="pre">type</span></code> and <code class="docutils literal notranslate"><span class="pre">mime</span></code> are by default derived from the file. They may be explicitly set in the metadata YAML.</p>
+<p>Some other fields are derived, e.g. attribute and child note positions are not explicitly set. The order is optionally provided by the user (defaulting to alphabetical), but position values are calculated rather than maintained by the user.</p>
+</section>
+<section id="attributes">
+<h3>Attributes<a class="headerlink" href="#attributes" title="Permalink to this heading">#</a></h3>
+<p>Attributes are similarly captured in <code class="docutils literal notranslate"><span class="pre">!meta.yaml</span></code>. Attribute <code class="docutils literal notranslate"><span class="pre">type</span></code> is inferred by whether the attribute is specified with <code class="docutils literal notranslate"><span class="pre">value</span></code> (for type <code class="docutils literal notranslate"><span class="pre">label</span></code>) or <code class="docutils literal notranslate"><span class="pre">target</span></code> note (for type <code class="docutils literal notranslate"><span class="pre">relation</span></code>).</p>
+<p>For ease of maintenance, <code class="docutils literal notranslate"><span class="pre">attributeId</span></code> is not maintained manually. The synchronization algorithm resolves attributes agnostic of <code class="docutils literal notranslate"><span class="pre">attributeId</span></code>.</p>
+</section>
+</section>
+<section id="note-id">
+<h2>Note id<a class="headerlink" href="#note-id" title="Permalink to this heading">#</a></h2>
+<p>To reliably compare note state with Trilium, <code class="docutils literal notranslate"><span class="pre">noteId</span></code> is required to be defined for each filesystem-based note. If not explicitly provided in metadata, it’s derived from the path relative to <strong>sync root</strong>.</p>
+<section id="provided-noteid">
+<h3>Provided <code class="docutils literal notranslate"><span class="pre">noteId</span></code><a class="headerlink" href="#provided-noteid" title="Permalink to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">noteId</span></code> can be explicitly provided in <code class="docutils literal notranslate"><span class="pre">!meta.yaml</span></code>. Notes originally synced from Trilium will have <code class="docutils literal notranslate"><span class="pre">noteId</span></code> fixed in this way.</p>
+</section>
+<section id="provided-noteidseed">
+<h3>Provided <code class="docutils literal notranslate"><span class="pre">noteIdSeed</span></code><a class="headerlink" href="#provided-noteidseed" title="Permalink to this heading">#</a></h3>
+<p>If <code class="docutils literal notranslate"><span class="pre">noteIdSeed</span></code> is provided in <code class="docutils literal notranslate"><span class="pre">!meta.yaml</span></code>, this value is used to generate <code class="docutils literal notranslate"><span class="pre">noteId</span></code> as the SHA-256 hash of <code class="docutils literal notranslate"><span class="pre">noteIdSeed</span></code>, base64-encoded (with replacement of <code class="docutils literal notranslate"><span class="pre">+</span></code> and <code class="docutils literal notranslate"><span class="pre">/</span></code>).</p>
+</section>
+<section id="filename-as-seed">
+<h3>Filename as seed<a class="headerlink" href="#filename-as-seed" title="Permalink to this heading">#</a></h3>
+<p>If neither <code class="docutils literal notranslate"><span class="pre">noteId</span></code> nor <code class="docutils literal notranslate"><span class="pre">noteIdSeed</span></code> is provided, <code class="docutils literal notranslate"><span class="pre">noteIdSeed</span></code> is taken to be the path of the file or folder representing this note, prefixed with its parent’s <code class="docutils literal notranslate"><span class="pre">noteIdSeed</span></code> if not a top-level child of <strong>sync root</strong>.</p>
+</section>
+<section id="note-links-in-markdown">
+<h3>Note links in Markdown<a class="headerlink" href="#note-links-in-markdown" title="Permalink to this heading">#</a></h3>
+<p>This allows referencing of notes in a flexible and maintainable way. For example, a note could be referenced in a Markdown file in the following ways:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">-</span><span class="w"> </span>[<span class="nt">Related note with noteIdSeed specified</span>](<span class="na">noteIdSeed:my-note-1</span>)
+<span class="w">    </span><span class="k">-</span><span class="w"> </span>[<span class="nt">Child without noteIdSeed specified</span>](<span class="na">noteIdSeed:my-note-1/a.md</span>)
+<span class="k">-</span><span class="w"> </span>[<span class="nt">Related note without noteIdSeed specified</span>](<span class="na">noteIdSeed:/path/to/my-note-2.md</span>)
+</pre></div>
+</div>
+<p>If not leading with <code class="docutils literal notranslate"><span class="pre">/</span></code>, the path provided is relative to the current note’s path. The full path relative to <strong>sync root</strong> (with a leading <code class="docutils literal notranslate"><span class="pre">/</span></code>) is formed prior to computing the hash.</p>
+<p>A Markdown renderer widget in Trilium’s UI could then resolve <code class="docutils literal notranslate"><span class="pre">noteId</span></code> and generate a link to the target note. Such a widget is currently in development and will be provided along with this framework.</p>
+</section>
+</section>
+<section id="content">
+<h2>Content<a class="headerlink" href="#content" title="Permalink to this heading">#</a></h2>
+<p>Content is populated based on how the note is specified:</p>
+<ul class="simple">
+<li><p>Folder note: content is stored in <code class="docutils literal notranslate"><span class="pre">!content.*</span></code>, where the extension is based on the note’s <code class="docutils literal notranslate"><span class="pre">type</span></code> and <code class="docutils literal notranslate"><span class="pre">mime</span></code> fields</p>
+<ul>
+<li><p>For example, <code class="docutils literal notranslate"><span class="pre">text/html</span></code> notes would have content stored in <code class="docutils literal notranslate"><span class="pre">!content.html</span></code></p></li>
+</ul>
+</li>
+<li><p>File note: content is stored in the file itself</p></li>
+</ul>
+</section>
+<section id="children">
+<h2>Children<a class="headerlink" href="#children" title="Permalink to this heading">#</a></h2>
+<p>The order of children may be specified in YAML metadata, along with an optional branch prefix. Not all children are required to be listed. Children listed in YAML metadata are positioned first, followed in alphabetical order by those not listed.</p>
+<p>If only some children are listed in YAML metadata, those are placed in the order provided at the beginning of the child list. Those not specified are sorted alphabetically at the end of the provided list.</p>
+</section>
+<section id="clones">
+<h2>Clones<a class="headerlink" href="#clones" title="Permalink to this heading">#</a></h2>
+<section id="canonical-notes">
+<h3>Canonical notes<a class="headerlink" href="#canonical-notes" title="Permalink to this heading">#</a></h3>
+<p>A given note is required to be defined in exactly one filesystem location - its <strong>canonical path</strong>. If the note is initially created on a filesystem, this is the canonical path. If being newly written from a Trilium server, a note path will be chosen (algorithm TBD) to contain the filesystem representation, while the others will be considered as clones.</p>
+</section>
+<section id="clone-notes">
+<h3>Clone notes<a class="headerlink" href="#clone-notes" title="Permalink to this heading">#</a></h3>
+<p>A clone is created as a text file named <code class="docutils literal notranslate"><span class="pre">!clone.[noteId].yaml</span></code>. It optionally contains branch parameters like <code class="docutils literal notranslate"><span class="pre">prefix</span></code>. Its position relative to other children is specified by providing the filename in the parent’s <code class="docutils literal notranslate"><span class="pre">children</span></code> list, same as for other children.</p>
+</section>
+</section>
 </section>
 
         </article>
@@ -316,8 +450,63 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Filesystem note specification (in progress)</a><ul>
+<li><a class="reference internal" href="#reserved-folder-and-file-names">Reserved folder and file names</a></li>
+<li><a class="reference internal" href="#sync-context">Sync context</a><ul>
+<li><a class="reference internal" href="#sync-endpoints">Sync endpoints</a></li>
+<li><a class="reference internal" href="#sync-mappings">Sync mappings</a></li>
+<li><a class="reference internal" href="#sync-state">Sync state</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#notes-as-folders">Notes as folders</a></li>
+<li><a class="reference internal" href="#notes-as-files">Notes as files</a><ul>
+<li><a class="reference internal" href="#originalfilename-label"><code class="docutils literal notranslate"><span class="pre">#originalFilename</span></code> label</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#metadata">Metadata</a><ul>
+<li><a class="reference internal" href="#yaml-source">YAML source</a><ul>
+<li><a class="reference internal" href="#folder-notes-meta-yaml">Folder notes: <code class="docutils literal notranslate"><span class="pre">!meta.yaml</span></code></a></li>
+<li><a class="reference internal" href="#file-notes-meta-yaml">File notes: <code class="docutils literal notranslate"><span class="pre">*.!meta.yaml</span></code></a></li>
+<li><a class="reference internal" href="#markdown-notes-frontmatter">Markdown notes: Frontmatter</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#fields-title-type-mime">Fields (title/type/mime)</a></li>
+<li><a class="reference internal" href="#attributes">Attributes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#note-id">Note id</a><ul>
+<li><a class="reference internal" href="#provided-noteid">Provided <code class="docutils literal notranslate"><span class="pre">noteId</span></code></a></li>
+<li><a class="reference internal" href="#provided-noteidseed">Provided <code class="docutils literal notranslate"><span class="pre">noteIdSeed</span></code></a></li>
+<li><a class="reference internal" href="#filename-as-seed">Filename as seed</a></li>
+<li><a class="reference internal" href="#note-links-in-markdown">Note links in Markdown</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#content">Content</a></li>
+<li><a class="reference internal" href="#children">Children</a></li>
+<li><a class="reference internal" href="#clones">Clones</a><ul>
+<li><a class="reference internal" href="#canonical-notes">Canonical notes</a></li>
+<li><a class="reference internal" href="#clone-notes">Clone notes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
