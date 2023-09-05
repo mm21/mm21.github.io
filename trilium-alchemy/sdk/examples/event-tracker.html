@@ -288,9 +288,8 @@
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Any existing children the destination note will be deleted. Therefore you may want to install it in an empty subtree so as to not tamper with your existing notes.</p>
-<p>In fact, especially at this stage, it’s recommended to only run this example on a temporary Trilium instance, not your production instance.</p>
-<p>To be safe, the installation script requires that you pass <code class="docutils literal notranslate"><span class="pre">--clobber</span></code> to delete existing children.</p>
+<p>Any existing children of the destination note will be deleted, so you should install it into an empty subtree. To be safe, if the installation script detects existing children it requires that you pass <code class="docutils literal notranslate"><span class="pre">--clobber</span></code> to delete them.</p>
+<p>This example is recommended to be installed in a non-production Trilium instance as it creates many notes, including a theme.</p>
 </div>
 </section>
 
