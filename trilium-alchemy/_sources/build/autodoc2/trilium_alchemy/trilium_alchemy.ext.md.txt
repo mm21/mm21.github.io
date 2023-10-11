@@ -32,9 +32,15 @@ trilium_alchemy.ext.helpers
     :summary:
     ```
 
-* - {py:obj}`JsFrontendNote <trilium_alchemy.ext.types.JsFrontendNote>`
+* - {py:obj}`CssNote <trilium_alchemy.ext.types.CssNote>`
   - {py:obj}`types <trilium_alchemy.ext.types>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.types.JsFrontendNote
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.CssNote
+    :summary:
+    ```
+
+* - {py:obj}`HtmlNote <trilium_alchemy.ext.types.HtmlNote>`
+  - {py:obj}`types <trilium_alchemy.ext.types>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.HtmlNote
     :summary:
     ```
 
@@ -44,9 +50,15 @@ trilium_alchemy.ext.helpers
     :summary:
     ```
 
-* - {py:obj}`CssNote <trilium_alchemy.ext.types.CssNote>`
+* - {py:obj}`JsFrontendNote <trilium_alchemy.ext.types.JsFrontendNote>`
   - {py:obj}`types <trilium_alchemy.ext.types>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.types.CssNote
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.JsFrontendNote
+    :summary:
+    ```
+
+* - {py:obj}`TextNote <trilium_alchemy.ext.types.TextNote>`
+  - {py:obj}`types <trilium_alchemy.ext.types>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.TextNote
     :summary:
     ```
 

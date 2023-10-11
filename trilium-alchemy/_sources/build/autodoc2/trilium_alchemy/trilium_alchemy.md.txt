@@ -69,6 +69,12 @@ trilium_alchemy.sync
     :summary:
     ```
 
+* - {py:obj}`IconMixin <trilium_alchemy.core.declarative.IconMixin>`
+  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin
+    :summary:
+    ```
+
 * - {py:obj}`Entity <trilium_alchemy.core.entity.Entity>`
   - {py:obj}`core.entity <trilium_alchemy.core.entity>`
   - ```{autodoc2-docstring} trilium_alchemy.core.entity.Entity
@@ -87,9 +93,15 @@ trilium_alchemy.sync
     :summary:
     ```
 
-* - {py:obj}`JsFrontendNote <trilium_alchemy.ext.types.JsFrontendNote>`
+* - {py:obj}`CssNote <trilium_alchemy.ext.types.CssNote>`
   - {py:obj}`ext.types <trilium_alchemy.ext.types>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.types.JsFrontendNote
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.CssNote
+    :summary:
+    ```
+
+* - {py:obj}`HtmlNote <trilium_alchemy.ext.types.HtmlNote>`
+  - {py:obj}`ext.types <trilium_alchemy.ext.types>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.HtmlNote
     :summary:
     ```
 
@@ -99,9 +111,15 @@ trilium_alchemy.sync
     :summary:
     ```
 
-* - {py:obj}`CssNote <trilium_alchemy.ext.types.CssNote>`
+* - {py:obj}`JsFrontendNote <trilium_alchemy.ext.types.JsFrontendNote>`
   - {py:obj}`ext.types <trilium_alchemy.ext.types>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.types.CssNote
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.JsFrontendNote
+    :summary:
+    ```
+
+* - {py:obj}`TextNote <trilium_alchemy.ext.types.TextNote>`
+  - {py:obj}`ext.types <trilium_alchemy.ext.types>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.types.TextNote
     :summary:
     ```
 

@@ -357,7 +357,7 @@
 
 `````
 
-`````{py:class} Relation(name: str, target: trilium_alchemy.core.note.Note, inheritable: bool = False, session: trilium_alchemy.core.session.Session = None, **kwargs)
+`````{py:class} Relation(name: str, target: trilium_alchemy.core.note.Note, inheritable: bool = False, session: trilium_alchemy.core.session.Session | None = None, **kwargs)
 :canonical: trilium_alchemy.core.attribute.Relation
 
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.__init__

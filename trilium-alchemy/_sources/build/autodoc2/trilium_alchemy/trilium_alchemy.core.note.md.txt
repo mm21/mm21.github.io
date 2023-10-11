@@ -41,7 +41,7 @@ trilium_alchemy.core.note.content
 
 ### Symbols
 
-`````{py:class} Note(title: str = 'new note', note_type: str = 'text', mime: str = 'text/html', parents: collections.abc.Iterable[trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch] | trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch = None, children: collections.abc.Iterable[trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch] = None, attributes: collections.abc.Iterable[trilium_alchemy.core.attribute.Attribute] = None, content: str | bytes | typing.IO = None, note_id: str = None, template: trilium_alchemy.core.note.note.Note | typing.Type[trilium_alchemy.core.note.note.Note] = None, session: trilium_alchemy.core.session.Session = None, **kwargs)
+`````{py:class} Note(title: str = 'new note', note_type: str = 'text', mime: str = 'text/html', parents: collections.abc.Iterable[trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch] | trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch | None = None, children: collections.abc.Iterable[trilium_alchemy.core.note.note.Note | trilium_alchemy.core.branch.Branch] | None = None, attributes: collections.abc.Iterable[trilium_alchemy.core.attribute.Attribute] | None = None, content: str | bytes | typing.IO | None = None, note_id: str | None = None, template: trilium_alchemy.core.note.note.Note | type[trilium_alchemy.core.note.note.Note] | None = None, session: trilium_alchemy.core.session.Session | None = None, **kwargs)
 :canonical: trilium_alchemy.core.note.Note
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.__init__
@@ -51,7 +51,8 @@ trilium_alchemy.core.note.content
 ```
 {py:obj}`trilium_alchemy.core.entity.Entity`\
 {py:obj}`trilium_alchemy.core.note.Mixin`\
-{py:obj}`collections.abc.MutableMapping`
+{py:obj}`collections.abc.MutableMapping`\
+{py:obj}`typing.Generic`
 ```{rubric} Aliases:
 ```
 `trilium_alchemy.Note`\
@@ -329,7 +330,7 @@ trilium_alchemy.core.note.content
 
 ````
 
-````{py:method} init(attributes: list[trilium_alchemy.core.attribute.Attribute], children: list[trilium_alchemy.core.branch.Branch | trilium_alchemy.core.note.note.Note]) -> dict[str, typing.Any] | None
+````{py:method} init(attributes: list[trilium_alchemy.core.attribute.Attribute], children: list[trilium_alchemy.core.note.note.ChildSpecT]) -> dict[str, typing.Any] | None
 :canonical: trilium_alchemy.core.note.Note.init
 *Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.init
@@ -353,7 +354,7 @@ trilium_alchemy.core.note.content
 
 ````
 
-````{py:method} create_declarative_child(child_cls: typing.Type[trilium_alchemy.core.note.note.Note], **kwargs) -> trilium_alchemy.core.branch.Branch
+````{py:method} create_declarative_child(child_cls: type[trilium_alchemy.core.note.note.Note], **kwargs) -> trilium_alchemy.core.branch.Branch
 :canonical: trilium_alchemy.core.note.Note.create_declarative_child
 *Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.create_declarative_child
@@ -435,7 +436,7 @@ trilium_alchemy.core.note.content
 
 `````
 
-`````{py:class} Mixin()
+`````{py:class} Mixin(child_id_seed: str | None)
 :canonical: trilium_alchemy.core.note.Mixin
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.__init__
@@ -443,7 +444,8 @@ trilium_alchemy.core.note.content
 
 ```{rubric} Bases:
 ```
-{py:obj}`abc.ABC`
+{py:obj}`abc.ABC`\
+{py:obj}`trilium_alchemy.core.session.SessionContainer`
 ```{rubric} Aliases:
 ```
 `trilium_alchemy.Mixin`\
@@ -531,7 +533,7 @@ trilium_alchemy.core.note.content
 
 ````
 
-````{py:method} init(attributes: list[trilium_alchemy.core.attribute.Attribute], children: list[trilium_alchemy.core.branch.Branch | trilium_alchemy.core.note.note.Note]) -> dict[str, typing.Any] | None
+````{py:method} init(attributes: list[trilium_alchemy.core.attribute.Attribute], children: list[trilium_alchemy.core.note.note.ChildSpecT]) -> dict[str, typing.Any] | None
 :canonical: trilium_alchemy.core.note.Mixin.init
 ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.init
 ```
@@ -552,7 +554,7 @@ trilium_alchemy.core.note.content
 
 ````
 
-````{py:method} create_declarative_child(child_cls: typing.Type[trilium_alchemy.core.note.note.Note], **kwargs) -> trilium_alchemy.core.branch.Branch
+````{py:method} create_declarative_child(child_cls: type[trilium_alchemy.core.note.note.Note], **kwargs) -> trilium_alchemy.core.branch.Branch
 :canonical: trilium_alchemy.core.note.Mixin.create_declarative_child
 ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.create_declarative_child
 ```
