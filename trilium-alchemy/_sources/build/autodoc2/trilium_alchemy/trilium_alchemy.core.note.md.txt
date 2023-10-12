@@ -330,7 +330,7 @@ trilium_alchemy.core.note.content
 
 ````
 
-````{py:method} init(attributes: list[trilium_alchemy.core.attribute.Attribute], children: list[trilium_alchemy.core.note.note.ChildSpecT]) -> dict[str, typing.Any] | None
+````{py:method} init(attributes: list[trilium_alchemy.core.attribute.Attribute], children: list[trilium_alchemy.core.note.note.Note | type[trilium_alchemy.core.note.note.Note] | trilium_alchemy.core.branch.Branch]) -> dict[str, typing.Any] | None
 :canonical: trilium_alchemy.core.note.Note.init
 *Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.init
@@ -445,7 +445,8 @@ trilium_alchemy.core.note.content
 ```{rubric} Bases:
 ```
 {py:obj}`abc.ABC`\
-{py:obj}`trilium_alchemy.core.session.SessionContainer`
+{py:obj}`trilium_alchemy.core.session.SessionContainer`\
+{py:obj}`typing.Generic`
 ```{rubric} Aliases:
 ```
 `trilium_alchemy.Mixin`\
@@ -533,7 +534,7 @@ trilium_alchemy.core.note.content
 
 ````
 
-````{py:method} init(attributes: list[trilium_alchemy.core.attribute.Attribute], children: list[trilium_alchemy.core.note.note.ChildSpecT]) -> dict[str, typing.Any] | None
+````{py:method} init(attributes: list[trilium_alchemy.core.attribute.Attribute], children: list[trilium_alchemy.core.note.note.Note | type[trilium_alchemy.core.note.note.Note] | trilium_alchemy.core.branch.Branch]) -> dict[str, typing.Any] | None
 :canonical: trilium_alchemy.core.note.Mixin.init
 ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.init
 ```

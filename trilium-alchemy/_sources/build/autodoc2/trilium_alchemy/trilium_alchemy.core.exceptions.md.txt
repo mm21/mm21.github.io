@@ -71,7 +71,7 @@
 
 `````
 
-`````{py:exception} ValidationError(errors: list[Exception])
+`````{py:exception} ValidationError(errors: list[str])
 :canonical: trilium_alchemy.core.exceptions.ValidationError
 
 ```{rubric} Initialization:

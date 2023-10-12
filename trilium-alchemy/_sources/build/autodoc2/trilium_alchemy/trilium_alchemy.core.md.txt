@@ -178,7 +178,7 @@ trilium_alchemy.core.exceptions
 
 ### Symbols
 
-`````{py:class} Session(host: str, token: str = None, password: str = None, default: bool = True)
+`````{py:class} Session(host: str, token: str | None = None, password: str | None = None, default: bool = True)
 :canonical: trilium_alchemy.core.Session
 
 ```{rubric} Initialization:
@@ -213,7 +213,7 @@ trilium_alchemy.core.exceptions
 
 ````{py:property} dirty_set
 :canonical: trilium_alchemy.core.Session.dirty_set
-:type: set[trilium_alchemy.Entity]
+:type: set[trilium_alchemy.core.entity.Entity]
 
 ```{autodoc2-docstring} trilium_alchemy.core.Session.dirty_set
 ```
@@ -222,7 +222,7 @@ trilium_alchemy.core.exceptions
 
 ````{py:property} dirty_map
 :canonical: trilium_alchemy.core.Session.dirty_map
-:type: dict[trilium_alchemy.State, set[trilium_alchemy.Entity]]
+:type: dict[trilium_alchemy.core.entity.types.State, set[trilium_alchemy.core.entity.Entity]]
 
 ```{autodoc2-docstring} trilium_alchemy.core.Session.dirty_map
 ```
@@ -247,14 +247,14 @@ trilium_alchemy.core.exceptions
 
 ````
 
-````{py:method} flush(entities: collections.abc.Iterable[trilium_alchemy.core.abc.Entity] = None)
+````{py:method} flush(entities: collections.abc.Iterable[trilium_alchemy.core.entity.Entity] | None = None)
 :canonical: trilium_alchemy.core.Session.flush
 ```{autodoc2-docstring} trilium_alchemy.core.Session.flush
 ```
 
 ````
 
-````{py:method} search(query: str, order_by: str = None, order_direction: typing.Literal[asc, desc] = None, limit: int = None, fast_search: bool = False, include_archived_notes: bool = False, ancestor_note: trilium_alchemy.core.note.Note = None, ancestor_depth: int = None, debug: bool = False) -> list[trilium_alchemy.core.note.Note]
+````{py:method} search(query: str, order_by: str | None = None, order_direction: typing.Literal[asc, desc] | None = None, limit: int | None = None, fast_search: bool = False, include_archived_notes: bool = False, ancestor_note: trilium_alchemy.core.note.Note | None = None, ancestor_depth: int | None = None, debug: bool = False) -> list[trilium_alchemy.core.note.Note]
 :canonical: trilium_alchemy.core.Session.search
 ```{autodoc2-docstring} trilium_alchemy.core.Session.search
 ```
@@ -268,14 +268,14 @@ trilium_alchemy.core.exceptions
 
 ````
 
-````{py:method} export_zip(note: trilium_alchemy.Note, dest_path: str, export_format: typing.Literal[html, markdown] = 'html')
+````{py:method} export_zip(note: trilium_alchemy.core.note.Note, dest_path: str, export_format: typing.Literal[html, markdown] = 'html')
 :canonical: trilium_alchemy.core.Session.export_zip
 ```{autodoc2-docstring} trilium_alchemy.core.Session.export_zip
 ```
 
 ````
 
-````{py:method} import_zip(note: trilium_alchemy.Note, src_path: str)
+````{py:method} import_zip(note: trilium_alchemy.core.note.Note, src_path: str)
 :canonical: trilium_alchemy.core.Session.import_zip
 ```{autodoc2-docstring} trilium_alchemy.core.Session.import_zip
 ```

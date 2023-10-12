@@ -103,7 +103,7 @@
 
 ````{py:attribute} icon
 :canonical: trilium_alchemy.ext.helpers.Template.icon
-:type: str
+:type: str | None
    `None`{l=python}
 
 *Inherited from:* {obj}`trilium_alchemy.core.declarative.IconMixin`
@@ -148,7 +148,7 @@
 
 ````{py:attribute} icon
 :canonical: trilium_alchemy.ext.helpers.WorkspaceTemplate.icon
-:type: str
+:type: str | None
    `None`{l=python}
 
 *Inherited from:* {obj}`trilium_alchemy.core.declarative.IconMixin`
@@ -203,7 +203,7 @@
 
 ````{py:attribute} icon
 :canonical: trilium_alchemy.ext.helpers.Workspace.icon
-:type: str
+:type: str | None
    `None`{l=python}
 
 *Inherited from:* {obj}`trilium_alchemy.core.declarative.IconMixin`

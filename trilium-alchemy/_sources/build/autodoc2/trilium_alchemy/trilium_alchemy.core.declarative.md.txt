@@ -71,11 +71,8 @@
 
 ### Symbols
 
-`````{py:class} IconMixin(child_id_seed: str | None)
+`````{py:class} IconMixin
 :canonical: trilium_alchemy.core.declarative.IconMixin
-
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.__init__
-```
 
 ```{rubric} Bases:
 ```
@@ -89,129 +86,10 @@
 
 ````{py:attribute} icon
 :canonical: trilium_alchemy.core.declarative.IconMixin.icon
-:type: str
+:type: str | None
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.icon
-```
-
-````
-
-````{py:attribute} note_id
-:canonical: trilium_alchemy.core.declarative.IconMixin.note_id
-:type: str | None
-   `None`{l=python}
-
-*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.note_id
-```
-
-````
-
-````{py:attribute} note_id_seed
-:canonical: trilium_alchemy.core.declarative.IconMixin.note_id_seed
-:type: str | None
-   `None`{l=python}
-
-*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.note_id_seed
-```
-
-````
-
-````{py:attribute} title
-:canonical: trilium_alchemy.core.declarative.IconMixin.title
-:type: str | None
-   `None`{l=python}
-
-*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.title
-```
-
-````
-
-````{py:attribute} note_type
-:canonical: trilium_alchemy.core.declarative.IconMixin.note_type
-:type: str
-   `"text"`{l=python}
-
-*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.note_type
-```
-
-````
-
-````{py:attribute} mime
-:canonical: trilium_alchemy.core.declarative.IconMixin.mime
-:type: str
-   `"text/html"`{l=python}
-
-*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.mime
-```
-
-````
-
-````{py:attribute} singleton
-:canonical: trilium_alchemy.core.declarative.IconMixin.singleton
-:type: bool
-   `False`{l=python}
-
-*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.singleton
-```
-
-````
-
-````{py:attribute} leaf
-:canonical: trilium_alchemy.core.declarative.IconMixin.leaf
-:type: bool
-   `False`{l=python}
-
-*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.leaf
-```
-
-````
-
-````{py:attribute} content_file
-:canonical: trilium_alchemy.core.declarative.IconMixin.content_file
-:type: str | None
-   `None`{l=python}
-
-*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.content_file
-```
-
-````
-
-````{py:method} init(attributes: list[trilium_alchemy.core.attribute.Attribute], children: list[trilium_alchemy.core.branch.Branch])
-:canonical: trilium_alchemy.core.declarative.IconMixin.init
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.init
-```
-
-````
-
-````{py:method} create_declarative_label(name: str, value: str = '', inheritable: bool = False) -> trilium_alchemy.core.attribute.Label
-:canonical: trilium_alchemy.core.declarative.IconMixin.create_declarative_label
-*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.create_declarative_label
-```
-
-````
-
-````{py:method} create_declarative_relation(name: str, target: trilium_alchemy.core.note.note.Note, inheritable: bool = False) -> trilium_alchemy.core.attribute.Relation
-:canonical: trilium_alchemy.core.declarative.IconMixin.create_declarative_relation
-*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.create_declarative_relation
-```
-
-````
-
-````{py:method} create_declarative_child(child_cls: type[trilium_alchemy.core.note.note.Note], **kwargs) -> trilium_alchemy.core.branch.Branch
-:canonical: trilium_alchemy.core.declarative.IconMixin.create_declarative_child
-*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.create_declarative_child
 ```
 
 ````
@@ -230,7 +108,7 @@
 
 ````
 
-````{py:function} relation(name: str, target_cls: typing.Type[trilium_alchemy.core.note.note.Note], inheritable: bool = False, accumulate: bool = False)
+````{py:function} relation(name: str, target_cls: type[trilium_alchemy.core.note.note.Note], inheritable: bool = False, accumulate: bool = False)
 :canonical: trilium_alchemy.core.declarative.relation
 
 ```{rubric} Aliases:
@@ -254,7 +132,7 @@
 
 ````
 
-````{py:function} relation_def(name: str, promoted: bool = True, multi: bool = False, inverse: str = None, inheritable: bool = False, accumulate: bool = False)
+````{py:function} relation_def(name: str, promoted: bool = True, multi: bool = False, inverse: str | None = None, inheritable: bool = False, accumulate: bool = False)
 :canonical: trilium_alchemy.core.declarative.relation_def
 
 ```{rubric} Aliases:
@@ -266,7 +144,7 @@
 
 ````
 
-````{py:function} children(*children: typing.Type[trilium_alchemy.core.note.note.Note] | tuple[typing.Type[trilium_alchemy.core.note.note.Note], dict[str, typing.Any]])
+````{py:function} children(*children: type[trilium_alchemy.core.note.note.Note] | tuple[type[trilium_alchemy.core.note.note.Note], dict[str, typing.Any]])
 :canonical: trilium_alchemy.core.declarative.children
 
 ```{rubric} Aliases:
@@ -278,7 +156,7 @@
 
 ````
 
-````{py:function} child(child: typing.Type[trilium_alchemy.core.note.note.Note], prefix: str = '', expanded: bool = False)
+````{py:function} child(child: type[trilium_alchemy.core.note.note.Note], prefix: str = '', expanded: bool = False)
 :canonical: trilium_alchemy.core.declarative.child
 
 ```{rubric} Aliases:

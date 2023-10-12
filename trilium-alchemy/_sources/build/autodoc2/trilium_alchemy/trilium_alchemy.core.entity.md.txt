@@ -76,10 +76,10 @@
 
 ```{rubric} Bases:
 ```
-{py:obj}`typing.Generic`\
 {py:obj}`abc.ABC`\
 {py:obj}`trilium_alchemy.core.session.SessionContainer`\
-{py:obj}`trilium_alchemy.core.entity.model.ModelContainer`
+{py:obj}`trilium_alchemy.core.entity.model.ModelContainer`\
+{py:obj}`typing.Generic`
 ```{rubric} Aliases:
 ```
 `trilium_alchemy.Entity`\
