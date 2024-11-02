@@ -116,6 +116,12 @@ trilium_alchemy.ext.helpers
     :summary:
     ```
 
+* - {py:obj}`BaseWorkspaceRoot <trilium_alchemy.ext.helpers.BaseWorkspaceRoot>`
+  - {py:obj}`helpers <trilium_alchemy.ext.helpers>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseWorkspaceRoot
+    :summary:
+    ```
+
 * - {py:obj}`BaseRootSystem <trilium_alchemy.ext.helpers.BaseRootSystem>`
   - {py:obj}`helpers <trilium_alchemy.ext.helpers>`
   - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem

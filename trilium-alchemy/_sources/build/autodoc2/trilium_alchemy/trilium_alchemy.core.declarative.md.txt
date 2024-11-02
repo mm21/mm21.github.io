@@ -8,24 +8,6 @@
 :allowtitles:
 ```
 
-### Class index
-
-:::symbol-category
-```{rubric} Canonical
-```
-:::
-
-````{list-table}
-:class: autosummary longtable
-:align: left
-
-* - {py:obj}`IconMixin <trilium_alchemy.core.declarative.IconMixin>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin
-    :summary:
-    ```
-
-````
-
 ### Function index
 
 :::symbol-category
@@ -70,31 +52,6 @@
 ````
 
 ### Symbols
-
-`````{py:class} IconMixin
-:canonical: trilium_alchemy.core.declarative.IconMixin
-
-```{rubric} Bases:
-```
-{py:obj}`trilium_alchemy.core.note.Mixin`
-```{rubric} Aliases:
-```
-`trilium_alchemy.IconMixin`\
-`trilium_alchemy.core.IconMixin`
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin
-```
-
-````{py:attribute} icon
-:canonical: trilium_alchemy.core.declarative.IconMixin.icon
-:type: str | None
-   `None`{l=python}
-
-```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin.icon
-```
-
-````
-
-`````
 
 ````{py:function} label(name: str, value: str = '', inheritable: bool = False, accumulate: bool = False)
 :canonical: trilium_alchemy.core.declarative.label

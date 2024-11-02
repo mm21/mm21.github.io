@@ -36,7 +36,7 @@
 
 ```{rubric} Bases:
 ```
-{py:obj}`trilium_alchemy.core.entity.Entity`
+{py:obj}`trilium_alchemy.core.entity.entity.OrderedEntity`
 ```{rubric} Aliases:
 ```
 `trilium_alchemy.Branch`\

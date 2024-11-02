@@ -38,7 +38,7 @@
 
 ### Symbols
 
-`````{py:class} Attribute(name: str, inheritable: bool = False, **kwargs)
+`````{py:class} Attribute(name: str, inheritable: bool = False, session: trilium_alchemy.core.session.Session | None = None, attribute_id: str | None = None, model_backing: trilium_alchemy.core.attribute.attribute.AttributeModel | None = None, owning_note: trilium_alchemy.core.note.Note | None = None)
 :canonical: trilium_alchemy.core.attribute.Attribute
 
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.__init__
@@ -46,7 +46,7 @@
 
 ```{rubric} Bases:
 ```
-{py:obj}`trilium_alchemy.core.entity.Entity`\
+{py:obj}`trilium_alchemy.core.entity.entity.OrderedEntity`\
 {py:obj}`abc.ABC`
 ```{rubric} Aliases:
 ```
@@ -190,7 +190,7 @@
 
 `````
 
-`````{py:class} Label(name: str, value: str = '', inheritable: bool = False, session: trilium_alchemy.core.session.Session = None, **kwargs)
+`````{py:class} Label(name: str, value: str = '', inheritable: bool = False, session: trilium_alchemy.core.session.Session | None = None, **kwargs)
 :canonical: trilium_alchemy.core.attribute.Label
 
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.__init__

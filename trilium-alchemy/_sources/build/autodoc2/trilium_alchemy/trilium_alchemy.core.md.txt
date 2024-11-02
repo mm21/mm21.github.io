@@ -82,12 +82,6 @@ trilium_alchemy.core.exceptions
     :summary:
     ```
 
-* - {py:obj}`IconMixin <trilium_alchemy.core.declarative.IconMixin>`
-  - {py:obj}`declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin
-    :summary:
-    ```
-
 * - {py:obj}`Entity <trilium_alchemy.core.entity.Entity>`
   - {py:obj}`entity <trilium_alchemy.core.entity>`
   - ```{autodoc2-docstring} trilium_alchemy.core.entity.Entity

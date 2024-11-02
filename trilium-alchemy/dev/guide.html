@@ -1,18 +1,18 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" data-content_root="../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Design" href="design/index.html" /><link rel="prev" title="Filesystem note specification (in progress)" href="../reference/fs-spec.html" />
         <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/dev/guide.html" />
 
-    <!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
+    <!-- Generated with Sphinx 7.4.7 and Furo 2023.09.10 -->
         <title>Developer guide - TriliumAlchemy</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=0855384a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=36a5483c" />
     
     
 
@@ -269,12 +269,12 @@
         </div>
         <article role="main">
           <section id="developer-guide">
-<h1>Developer guide<a class="headerlink" href="#developer-guide" title="Permalink to this heading">#</a></h1>
+<h1>Developer guide<a class="headerlink" href="#developer-guide" title="Link to this heading">¶</a></h1>
 <p>Contributions are welcome, but please reach out first so work can be coordinated. This guide will walk you through setting up your environment and running tests.</p>
 <section id="setup">
-<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h2>
+<h2>Setup<a class="headerlink" href="#setup" title="Link to this heading">¶</a></h2>
 <section id="installation">
-<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h3>
+<h3>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h3>
 <p>Install the dependencies by activating a shell:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>shell
 </pre></div>
@@ -285,12 +285,12 @@
 </div>
 </section>
 <section id="environment">
-<h3>Environment<a class="headerlink" href="#environment" title="Permalink to this heading">#</a></h3>
+<h3>Environment<a class="headerlink" href="#environment" title="Link to this heading">¶</a></h3>
 <p>From the root folder, copy <code class="docutils literal notranslate"><span class="pre">.env.example</span></code> to <code class="docutils literal notranslate"><span class="pre">.env</span></code> and fill in the variables. Not all tests require all of them, e.g. <code class="docutils literal notranslate"><span class="pre">TRILIUM_DATA_DIR</span></code> is only used to verify that backups were created. However it’s encouraged to provide all of them so you can run all the tests.</p>
 </section>
 </section>
 <section id="command-line-targets">
-<h2>Command-line targets<a class="headerlink" href="#command-line-targets" title="Permalink to this heading">#</a></h2>
+<h2>Command-line targets<a class="headerlink" href="#command-line-targets" title="Link to this heading">¶</a></h2>
 <p>There are a number of scons aliases to facilitate development workflows. Targets are generated in a corresponding folder under the top-level <code class="docutils literal notranslate"><span class="pre">build</span></code> folder (e.g. <code class="docutils literal notranslate"><span class="pre">build/doc/html</span></code>).</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">test</span></code>: Runs tests and generates coverage reports (HTML, XML, <code class="docutils literal notranslate"><span class="pre">.coverage</span></code>)</p></li>
@@ -308,7 +308,7 @@
 <p>For example, to run all tests and generate reports, run <code class="docutils literal notranslate"><span class="pre">scons</span> <span class="pre">test</span></code>.</p>
 </section>
 <section id="running-tests">
-<h2>Running tests<a class="headerlink" href="#running-tests" title="Permalink to this heading">#</a></h2>
+<h2>Running tests<a class="headerlink" href="#running-tests" title="Link to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Please use a separate, “disposable” Trilium instance to run the tests. Running the full suite creates and deletes over 70 notes within a short amount of time.</p>
@@ -320,9 +320,9 @@
 </div>
 </section>
 <section id="developing-tests">
-<h2>Developing tests<a class="headerlink" href="#developing-tests" title="Permalink to this heading">#</a></h2>
+<h2>Developing tests<a class="headerlink" href="#developing-tests" title="Link to this heading">¶</a></h2>
 <section id="fixtures">
-<h3>Fixtures<a class="headerlink" href="#fixtures" title="Permalink to this heading">#</a></h3>
+<h3>Fixtures<a class="headerlink" href="#fixtures" title="Link to this heading">¶</a></h3>
 <p>To get a new <a class="reference internal" href="../build/autodoc2/trilium_alchemy/trilium_alchemy.core.html#trilium_alchemy.core.Session" title="trilium_alchemy.core.Session"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Session</span></code></a> and a new <a class="reference internal" href="../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a> for testing, simply create a test (function starting with <code class="docutils literal notranslate"><span class="pre">test</span></code>) which takes arguments called <code class="docutils literal notranslate"><span class="pre">session</span></code> and <code class="docutils literal notranslate"><span class="pre">note</span></code> respectively. For example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_create</span><span class="p">(</span><span class="n">session</span><span class="p">:</span> <span class="n">Session</span><span class="p">,</span> <span class="n">note</span><span class="p">:</span> <span class="n">Note</span><span class="p">):</span>
     <span class="o">...</span>
@@ -331,7 +331,7 @@
 <p>Here a new <a class="reference internal" href="../build/autodoc2/trilium_alchemy/trilium_alchemy.core.html#trilium_alchemy.core.Session" title="trilium_alchemy.core.Session"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Session</span></code></a> will be created, along with a new <a class="reference internal" href="../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a>. The note is automatically deleted after the test exits.</p>
 </section>
 <section id="markers">
-<h3>Markers<a class="headerlink" href="#markers" title="Permalink to this heading">#</a></h3>
+<h3>Markers<a class="headerlink" href="#markers" title="Link to this heading">¶</a></h3>
 <p>Markers are useful to configure certain things about the created <a class="reference internal" href="../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a> under test, e.g. which attributes it has. For example, <code class="docutils literal notranslate"><span class="pre">test/attribute/test_helpers.py::test_index_del</span></code> uses such a marker to create an attribute in order to test deleting it.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@mark</span><span class="o">.</span><span class="n">attribute</span><span class="p">(</span><span class="s2">&quot;label1&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">test_index_del</span><span class="p">(</span><span class="n">session</span><span class="p">:</span> <span class="n">Session</span><span class="p">,</span> <span class="n">note</span><span class="p">:</span> <span class="n">Note</span><span class="p">):</span>
@@ -422,12 +422,12 @@
       
     </aside>
   </div>
-</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
-    <script src="../_static/scripts/furo.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/custom.js"></script>
+</div><script src="../_static/documentation_options.js?v=01f34227"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/custom.js?v=98a9d4e2"></script>
     </body>
 </html>

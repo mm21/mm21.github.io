@@ -1,18 +1,18 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" data-content_root="../../../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="Attributes" href="attributes.html" /><link rel="prev" title="Sessions" href="sessions.html" />
         <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/sdk/guide/working-with-notes/notes.html" />
 
-    <!-- Generated with Sphinx 7.0.1 and Furo 2023.05.20 -->
+    <!-- Generated with Sphinx 7.4.7 and Furo 2023.09.10 -->
         <title>Notes - TriliumAlchemy</title>
-      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=0855384a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo-extensions.css?v=36a5483c" />
     
     
 
@@ -269,9 +269,9 @@
         </div>
         <article role="main">
           <section id="notes">
-<span id="working-with-notes-notes"></span><h1>Notes<a class="headerlink" href="#notes" title="Permalink to this heading">#</a></h1>
+<span id="working-with-notes-notes"></span><h1>Notes<a class="headerlink" href="#notes" title="Link to this heading">¶</a></h1>
 <section id="creation">
-<h2>Creation<a class="headerlink" href="#creation" title="Permalink to this heading">#</a></h2>
+<h2>Creation<a class="headerlink" href="#creation" title="Link to this heading">¶</a></h2>
 <p>Create a note by instantiating <a class="reference internal" href="../../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">note</span> <span class="o">=</span> <span class="n">Note</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;My note&quot;</span><span class="p">)</span>
 <span class="k">assert</span> <span class="n">note</span><span class="o">.</span><span class="n">title</span> <span class="o">==</span> <span class="s2">&quot;My note&quot;</span>
@@ -293,7 +293,7 @@
 <p>The remaining examples will assume that you’ve placed the newly created note in your hierarchy by giving it a parent.</p>
 </section>
 <section id="entity-bind-operator">
-<h2>Entity bind operator: <code class="docutils literal notranslate"><span class="pre">+=</span></code><a class="headerlink" href="#entity-bind-operator" title="Permalink to this heading">#</a></h2>
+<h2>Entity bind operator: <code class="docutils literal notranslate"><span class="pre">+=</span></code><a class="headerlink" href="#entity-bind-operator" title="Link to this heading">¶</a></h2>
 <p>Use <code class="code docutils literal highlight highlight-python"><span class="o">+=</span></code> to add a <a class="reference internal" href="../../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.attribute.html#trilium_alchemy.core.attribute.Label" title="trilium_alchemy.core.attribute.Label"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Label</span></code></a>, <a class="reference internal" href="../../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.attribute.html#trilium_alchemy.core.attribute.Relation" title="trilium_alchemy.core.attribute.Relation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Relation</span></code></a>, or <a class="reference internal" href="../../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.branch.html#trilium_alchemy.core.branch.Branch" title="trilium_alchemy.core.branch.Branch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Branch</span></code></a> (parent or child).</p>
 <p>Add a label:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">note</span> <span class="o">+=</span> <span class="n">Label</span><span class="p">(</span><span class="s2">&quot;myLabel&quot;</span><span class="p">)</span>
@@ -329,7 +329,7 @@
 </div>
 </section>
 <section id="clone-operator">
-<h2>Clone operator: <code class="docutils literal notranslate"><span class="pre">^=</span></code><a class="headerlink" href="#clone-operator" title="Permalink to this heading">#</a></h2>
+<h2>Clone operator: <code class="docutils literal notranslate"><span class="pre">^=</span></code><a class="headerlink" href="#clone-operator" title="Link to this heading">¶</a></h2>
 <p>Use <code class="code docutils literal highlight highlight-python"><span class="o">^=</span></code> to add another note as a parent, cloning it:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># get today&#39;s day note</span>
 <span class="n">today</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">get_today_note</span><span class="p">()</span>
@@ -345,7 +345,7 @@
 </div>
 </section>
 <section id="single-valued-attributes">
-<h2>Single-valued attributes<a class="headerlink" href="#single-valued-attributes" title="Permalink to this heading">#</a></h2>
+<h2>Single-valued attributes<a class="headerlink" href="#single-valued-attributes" title="Link to this heading">¶</a></h2>
 <p>Notes can be indexed to get/set a single-valued attribute, or rather the first attribute matching the provided name.</p>
 <p>If no attribute with that name exists, a new one is created. The attribute type (<a class="reference internal" href="../../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.attribute.html#trilium_alchemy.core.attribute.Label" title="trilium_alchemy.core.attribute.Label"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Label</span></code></a> or <a class="reference internal" href="../../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.attribute.html#trilium_alchemy.core.attribute.Relation" title="trilium_alchemy.core.attribute.Relation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Relation</span></code></a>) is inferred by the type of the assigned value.</p>
 <p>For example, to set <code class="docutils literal notranslate"><span class="pre">#priority=10</span></code>:</p>
@@ -363,7 +363,7 @@
 </div>
 </section>
 <section id="multi-valued-attributes">
-<h2>Multi-valued attributes<a class="headerlink" href="#multi-valued-attributes" title="Permalink to this heading">#</a></h2>
+<h2>Multi-valued attributes<a class="headerlink" href="#multi-valued-attributes" title="Link to this heading">¶</a></h2>
 <p>To access a list of all attributes of a given name, index into any of the following:</p>
 <ul class="simple">
 <li><p>Combined owned and inherited attributes: <a class="reference internal" href="../../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.attributes" title="trilium_alchemy.core.note.Note.attributes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.attributes</span></code></a></p></li>
@@ -384,7 +384,7 @@ Label(#myLabel, value=value2, attribute_id=None, note=Note(title=new note, note_
 </div>
 </section>
 <section id="content">
-<h2>Content<a class="headerlink" href="#content" title="Permalink to this heading">#</a></h2>
+<h2>Content<a class="headerlink" href="#content" title="Link to this heading">¶</a></h2>
 <p>To access note content, get or set <a class="reference internal" href="../../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.content" title="trilium_alchemy.core.note.Note.content"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.content</span></code></a>. Its type should be <code class="code docutils literal highlight highlight-python"><span class="nb">str</span></code> if <a class="reference internal" href="../../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.is_string" title="trilium_alchemy.core.note.Note.is_string"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.is_string</span></code></a> is <code class="code docutils literal highlight highlight-python"><span class="kc">True</span></code>, and <code class="code docutils literal highlight highlight-python"><span class="nb">bytes</span></code> otherwise.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">note</span> <span class="o">=</span> <span class="n">Note</span><span class="p">()</span>
 <span class="n">note</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="s2">&quot;&lt;p&gt;Hello, world!&lt;/p&gt;&quot;</span>
@@ -480,12 +480,12 @@ Label(#myLabel, value=value2, attribute_id=None, note=Note(title=new note, note_
       
     </aside>
   </div>
-</div><script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/sphinx_highlight.js"></script>
-    <script src="../../../_static/scripts/furo.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/custom.js"></script>
+</div><script src="../../../_static/documentation_options.js?v=01f34227"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/scripts/furo.js?v=32e29ea5"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/custom.js?v=98a9d4e2"></script>
     </body>
 </html>

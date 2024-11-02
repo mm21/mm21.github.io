@@ -68,7 +68,7 @@
 
 ### Symbols
 
-`````{py:class} Entity(entity_id: str | None = None, session: trilium_alchemy.core.session.Session | None = None, model_backing: trilium_alchemy.core.entity.entity.ModelT | None = None, create: bool | None = None)
+`````{py:class} Entity(*, entity_id: str | None = None, session: trilium_alchemy.core.session.Session | None = None, model_backing: trilium_alchemy.core.entity.entity.ModelT | None = None, create: bool | None = None)
 :canonical: trilium_alchemy.core.entity.Entity
 
 ```{autodoc2-docstring} trilium_alchemy.core.entity.Entity.__init__
@@ -146,8 +146,11 @@
 
 `````
 
-`````{py:class} State
+`````{py:class} State(*args, **kwds)
 :canonical: trilium_alchemy.core.entity.State
+
+```{autodoc2-docstring} trilium_alchemy.core.entity.State.__init__
+```
 
 ```{rubric} Bases:
 ```
@@ -242,7 +245,7 @@
 
 ````
 
-````{py:class} ReadOnlyDescriptor(attr: str, allow_none_cb: str | None = None)
+````{py:class} ReadOnlyDescriptor(attr: str, allow_none_cb: str | None = None, allow_none: bool = False)
 :canonical: trilium_alchemy.core.entity.ReadOnlyDescriptor
 
 ```{autodoc2-docstring} trilium_alchemy.core.entity.ReadOnlyDescriptor.__init__

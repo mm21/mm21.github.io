@@ -64,6 +64,11 @@
     :summary:
     ```
 
+* - {py:obj}`BaseWorkspaceRoot <trilium_alchemy.ext.helpers.BaseWorkspaceRoot>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseWorkspaceRoot
+    :summary:
+    ```
+
 * - {py:obj}`BaseRootSystem <trilium_alchemy.ext.helpers.BaseRootSystem>`
   - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem
     :summary:
@@ -91,23 +96,12 @@
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template
 ```
 
-````{py:attribute} singleton
-:canonical: trilium_alchemy.ext.helpers.Template.singleton
+````{py:attribute} idempotent
+:canonical: trilium_alchemy.ext.helpers.Template.idempotent
    `True`{l=python}
 
 *Inherited from:* {obj}`trilium_alchemy.ext.helpers.BaseTemplate`
-```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template.singleton
-```
-
-````
-
-````{py:attribute} icon
-:canonical: trilium_alchemy.ext.helpers.Template.icon
-:type: str | None
-   `None`{l=python}
-
-*Inherited from:* {obj}`trilium_alchemy.core.declarative.IconMixin`
-```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template.icon
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template.idempotent
 ```
 
 ````
@@ -136,23 +130,12 @@
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate
 ```
 
-````{py:attribute} singleton
-:canonical: trilium_alchemy.ext.helpers.WorkspaceTemplate.singleton
+````{py:attribute} idempotent
+:canonical: trilium_alchemy.ext.helpers.WorkspaceTemplate.idempotent
    `True`{l=python}
 
 *Inherited from:* {obj}`trilium_alchemy.ext.helpers.BaseTemplate`
-```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate.singleton
-```
-
-````
-
-````{py:attribute} icon
-:canonical: trilium_alchemy.ext.helpers.WorkspaceTemplate.icon
-:type: str | None
-   `None`{l=python}
-
-*Inherited from:* {obj}`trilium_alchemy.core.declarative.IconMixin`
-```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate.icon
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate.idempotent
 ```
 
 ````
@@ -173,8 +156,7 @@
 
 ```{rubric} Bases:
 ```
-{py:obj}`trilium_alchemy.core.note.Note`\
-{py:obj}`trilium_alchemy.core.declarative.IconMixin`
+{py:obj}`trilium_alchemy.core.note.Note`
 ```{rubric} Aliases:
 ```
 `trilium_alchemy.Workspace`\
@@ -193,21 +175,10 @@
 
 ````{py:attribute} system
 :canonical: trilium_alchemy.ext.helpers.Workspace.system
-:type: trilium_alchemy.ext.helpers.BaseSystem
+:type: BaseSystem
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.Workspace.system
-```
-
-````
-
-````{py:attribute} icon
-:canonical: trilium_alchemy.ext.helpers.Workspace.icon
-:type: str | None
-   `None`{l=python}
-
-*Inherited from:* {obj}`trilium_alchemy.core.declarative.IconMixin`
-```{autodoc2-docstring} trilium_alchemy.ext.helpers.Workspace.icon
 ```
 
 ````
@@ -511,7 +482,7 @@
 
 ````{py:attribute} templates
 :canonical: trilium_alchemy.ext.helpers.BaseSystem.templates
-:type: list[typing.Type[trilium_alchemy.ext.helpers.Template]]
+:type: list[typing.Type[trilium_alchemy.ext.helpers.Template]] | None
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.templates
@@ -521,7 +492,7 @@
 
 ````{py:attribute} workspace_templates
 :canonical: trilium_alchemy.ext.helpers.BaseSystem.workspace_templates
-:type: list[typing.Type[trilium_alchemy.ext.helpers.WorkspaceTemplate]]
+:type: list[typing.Type[trilium_alchemy.ext.helpers.WorkspaceTemplate]] | None
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.workspace_templates
@@ -531,7 +502,7 @@
 
 ````{py:attribute} stylesheets
 :canonical: trilium_alchemy.ext.helpers.BaseSystem.stylesheets
-:type: list[typing.Type[trilium_alchemy.ext.helpers.AppCss]]
+:type: list[typing.Type[trilium_alchemy.ext.helpers.AppCss]] | None
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.stylesheets
@@ -541,7 +512,7 @@
 
 ````{py:attribute} widgets
 :canonical: trilium_alchemy.ext.helpers.BaseSystem.widgets
-:type: list[typing.Type[trilium_alchemy.ext.helpers.Widget]]
+:type: list[typing.Type[trilium_alchemy.ext.helpers.Widget]] | None
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.widgets
@@ -551,10 +522,35 @@
 
 ````{py:attribute} scripts
 :canonical: trilium_alchemy.ext.helpers.BaseSystem.scripts
-:type: list[typing.Type[trilium_alchemy.ext.helpers.FrontendScript | trilium_alchemy.ext.helpers.BackendScript]]
+:type: list[typing.Type[trilium_alchemy.ext.helpers.FrontendScript | trilium_alchemy.ext.helpers.BackendScript]] | None
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem.scripts
+```
+
+````
+
+`````
+
+`````{py:class} BaseWorkspaceRoot
+:canonical: trilium_alchemy.ext.helpers.BaseWorkspaceRoot
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.Note`
+```{rubric} Aliases:
+```
+`trilium_alchemy.BaseWorkspaceRoot`\
+`trilium_alchemy.ext.BaseWorkspaceRoot`
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseWorkspaceRoot
+```
+
+````{py:attribute} system
+:canonical: trilium_alchemy.ext.helpers.BaseWorkspaceRoot.system
+:type: type[trilium_alchemy.ext.helpers.BaseSystem] | None
+   `None`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseWorkspaceRoot.system
 ```
 
 ````
@@ -576,7 +572,7 @@
 
 ````{py:attribute} themes
 :canonical: trilium_alchemy.ext.helpers.BaseRootSystem.themes
-:type: list[typing.Type[trilium_alchemy.ext.helpers.Theme]]
+:type: list[typing.Type[trilium_alchemy.ext.helpers.Theme]] | None
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem.themes
@@ -586,7 +582,7 @@
 
 ````{py:attribute} templates
 :canonical: trilium_alchemy.ext.helpers.BaseRootSystem.templates
-:type: list[typing.Type[trilium_alchemy.ext.helpers.Template]]
+:type: list[typing.Type[trilium_alchemy.ext.helpers.Template]] | None
    `None`{l=python}
 
 *Inherited from:* {obj}`trilium_alchemy.ext.helpers.BaseSystem`
@@ -597,7 +593,7 @@
 
 ````{py:attribute} workspace_templates
 :canonical: trilium_alchemy.ext.helpers.BaseRootSystem.workspace_templates
-:type: list[typing.Type[trilium_alchemy.ext.helpers.WorkspaceTemplate]]
+:type: list[typing.Type[trilium_alchemy.ext.helpers.WorkspaceTemplate]] | None
    `None`{l=python}
 
 *Inherited from:* {obj}`trilium_alchemy.ext.helpers.BaseSystem`
@@ -608,7 +604,7 @@
 
 ````{py:attribute} stylesheets
 :canonical: trilium_alchemy.ext.helpers.BaseRootSystem.stylesheets
-:type: list[typing.Type[trilium_alchemy.ext.helpers.AppCss]]
+:type: list[typing.Type[trilium_alchemy.ext.helpers.AppCss]] | None
    `None`{l=python}
 
 *Inherited from:* {obj}`trilium_alchemy.ext.helpers.BaseSystem`
@@ -619,7 +615,7 @@
 
 ````{py:attribute} widgets
 :canonical: trilium_alchemy.ext.helpers.BaseRootSystem.widgets
-:type: list[typing.Type[trilium_alchemy.ext.helpers.Widget]]
+:type: list[typing.Type[trilium_alchemy.ext.helpers.Widget]] | None
    `None`{l=python}
 
 *Inherited from:* {obj}`trilium_alchemy.ext.helpers.BaseSystem`
@@ -630,7 +626,7 @@
 
 ````{py:attribute} scripts
 :canonical: trilium_alchemy.ext.helpers.BaseRootSystem.scripts
-:type: list[typing.Type[trilium_alchemy.ext.helpers.FrontendScript | trilium_alchemy.ext.helpers.BackendScript]]
+:type: list[typing.Type[trilium_alchemy.ext.helpers.FrontendScript | trilium_alchemy.ext.helpers.BackendScript]] | None
    `None`{l=python}
 
 *Inherited from:* {obj}`trilium_alchemy.ext.helpers.BaseSystem`
@@ -665,7 +661,7 @@
 
 ````{py:attribute} system
 :canonical: trilium_alchemy.ext.helpers.BaseRoot.system
-:type: typing.Type[trilium_alchemy.ext.helpers.BaseRootSystem]
+:type: typing.Type[trilium_alchemy.ext.helpers.BaseRootSystem] | None
    {obj}`BaseRootSystem <trilium_alchemy.ext.helpers.BaseRootSystem>`
 
 ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRoot.system

@@ -58,8 +58,7 @@
 
 ```{rubric} Bases:
 ```
-{py:obj}`trilium_alchemy.core.note.Note`\
-{py:obj}`trilium_alchemy.core.declarative.IconMixin`
+{py:obj}`trilium_alchemy.core.note.Note`
 ```{rubric} Aliases:
 ```
 `trilium_alchemy.CodeNote`\

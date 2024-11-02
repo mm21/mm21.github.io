@@ -51,8 +51,7 @@ trilium_alchemy.core.note.content
 ```
 {py:obj}`trilium_alchemy.core.entity.Entity`\
 {py:obj}`trilium_alchemy.core.note.Mixin`\
-{py:obj}`collections.abc.MutableMapping`\
-{py:obj}`typing.Generic`
+{py:obj}`collections.abc.MutableMapping`
 ```{rubric} Aliases:
 ```
 `trilium_alchemy.Note`\
@@ -211,6 +210,17 @@ trilium_alchemy.core.note.content
 
 ````
 
+````{py:attribute} note_id_segment
+:canonical: trilium_alchemy.core.note.Note.note_id_segment
+:type: str | None
+   `None`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.note_id_segment
+```
+
+````
+
 ````{py:attribute} singleton
 :canonical: trilium_alchemy.core.note.Note.singleton
 :type: bool
@@ -218,6 +228,28 @@ trilium_alchemy.core.note.content
 
 *Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.singleton
+```
+
+````
+
+````{py:attribute} idempotent
+:canonical: trilium_alchemy.core.note.Note.idempotent
+:type: bool
+   `False`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.idempotent
+```
+
+````
+
+````{py:attribute} idempotent_segment
+:canonical: trilium_alchemy.core.note.Note.idempotent_segment
+:type: bool
+   `False`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.idempotent_segment
 ```
 
 ````
@@ -240,6 +272,46 @@ trilium_alchemy.core.note.content
 
 *Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.content_file
+```
+
+````
+
+````{py:attribute} hide_new_note
+:canonical: trilium_alchemy.core.note.Note.hide_new_note
+:type: bool
+   `False`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.hide_new_note
+```
+
+````
+
+````{py:attribute} icon
+:canonical: trilium_alchemy.core.note.Note.icon
+:type: str | None
+   `None`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.icon
+```
+
+````
+
+````{py:property} paths
+:canonical: trilium_alchemy.core.note.Note.paths
+:type: list[list[trilium_alchemy.core.note.note.Note]]
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.paths
+```
+
+````
+
+````{py:property} paths_str
+:canonical: trilium_alchemy.core.note.Note.paths_str
+:type: list[str]
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.paths_str
 ```
 
 ````
@@ -289,6 +361,23 @@ trilium_alchemy.core.note.content
 
 *Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.str_summary
+```
+
+````
+
+````{py:property} note_id_seed_final
+:canonical: trilium_alchemy.core.note.Note.note_id_seed_final
+:type: str | None
+
+*Inherited from:* {obj}`trilium_alchemy.core.note.Mixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.note_id_seed_final
+```
+
+````
+
+````{py:method} copy(deep: bool = False, content: bool = False) -> trilium_alchemy.core.note.note.Note
+:canonical: trilium_alchemy.core.note.Note.copy
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.copy
 ```
 
 ````
@@ -436,7 +525,7 @@ trilium_alchemy.core.note.content
 
 `````
 
-`````{py:class} Mixin(child_id_seed: str | None)
+`````{py:class} Mixin(note_id_seed_final: str | None)
 :canonical: trilium_alchemy.core.note.Mixin
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.__init__
@@ -445,8 +534,7 @@ trilium_alchemy.core.note.content
 ```{rubric} Bases:
 ```
 {py:obj}`abc.ABC`\
-{py:obj}`trilium_alchemy.core.session.SessionContainer`\
-{py:obj}`typing.Generic`
+{py:obj}`trilium_alchemy.core.session.SessionContainer`
 ```{rubric} Aliases:
 ```
 `trilium_alchemy.Mixin`\
@@ -470,6 +558,16 @@ trilium_alchemy.core.note.content
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.note_id_seed
+```
+
+````
+
+````{py:attribute} note_id_segment
+:canonical: trilium_alchemy.core.note.Mixin.note_id_segment
+:type: str | None
+   `None`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.note_id_segment
 ```
 
 ````
@@ -514,6 +612,26 @@ trilium_alchemy.core.note.content
 
 ````
 
+````{py:attribute} idempotent
+:canonical: trilium_alchemy.core.note.Mixin.idempotent
+:type: bool
+   `False`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.idempotent
+```
+
+````
+
+````{py:attribute} idempotent_segment
+:canonical: trilium_alchemy.core.note.Mixin.idempotent_segment
+:type: bool
+   `False`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.idempotent_segment
+```
+
+````
+
 ````{py:attribute} leaf
 :canonical: trilium_alchemy.core.note.Mixin.leaf
 :type: bool
@@ -530,6 +648,35 @@ trilium_alchemy.core.note.content
    `None`{l=python}
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.content_file
+```
+
+````
+
+````{py:attribute} hide_new_note
+:canonical: trilium_alchemy.core.note.Mixin.hide_new_note
+:type: bool
+   `False`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.hide_new_note
+```
+
+````
+
+````{py:attribute} icon
+:canonical: trilium_alchemy.core.note.Mixin.icon
+:type: str | None
+   `None`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.icon
+```
+
+````
+
+````{py:property} note_id_seed_final
+:canonical: trilium_alchemy.core.note.Mixin.note_id_seed_final
+:type: str | None
+
+```{autodoc2-docstring} trilium_alchemy.core.note.Mixin.note_id_seed_final
 ```
 
 ````

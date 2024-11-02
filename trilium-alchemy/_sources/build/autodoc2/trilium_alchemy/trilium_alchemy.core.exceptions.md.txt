@@ -52,6 +52,14 @@
 ```{autodoc2-docstring} trilium_alchemy.core.exceptions.ReadOnlyError
 ```
 
+````{py:method} add_note()
+:canonical: trilium_alchemy.core.exceptions.ReadOnlyError.add_note
+*Inherited from:* {obj}`.BaseException`
+```{autodoc2-docstring} trilium_alchemy.core.exceptions.ReadOnlyError.add_note
+```
+
+````
+
 ````{py:method} with_traceback()
 :canonical: trilium_alchemy.core.exceptions.ReadOnlyError.with_traceback
 *Inherited from:* {obj}`.BaseException`
@@ -89,6 +97,14 @@
 `trilium_alchemy.core.ValidationError`
 ```{autodoc2-docstring} trilium_alchemy.core.exceptions.ValidationError
 ```
+
+````{py:method} add_note()
+:canonical: trilium_alchemy.core.exceptions.ValidationError.add_note
+*Inherited from:* {obj}`.BaseException`
+```{autodoc2-docstring} trilium_alchemy.core.exceptions.ValidationError.add_note
+```
+
+````
 
 ````{py:method} with_traceback()
 :canonical: trilium_alchemy.core.exceptions.ValidationError.with_traceback

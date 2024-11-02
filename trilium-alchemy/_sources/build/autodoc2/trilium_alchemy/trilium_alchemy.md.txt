@@ -69,12 +69,6 @@ trilium_alchemy.sync
     :summary:
     ```
 
-* - {py:obj}`IconMixin <trilium_alchemy.core.declarative.IconMixin>`
-  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.IconMixin
-    :summary:
-    ```
-
 * - {py:obj}`Entity <trilium_alchemy.core.entity.Entity>`
   - {py:obj}`core.entity <trilium_alchemy.core.entity>`
   - ```{autodoc2-docstring} trilium_alchemy.core.entity.Entity
@@ -174,6 +168,12 @@ trilium_alchemy.sync
 * - {py:obj}`BaseSystem <trilium_alchemy.ext.helpers.BaseSystem>`
   - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
   - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem
+    :summary:
+    ```
+
+* - {py:obj}`BaseWorkspaceRoot <trilium_alchemy.ext.helpers.BaseWorkspaceRoot>`
+  - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseWorkspaceRoot
     :summary:
     ```
 
