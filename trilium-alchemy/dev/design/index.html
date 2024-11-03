@@ -272,18 +272,18 @@
 <h1>Design<a class="headerlink" href="#design" title="Link to this heading">¶</a></h1>
 <section id="entities">
 <h2>Entities<a class="headerlink" href="#entities" title="Link to this heading">¶</a></h2>
-<p><a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.Entity" title="trilium_alchemy.core.entity.Entity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Entity</span></code></a> is the base class representing notes, attributes, and branches. It essentially maps to a record in Trilium’s database.</p>
+<p><a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseEntity</span></code></a> is the base class representing notes, attributes, and branches. It essentially maps to a record in Trilium’s database.</p>
 <p class="plantuml">
-<img src="../../_images/plantuml-84ff9fb0977d3dc2ef0e22d15b80ea2bc9901f1a.svg" alt="&#64;startuml
+<img src="../../_images/plantuml-c94393ed04bd49663ba2f1bdc3b503932e75b5cb.svg" alt="&#64;startuml entity-classes
 
 package trilium_alchemy.core &lt;&lt;Frame&gt;&gt; {
-  class Entity {
+  class BaseEntity {
   }
 
   class Note {
   }
 
-  class Attribute {
+  class BaseAttribute {
   }
 
   class Label {
@@ -295,16 +295,16 @@ package trilium_alchemy.core &lt;&lt;Frame&gt;&gt; {
   class Branch {
   }
 
-  Entity &lt;|-- Note
-  Entity &lt;|-- Attribute
-  Entity &lt;|-- Branch
-  Attribute &lt;|-- Label
-  Attribute &lt;|-- Relation
+  BaseEntity &lt;|-- Note
+  BaseEntity &lt;|-- BaseAttribute
+  BaseEntity &lt;|-- Branch
+  BaseAttribute &lt;|-- Label
+  BaseAttribute &lt;|-- Relation
 }"/></p>
 </section>
 <section id="entity-state-machine">
 <h2>Entity state machine<a class="headerlink" href="#entity-state-machine" title="Link to this heading">¶</a></h2>
-<p>The entity state (<a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.Entity.state" title="trilium_alchemy.core.entity.Entity.state"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Entity.state</span></code></a>) is automatically managed based on the user’s actions. The following illustrates the possible state transitions.</p>
+<p>The entity state (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Entity.state</span></code>) is automatically managed based on the user’s actions. The following illustrates the possible state transitions.</p>
 <p class="plantuml">
 <img src="../../_images/plantuml-ebc1508c82dc45fe157eadebdd56515327843c2d.svg" alt="&#64;startuml
 

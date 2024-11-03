@@ -33,7 +33,7 @@
 
 ### Symbols
 
-````{py:class} Content(entity: trilium_alchemy.core.entity.Entity)
+````{py:class} Content(entity: trilium_alchemy.core.entity.BaseEntity)
 :canonical: trilium_alchemy.core.note.content.Content
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.content.Content.__init__

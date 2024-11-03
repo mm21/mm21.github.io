@@ -91,7 +91,7 @@
 
 `````
 
-`````{py:class} ParentBranches(entity: trilium_alchemy.core.entity.entity.Entity)
+`````{py:class} ParentBranches(entity: trilium_alchemy.core.entity.entity.BaseEntity)
 :canonical: trilium_alchemy.core.note.branches.ParentBranches
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches.__init__
@@ -162,7 +162,7 @@
 
 `````
 
-`````{py:class} ChildBranches(entity: trilium_alchemy.core.entity.entity.Entity)
+`````{py:class} ChildBranches(entity: trilium_alchemy.core.entity.entity.BaseEntity)
 :canonical: trilium_alchemy.core.note.branches.ChildBranches
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.__init__
@@ -257,7 +257,7 @@
 
 `````
 
-`````{py:class} Parents(entity: trilium_alchemy.core.entity.entity.Entity)
+`````{py:class} Parents(entity: trilium_alchemy.core.entity.entity.BaseEntity)
 :canonical: trilium_alchemy.core.note.branches.Parents
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.branches.Parents.__init__
@@ -318,7 +318,7 @@
 
 `````
 
-`````{py:class} Children(entity: trilium_alchemy.core.entity.entity.Entity)
+`````{py:class} Children(entity: trilium_alchemy.core.entity.entity.BaseEntity)
 :canonical: trilium_alchemy.core.note.branches.Children
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.branches.Children.__init__

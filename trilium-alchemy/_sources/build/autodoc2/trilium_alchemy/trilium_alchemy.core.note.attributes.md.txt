@@ -145,7 +145,7 @@
 
 `````
 
-`````{py:class} OwnedAttributes(entity: trilium_alchemy.core.entity.entity.Entity)
+`````{py:class} OwnedAttributes(entity: trilium_alchemy.core.entity.entity.BaseEntity)
 :canonical: trilium_alchemy.core.note.attributes.OwnedAttributes
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.__init__
@@ -232,7 +232,7 @@
 
 `````
 
-`````{py:class} InheritedAttributes(entity: trilium_alchemy.core.entity.entity.Entity)
+`````{py:class} InheritedAttributes(entity: trilium_alchemy.core.entity.entity.BaseEntity)
 :canonical: trilium_alchemy.core.note.attributes.InheritedAttributes
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedAttributes.__init__

@@ -19,8 +19,8 @@
 :class: autosummary longtable
 :align: left
 
-* - {py:obj}`Attribute <trilium_alchemy.core.attribute.Attribute>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute
+* - {py:obj}`BaseAttribute <trilium_alchemy.core.attribute.BaseAttribute>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute
     :summary:
     ```
 
@@ -38,10 +38,10 @@
 
 ### Symbols
 
-`````{py:class} Attribute(name: str, inheritable: bool = False, session: trilium_alchemy.core.session.Session | None = None, attribute_id: str | None = None, model_backing: trilium_alchemy.core.attribute.attribute.AttributeModel | None = None, owning_note: trilium_alchemy.core.note.Note | None = None)
-:canonical: trilium_alchemy.core.attribute.Attribute
+`````{py:class} BaseAttribute(name: str, inheritable: bool = False, session: trilium_alchemy.core.session.Session | None = None, attribute_id: str | None = None, model_backing: trilium_alchemy.core.attribute.attribute.AttributeModel | None = None, owning_note: trilium_alchemy.core.note.Note | None = None)
+:canonical: trilium_alchemy.core.attribute.BaseAttribute
 
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.__init__
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.__init__
 ```
 
 ```{rubric} Bases:
@@ -50,140 +50,140 @@
 {py:obj}`abc.ABC`
 ```{rubric} Aliases:
 ```
-`trilium_alchemy.Attribute`\
-`trilium_alchemy.core.Attribute`
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute
+`trilium_alchemy.BaseAttribute`\
+`trilium_alchemy.core.BaseAttribute`
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute
 ```
 
 ````{py:attribute} attribute_id
-:canonical: trilium_alchemy.core.attribute.Attribute.attribute_id
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.attribute_id
 :type: str
    {obj}`EntityIdDescriptor() <trilium_alchemy.core.entity.EntityIdDescriptor>`
 
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.attribute_id
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.attribute_id
 ```
 
 ````
 
 ````{py:attribute} name
-:canonical: trilium_alchemy.core.attribute.Attribute.name
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.name
 :type: str
    {obj}`ReadOnlyDescriptor() <trilium_alchemy.core.entity.ReadOnlyDescriptor>`
 
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.name
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.name
 ```
 
 ````
 
 ````{py:attribute} inheritable
-:canonical: trilium_alchemy.core.attribute.Attribute.inheritable
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.inheritable
 :type: bool
    {obj}`FieldDescriptor() <trilium_alchemy.core.entity.FieldDescriptor>`
 
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.inheritable
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.inheritable
 ```
 
 ````
 
 ````{py:attribute} utc_date_modified
-:canonical: trilium_alchemy.core.attribute.Attribute.utc_date_modified
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.utc_date_modified
 :type: str
    {obj}`ReadOnlyFieldDescriptor() <trilium_alchemy.core.entity.ReadOnlyFieldDescriptor>`
 
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.utc_date_modified
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.utc_date_modified
 ```
 
 ````
 
 ````{py:attribute} note
-:canonical: trilium_alchemy.core.attribute.Attribute.note
-:type: trilium_alchemy.core.attribute.attribute.Attribute.note
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.note
+:type: trilium_alchemy.core.attribute.attribute.BaseAttribute.note
    {obj}`ReadOnlyDescriptor() <trilium_alchemy.core.entity.ReadOnlyDescriptor>`
 
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.note
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.note
 ```
 
 ````
 
 ````{py:attribute} position
-:canonical: trilium_alchemy.core.attribute.Attribute.position
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.position
    {obj}`ReadOnlyDescriptor() <trilium_alchemy.core.entity.ReadOnlyDescriptor>`
 
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.position
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.position
 ```
 
 ````
 
 ````{py:attribute} attribute_type
-:canonical: trilium_alchemy.core.attribute.Attribute.attribute_type
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.attribute_type
 :type: str
    `None`{l=python}
 
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.attribute_type
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.attribute_type
 ```
 
 ````
 
 ````{py:property} state
-:canonical: trilium_alchemy.core.attribute.Attribute.state
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.state
 :type: trilium_alchemy.core.entity.types.State
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.state
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.state
 ```
 
 ````
 
 ````{py:property} session
-:canonical: trilium_alchemy.core.attribute.Attribute.session
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.session
 :type: trilium_alchemy.core.session.Session
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.session
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.session
 ```
 
 ````
 
 ````{py:property} str_short
-:canonical: trilium_alchemy.core.attribute.Attribute.str_short
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.str_short
 :type: str
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.str_short
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.str_short
 ```
 
 ````
 
 ````{py:property} str_summary
-:canonical: trilium_alchemy.core.attribute.Attribute.str_summary
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.str_summary
 :type: str
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.str_summary
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.str_summary
 ```
 
 ````
 
 ````{py:method} flush() -> None
-:canonical: trilium_alchemy.core.attribute.Attribute.flush
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.flush
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.flush
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.flush
 ```
 
 ````
 
 ````{py:method} invalidate() -> None
-:canonical: trilium_alchemy.core.attribute.Attribute.invalidate
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.invalidate
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.invalidate
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.invalidate
 ```
 
 ````
 
 ````{py:method} delete() -> None
-:canonical: trilium_alchemy.core.attribute.Attribute.delete
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
-```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute.delete
+:canonical: trilium_alchemy.core.attribute.BaseAttribute.delete
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
+```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.delete
 ```
 
 ````
@@ -198,7 +198,7 @@
 
 ```{rubric} Bases:
 ```
-{py:obj}`trilium_alchemy.core.attribute.Attribute`
+{py:obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{rubric} Aliases:
 ```
 `trilium_alchemy.Label`\
@@ -231,7 +231,7 @@
 :type: str
    {obj}`EntityIdDescriptor() <trilium_alchemy.core.entity.EntityIdDescriptor>`
 
-*Inherited from:* {obj}`trilium_alchemy.core.attribute.Attribute`
+*Inherited from:* {obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.attribute_id
 ```
 
@@ -242,7 +242,7 @@
 :type: str
    {obj}`ReadOnlyDescriptor() <trilium_alchemy.core.entity.ReadOnlyDescriptor>`
 
-*Inherited from:* {obj}`trilium_alchemy.core.attribute.Attribute`
+*Inherited from:* {obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.name
 ```
 
@@ -253,7 +253,7 @@
 :type: bool
    {obj}`FieldDescriptor() <trilium_alchemy.core.entity.FieldDescriptor>`
 
-*Inherited from:* {obj}`trilium_alchemy.core.attribute.Attribute`
+*Inherited from:* {obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.inheritable
 ```
 
@@ -264,7 +264,7 @@
 :type: str
    {obj}`ReadOnlyFieldDescriptor() <trilium_alchemy.core.entity.ReadOnlyFieldDescriptor>`
 
-*Inherited from:* {obj}`trilium_alchemy.core.attribute.Attribute`
+*Inherited from:* {obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.utc_date_modified
 ```
 
@@ -272,10 +272,10 @@
 
 ````{py:attribute} note
 :canonical: trilium_alchemy.core.attribute.Label.note
-:type: trilium_alchemy.core.attribute.attribute.Attribute.note
+:type: trilium_alchemy.core.attribute.attribute.BaseAttribute.note
    {obj}`ReadOnlyDescriptor() <trilium_alchemy.core.entity.ReadOnlyDescriptor>`
 
-*Inherited from:* {obj}`trilium_alchemy.core.attribute.Attribute`
+*Inherited from:* {obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.note
 ```
 
@@ -285,7 +285,7 @@
 :canonical: trilium_alchemy.core.attribute.Label.position
    {obj}`ReadOnlyDescriptor() <trilium_alchemy.core.entity.ReadOnlyDescriptor>`
 
-*Inherited from:* {obj}`trilium_alchemy.core.attribute.Attribute`
+*Inherited from:* {obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.position
 ```
 
@@ -295,7 +295,7 @@
 :canonical: trilium_alchemy.core.attribute.Label.state
 :type: trilium_alchemy.core.entity.types.State
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.state
 ```
 
@@ -305,7 +305,7 @@
 :canonical: trilium_alchemy.core.attribute.Label.session
 :type: trilium_alchemy.core.session.Session
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.session
 ```
 
@@ -315,7 +315,7 @@
 :canonical: trilium_alchemy.core.attribute.Label.str_short
 :type: str
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.str_short
 ```
 
@@ -325,7 +325,7 @@
 :canonical: trilium_alchemy.core.attribute.Label.str_summary
 :type: str
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.str_summary
 ```
 
@@ -333,7 +333,7 @@
 
 ````{py:method} flush() -> None
 :canonical: trilium_alchemy.core.attribute.Label.flush
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.flush
 ```
 
@@ -341,7 +341,7 @@
 
 ````{py:method} invalidate() -> None
 :canonical: trilium_alchemy.core.attribute.Label.invalidate
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.invalidate
 ```
 
@@ -349,7 +349,7 @@
 
 ````{py:method} delete() -> None
 :canonical: trilium_alchemy.core.attribute.Label.delete
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.delete
 ```
 
@@ -365,7 +365,7 @@
 
 ```{rubric} Bases:
 ```
-{py:obj}`trilium_alchemy.core.attribute.Attribute`
+{py:obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{rubric} Aliases:
 ```
 `trilium_alchemy.Relation`\
@@ -398,7 +398,7 @@
 :type: str
    {obj}`EntityIdDescriptor() <trilium_alchemy.core.entity.EntityIdDescriptor>`
 
-*Inherited from:* {obj}`trilium_alchemy.core.attribute.Attribute`
+*Inherited from:* {obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.attribute_id
 ```
 
@@ -409,7 +409,7 @@
 :type: str
    {obj}`ReadOnlyDescriptor() <trilium_alchemy.core.entity.ReadOnlyDescriptor>`
 
-*Inherited from:* {obj}`trilium_alchemy.core.attribute.Attribute`
+*Inherited from:* {obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.name
 ```
 
@@ -420,7 +420,7 @@
 :type: bool
    {obj}`FieldDescriptor() <trilium_alchemy.core.entity.FieldDescriptor>`
 
-*Inherited from:* {obj}`trilium_alchemy.core.attribute.Attribute`
+*Inherited from:* {obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.inheritable
 ```
 
@@ -431,7 +431,7 @@
 :type: str
    {obj}`ReadOnlyFieldDescriptor() <trilium_alchemy.core.entity.ReadOnlyFieldDescriptor>`
 
-*Inherited from:* {obj}`trilium_alchemy.core.attribute.Attribute`
+*Inherited from:* {obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.utc_date_modified
 ```
 
@@ -439,10 +439,10 @@
 
 ````{py:attribute} note
 :canonical: trilium_alchemy.core.attribute.Relation.note
-:type: trilium_alchemy.core.attribute.attribute.Attribute.note
+:type: trilium_alchemy.core.attribute.attribute.BaseAttribute.note
    {obj}`ReadOnlyDescriptor() <trilium_alchemy.core.entity.ReadOnlyDescriptor>`
 
-*Inherited from:* {obj}`trilium_alchemy.core.attribute.Attribute`
+*Inherited from:* {obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.note
 ```
 
@@ -452,7 +452,7 @@
 :canonical: trilium_alchemy.core.attribute.Relation.position
    {obj}`ReadOnlyDescriptor() <trilium_alchemy.core.entity.ReadOnlyDescriptor>`
 
-*Inherited from:* {obj}`trilium_alchemy.core.attribute.Attribute`
+*Inherited from:* {obj}`trilium_alchemy.core.attribute.BaseAttribute`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.position
 ```
 
@@ -462,7 +462,7 @@
 :canonical: trilium_alchemy.core.attribute.Relation.state
 :type: trilium_alchemy.core.entity.types.State
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.state
 ```
 
@@ -472,7 +472,7 @@
 :canonical: trilium_alchemy.core.attribute.Relation.session
 :type: trilium_alchemy.core.session.Session
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.session
 ```
 
@@ -482,7 +482,7 @@
 :canonical: trilium_alchemy.core.attribute.Relation.str_short
 :type: str
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.str_short
 ```
 
@@ -492,7 +492,7 @@
 :canonical: trilium_alchemy.core.attribute.Relation.str_summary
 :type: str
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.str_summary
 ```
 
@@ -500,7 +500,7 @@
 
 ````{py:method} flush() -> None
 :canonical: trilium_alchemy.core.attribute.Relation.flush
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.flush
 ```
 
@@ -508,7 +508,7 @@
 
 ````{py:method} invalidate() -> None
 :canonical: trilium_alchemy.core.attribute.Relation.invalidate
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.invalidate
 ```
 
@@ -516,7 +516,7 @@
 
 ````{py:method} delete() -> None
 :canonical: trilium_alchemy.core.attribute.Relation.delete
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.delete
 ```
 

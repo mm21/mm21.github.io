@@ -118,7 +118,7 @@
 :canonical: trilium_alchemy.core.branch.Branch.state
 :type: trilium_alchemy.core.entity.types.State
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.state
 ```
 
@@ -128,7 +128,7 @@
 :canonical: trilium_alchemy.core.branch.Branch.session
 :type: trilium_alchemy.core.session.Session
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.session
 ```
 
@@ -138,7 +138,7 @@
 :canonical: trilium_alchemy.core.branch.Branch.str_short
 :type: str
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.str_short
 ```
 
@@ -148,7 +148,7 @@
 :canonical: trilium_alchemy.core.branch.Branch.str_summary
 :type: str
 
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.str_summary
 ```
 
@@ -156,7 +156,7 @@
 
 ````{py:method} flush() -> None
 :canonical: trilium_alchemy.core.branch.Branch.flush
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.flush
 ```
 
@@ -164,7 +164,7 @@
 
 ````{py:method} invalidate() -> None
 :canonical: trilium_alchemy.core.branch.Branch.invalidate
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.invalidate
 ```
 
@@ -172,7 +172,7 @@
 
 ````{py:method} delete() -> None
 :canonical: trilium_alchemy.core.branch.Branch.delete
-*Inherited from:* {obj}`trilium_alchemy.core.entity.Entity`
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.delete
 ```
 

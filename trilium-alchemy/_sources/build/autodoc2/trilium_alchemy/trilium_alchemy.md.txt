@@ -39,15 +39,15 @@ trilium_alchemy.sync
     :summary:
     ```
 
-* - {py:obj}`Mixin <trilium_alchemy.core.note.Mixin>`
+* - {py:obj}`BaseNoteMixin <trilium_alchemy.core.note.BaseNoteMixin>`
   - {py:obj}`core.note <trilium_alchemy.core.note>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.BaseNoteMixin
     :summary:
     ```
 
-* - {py:obj}`Attribute <trilium_alchemy.core.attribute.Attribute>`
+* - {py:obj}`BaseAttribute <trilium_alchemy.core.attribute.BaseAttribute>`
   - {py:obj}`core.attribute <trilium_alchemy.core.attribute>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute
+  - ```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute
     :summary:
     ```
 
@@ -69,9 +69,9 @@ trilium_alchemy.sync
     :summary:
     ```
 
-* - {py:obj}`Entity <trilium_alchemy.core.entity.Entity>`
+* - {py:obj}`BaseEntity <trilium_alchemy.core.entity.BaseEntity>`
   - {py:obj}`core.entity <trilium_alchemy.core.entity>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.entity.Entity
+  - ```{autodoc2-docstring} trilium_alchemy.core.entity.BaseEntity
     :summary:
     ```
 

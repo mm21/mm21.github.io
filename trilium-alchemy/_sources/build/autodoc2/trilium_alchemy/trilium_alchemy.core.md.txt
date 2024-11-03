@@ -52,15 +52,15 @@ trilium_alchemy.core.exceptions
     :summary:
     ```
 
-* - {py:obj}`Mixin <trilium_alchemy.core.note.Mixin>`
+* - {py:obj}`BaseNoteMixin <trilium_alchemy.core.note.BaseNoteMixin>`
   - {py:obj}`note <trilium_alchemy.core.note>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.note.Mixin
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.BaseNoteMixin
     :summary:
     ```
 
-* - {py:obj}`Attribute <trilium_alchemy.core.attribute.Attribute>`
+* - {py:obj}`BaseAttribute <trilium_alchemy.core.attribute.BaseAttribute>`
   - {py:obj}`attribute <trilium_alchemy.core.attribute>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.attribute.Attribute
+  - ```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute
     :summary:
     ```
 
@@ -82,9 +82,9 @@ trilium_alchemy.core.exceptions
     :summary:
     ```
 
-* - {py:obj}`Entity <trilium_alchemy.core.entity.Entity>`
+* - {py:obj}`BaseEntity <trilium_alchemy.core.entity.BaseEntity>`
   - {py:obj}`entity <trilium_alchemy.core.entity>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.entity.Entity
+  - ```{autodoc2-docstring} trilium_alchemy.core.entity.BaseEntity
     :summary:
     ```
 
@@ -207,7 +207,7 @@ trilium_alchemy.core.exceptions
 
 ````{py:property} dirty_set
 :canonical: trilium_alchemy.core.Session.dirty_set
-:type: set[trilium_alchemy.core.entity.Entity]
+:type: set[trilium_alchemy.core.entity.BaseEntity]
 
 ```{autodoc2-docstring} trilium_alchemy.core.Session.dirty_set
 ```
@@ -216,7 +216,7 @@ trilium_alchemy.core.exceptions
 
 ````{py:property} dirty_map
 :canonical: trilium_alchemy.core.Session.dirty_map
-:type: dict[trilium_alchemy.core.entity.types.State, set[trilium_alchemy.core.entity.Entity]]
+:type: dict[trilium_alchemy.core.entity.types.State, set[trilium_alchemy.core.entity.BaseEntity]]
 
 ```{autodoc2-docstring} trilium_alchemy.core.Session.dirty_map
 ```
@@ -241,7 +241,7 @@ trilium_alchemy.core.exceptions
 
 ````
 
-````{py:method} flush(entities: collections.abc.Iterable[trilium_alchemy.core.entity.Entity] | None = None)
+````{py:method} flush(entities: collections.abc.Iterable[trilium_alchemy.core.entity.BaseEntity] | None = None)
 :canonical: trilium_alchemy.core.Session.flush
 ```{autodoc2-docstring} trilium_alchemy.core.Session.flush
 ```
