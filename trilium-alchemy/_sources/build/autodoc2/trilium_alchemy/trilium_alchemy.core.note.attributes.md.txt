@@ -34,6 +34,36 @@
     :summary:
     ```
 
+* - {py:obj}`Labels <trilium_alchemy.core.note.attributes.Labels>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels
+    :summary:
+    ```
+
+* - {py:obj}`OwnedLabels <trilium_alchemy.core.note.attributes.OwnedLabels>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels
+    :summary:
+    ```
+
+* - {py:obj}`InheritedLabels <trilium_alchemy.core.note.attributes.InheritedLabels>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedLabels
+    :summary:
+    ```
+
+* - {py:obj}`Relations <trilium_alchemy.core.note.attributes.Relations>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations
+    :summary:
+    ```
+
+* - {py:obj}`OwnedRelations <trilium_alchemy.core.note.attributes.OwnedRelations>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations
+    :summary:
+    ```
+
+* - {py:obj}`InheritedRelations <trilium_alchemy.core.note.attributes.InheritedRelations>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedRelations
+    :summary:
+    ```
+
 ````
 
 ### Symbols
@@ -47,82 +77,41 @@
 ```{rubric} Bases:
 ```
 {py:obj}`trilium_alchemy.core.note.extension.NoteExtension`\
-{py:obj}`trilium_alchemy.core.note.attributes.NameMap`\
-{py:obj}`collections.abc.MutableSequence`
+{py:obj}`trilium_alchemy.core.note.attributes._filters.BaseFilteredAttributes`\
+{py:obj}`collections.abc.Sequence`
 ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes
 ```
 
-````{py:attribute} owned
+````{py:property} owned
 :canonical: trilium_alchemy.core.note.attributes.Attributes.owned
-:type: trilium_alchemy.core.note.attributes.OwnedAttributes
-   {obj}`ExtensionDescriptor() <trilium_alchemy.core.entity.ExtensionDescriptor>`
+:type: trilium_alchemy.core.note.attributes.attributes.OwnedAttributes
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.owned
 ```
 
 ````
 
-````{py:attribute} inherited
+````{py:property} inherited
 :canonical: trilium_alchemy.core.note.attributes.Attributes.inherited
-:type: trilium_alchemy.core.note.attributes.InheritedAttributes
-   {obj}`ExtensionDescriptor() <trilium_alchemy.core.entity.ExtensionDescriptor>`
+:type: trilium_alchemy.core.note.attributes.attributes.InheritedAttributes
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.inherited
 ```
 
 ````
 
-````{py:method} insert(i: int, value: typing.Any)
-:canonical: trilium_alchemy.core.note.attributes.Attributes.insert
-```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.insert
+````{py:method} get(name: str) -> AttributeT | None
+:canonical: trilium_alchemy.core.note.attributes.Attributes.get
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.get
 ```
 
 ````
 
-````{py:method} append(value)
-:canonical: trilium_alchemy.core.note.attributes.Attributes.append
-*Inherited from:* {obj}`collections.abc.MutableSequence`
-```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.append
-```
-
-````
-
-````{py:method} clear()
-:canonical: trilium_alchemy.core.note.attributes.Attributes.clear
-*Inherited from:* {obj}`collections.abc.MutableSequence`
-```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.clear
-```
-
-````
-
-````{py:method} reverse()
-:canonical: trilium_alchemy.core.note.attributes.Attributes.reverse
-*Inherited from:* {obj}`collections.abc.MutableSequence`
-```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.reverse
-```
-
-````
-
-````{py:method} extend(values)
-:canonical: trilium_alchemy.core.note.attributes.Attributes.extend
-*Inherited from:* {obj}`collections.abc.MutableSequence`
-```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.extend
-```
-
-````
-
-````{py:method} pop(index=-1)
-:canonical: trilium_alchemy.core.note.attributes.Attributes.pop
-*Inherited from:* {obj}`collections.abc.MutableSequence`
-```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.pop
-```
-
-````
-
-````{py:method} remove(value)
-:canonical: trilium_alchemy.core.note.attributes.Attributes.remove
-*Inherited from:* {obj}`collections.abc.MutableSequence`
-```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.remove
+````{py:method} get_all(name: str) -> list[AttributeT]
+:canonical: trilium_alchemy.core.note.attributes.Attributes.get_all
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Attributes.get_all
 ```
 
 ````
@@ -153,14 +142,30 @@
 
 ```{rubric} Bases:
 ```
-{py:obj}`trilium_alchemy.core.note.attributes.NameMap`\
-{py:obj}`trilium_alchemy.core.note.extension.List`
+{py:obj}`trilium_alchemy.core.note.attributes._filters.BaseFilteredAttributes`\
+{py:obj}`trilium_alchemy.core.note.extension.BaseEntityList`
 ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes
 ```
 
-````{py:method} insert(i: int, value: typing.Any)
+````{py:method} get(name: str) -> AttributeT | None
+:canonical: trilium_alchemy.core.note.attributes.OwnedAttributes.get
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.get
+```
+
+````
+
+````{py:method} get_all(name: str) -> list[AttributeT]
+:canonical: trilium_alchemy.core.note.attributes.OwnedAttributes.get_all
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.get_all
+```
+
+````
+
+````{py:method} insert(i: int, value: EntityT)
 :canonical: trilium_alchemy.core.note.attributes.OwnedAttributes.insert
-*Inherited from:* {obj}`trilium_alchemy.core.note.extension.List`
+*Inherited from:* {obj}`trilium_alchemy.core.note.extension.BaseEntityList`
 ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedAttributes.insert
 ```
 
@@ -241,10 +246,26 @@
 ```{rubric} Bases:
 ```
 {py:obj}`trilium_alchemy.core.note.extension.NoteStatefulExtension`\
-{py:obj}`trilium_alchemy.core.note.attributes.NameMap`\
+{py:obj}`trilium_alchemy.core.note.attributes._filters.BaseFilteredAttributes`\
 {py:obj}`collections.abc.Sequence`
 ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedAttributes
 ```
+
+````{py:method} get(name: str) -> AttributeT | None
+:canonical: trilium_alchemy.core.note.attributes.InheritedAttributes.get
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedAttributes.get
+```
+
+````
+
+````{py:method} get_all(name: str) -> list[AttributeT]
+:canonical: trilium_alchemy.core.note.attributes.InheritedAttributes.get_all
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedAttributes.get_all
+```
+
+````
 
 ````{py:method} index(value, start=0, stop=None)
 :canonical: trilium_alchemy.core.note.attributes.InheritedAttributes.index
@@ -258,6 +279,628 @@
 :canonical: trilium_alchemy.core.note.attributes.InheritedAttributes.count
 *Inherited from:* {obj}`collections.abc.Sequence`
 ```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedAttributes.count
+```
+
+````
+
+`````
+
+`````{py:class} Labels(note: trilium_alchemy.core.note.note.Note)
+:canonical: trilium_alchemy.core.note.attributes.Labels
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.attributes._filters.BaseCombinedFilteredAttributes`\
+{py:obj}`trilium_alchemy.core.note.attributes.labels.BaseWriteableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels
+```
+
+````{py:property} owned
+:canonical: trilium_alchemy.core.note.attributes.Labels.owned
+:type: trilium_alchemy.core.note.attributes.labels.OwnedLabels
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels.owned
+```
+
+````
+
+````{py:property} inherited
+:canonical: trilium_alchemy.core.note.attributes.Labels.inherited
+:type: trilium_alchemy.core.note.attributes.labels.InheritedLabels
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels.inherited
+```
+
+````
+
+````{py:method} get(name: str) -> AttributeT | None
+:canonical: trilium_alchemy.core.note.attributes.Labels.get
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels.get
+```
+
+````
+
+````{py:method} get_all(name: str) -> list[AttributeT]
+:canonical: trilium_alchemy.core.note.attributes.Labels.get_all
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels.get_all
+```
+
+````
+
+````{py:method} index(value, start=0, stop=None)
+:canonical: trilium_alchemy.core.note.attributes.Labels.index
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels.index
+```
+
+````
+
+````{py:method} count(value)
+:canonical: trilium_alchemy.core.note.attributes.Labels.count
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels.count
+```
+
+````
+
+````{py:method} set_value(name: str, val: str, inheritable: bool = False)
+:canonical: trilium_alchemy.core.note.attributes.Labels.set_value
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.labels.BaseWriteableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels.set_value
+```
+
+````
+
+````{py:method} set_values(name: str, vals: list[str], inheritable: bool = False)
+:canonical: trilium_alchemy.core.note.attributes.Labels.set_values
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.labels.BaseWriteableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels.set_values
+```
+
+````
+
+````{py:method} append_value(name: str, val: str, inheritable: bool = False)
+:canonical: trilium_alchemy.core.note.attributes.Labels.append_value
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.labels.BaseWriteableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels.append_value
+```
+
+````
+
+````{py:method} get_value(name: str) -> str | None
+:canonical: trilium_alchemy.core.note.attributes.Labels.get_value
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.labels.BaseReadableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels.get_value
+```
+
+````
+
+````{py:method} get_values(name: str) -> list[str]
+:canonical: trilium_alchemy.core.note.attributes.Labels.get_values
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.labels.BaseReadableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Labels.get_values
+```
+
+````
+
+`````
+
+`````{py:class} OwnedLabels(note: trilium_alchemy.core.note.note.Note)
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.attributes._filters.BaseOwnedFilteredAttributes`\
+{py:obj}`trilium_alchemy.core.note.attributes.labels.BaseWriteableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels
+```
+
+````{py:method} insert(i: int, val: AttributeT)
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.insert
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.BaseOwnedFilteredAttributes`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.insert
+```
+
+````
+
+````{py:method} get(name: str) -> AttributeT | None
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.get
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.get
+```
+
+````
+
+````{py:method} get_all(name: str) -> list[AttributeT]
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.get_all
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.get_all
+```
+
+````
+
+````{py:method} append(value)
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.append
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.append
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.clear
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.clear
+```
+
+````
+
+````{py:method} reverse()
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.reverse
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.reverse
+```
+
+````
+
+````{py:method} extend(values)
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.extend
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.extend
+```
+
+````
+
+````{py:method} pop(index=-1)
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.pop
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.pop
+```
+
+````
+
+````{py:method} remove(value)
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.remove
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.remove
+```
+
+````
+
+````{py:method} index(value, start=0, stop=None)
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.index
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.index
+```
+
+````
+
+````{py:method} count(value)
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.count
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.count
+```
+
+````
+
+````{py:method} set_value(name: str, val: str, inheritable: bool = False)
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.set_value
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.labels.BaseWriteableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.set_value
+```
+
+````
+
+````{py:method} set_values(name: str, vals: list[str], inheritable: bool = False)
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.set_values
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.labels.BaseWriteableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.set_values
+```
+
+````
+
+````{py:method} append_value(name: str, val: str, inheritable: bool = False)
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.append_value
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.labels.BaseWriteableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.append_value
+```
+
+````
+
+````{py:method} get_value(name: str) -> str | None
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.get_value
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.labels.BaseReadableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.get_value
+```
+
+````
+
+````{py:method} get_values(name: str) -> list[str]
+:canonical: trilium_alchemy.core.note.attributes.OwnedLabels.get_values
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.labels.BaseReadableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedLabels.get_values
+```
+
+````
+
+`````
+
+`````{py:class} InheritedLabels(note: trilium_alchemy.core.note.note.Note)
+:canonical: trilium_alchemy.core.note.attributes.InheritedLabels
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedLabels.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.attributes._filters.BaseInheritedFilteredAttributes`\
+{py:obj}`trilium_alchemy.core.note.attributes.labels.BaseReadableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedLabels
+```
+
+````{py:method} get(name: str) -> AttributeT | None
+:canonical: trilium_alchemy.core.note.attributes.InheritedLabels.get
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedLabels.get
+```
+
+````
+
+````{py:method} get_all(name: str) -> list[AttributeT]
+:canonical: trilium_alchemy.core.note.attributes.InheritedLabels.get_all
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedLabels.get_all
+```
+
+````
+
+````{py:method} index(value, start=0, stop=None)
+:canonical: trilium_alchemy.core.note.attributes.InheritedLabels.index
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedLabels.index
+```
+
+````
+
+````{py:method} count(value)
+:canonical: trilium_alchemy.core.note.attributes.InheritedLabels.count
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedLabels.count
+```
+
+````
+
+````{py:method} get_value(name: str) -> str | None
+:canonical: trilium_alchemy.core.note.attributes.InheritedLabels.get_value
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.labels.BaseReadableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedLabels.get_value
+```
+
+````
+
+````{py:method} get_values(name: str) -> list[str]
+:canonical: trilium_alchemy.core.note.attributes.InheritedLabels.get_values
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.labels.BaseReadableLabelMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedLabels.get_values
+```
+
+````
+
+`````
+
+`````{py:class} Relations(note: trilium_alchemy.core.note.note.Note)
+:canonical: trilium_alchemy.core.note.attributes.Relations
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.attributes._filters.BaseCombinedFilteredAttributes`\
+{py:obj}`trilium_alchemy.core.note.attributes.relations.BaseWriteableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations
+```
+
+````{py:property} owned
+:canonical: trilium_alchemy.core.note.attributes.Relations.owned
+:type: trilium_alchemy.core.note.attributes.relations.OwnedRelations
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations.owned
+```
+
+````
+
+````{py:property} inherited
+:canonical: trilium_alchemy.core.note.attributes.Relations.inherited
+:type: trilium_alchemy.core.note.attributes.relations.InheritedRelations
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations.inherited
+```
+
+````
+
+````{py:method} get(name: str) -> AttributeT | None
+:canonical: trilium_alchemy.core.note.attributes.Relations.get
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations.get
+```
+
+````
+
+````{py:method} get_all(name: str) -> list[AttributeT]
+:canonical: trilium_alchemy.core.note.attributes.Relations.get_all
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations.get_all
+```
+
+````
+
+````{py:method} index(value, start=0, stop=None)
+:canonical: trilium_alchemy.core.note.attributes.Relations.index
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations.index
+```
+
+````
+
+````{py:method} count(value)
+:canonical: trilium_alchemy.core.note.attributes.Relations.count
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations.count
+```
+
+````
+
+````{py:method} set_target(name: str, val: trilium_alchemy.core.note.note.Note, inheritable: bool = False)
+:canonical: trilium_alchemy.core.note.attributes.Relations.set_target
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.relations.BaseWriteableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations.set_target
+```
+
+````
+
+````{py:method} set_targets(name: str, vals: list[trilium_alchemy.core.note.note.Note], inheritable: bool = False)
+:canonical: trilium_alchemy.core.note.attributes.Relations.set_targets
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.relations.BaseWriteableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations.set_targets
+```
+
+````
+
+````{py:method} append_target(name: str, val: trilium_alchemy.core.note.note.Note, inheritable: bool = False)
+:canonical: trilium_alchemy.core.note.attributes.Relations.append_target
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.relations.BaseWriteableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations.append_target
+```
+
+````
+
+````{py:method} get_target(name: str) -> trilium_alchemy.core.attribute.relation.Relation | None
+:canonical: trilium_alchemy.core.note.attributes.Relations.get_target
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.relations.BaseReadableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations.get_target
+```
+
+````
+
+````{py:method} get_targets(name: str) -> list[trilium_alchemy.core.note.note.Note]
+:canonical: trilium_alchemy.core.note.attributes.Relations.get_targets
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.relations.BaseReadableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.Relations.get_targets
+```
+
+````
+
+`````
+
+`````{py:class} OwnedRelations(note: trilium_alchemy.core.note.note.Note)
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.attributes._filters.BaseOwnedFilteredAttributes`\
+{py:obj}`trilium_alchemy.core.note.attributes.relations.BaseWriteableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations
+```
+
+````{py:method} insert(i: int, val: AttributeT)
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.insert
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.BaseOwnedFilteredAttributes`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.insert
+```
+
+````
+
+````{py:method} get(name: str) -> AttributeT | None
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.get
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.get
+```
+
+````
+
+````{py:method} get_all(name: str) -> list[AttributeT]
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.get_all
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.get_all
+```
+
+````
+
+````{py:method} append(value)
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.append
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.append
+```
+
+````
+
+````{py:method} clear()
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.clear
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.clear
+```
+
+````
+
+````{py:method} reverse()
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.reverse
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.reverse
+```
+
+````
+
+````{py:method} extend(values)
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.extend
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.extend
+```
+
+````
+
+````{py:method} pop(index=-1)
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.pop
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.pop
+```
+
+````
+
+````{py:method} remove(value)
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.remove
+*Inherited from:* {obj}`collections.abc.MutableSequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.remove
+```
+
+````
+
+````{py:method} index(value, start=0, stop=None)
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.index
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.index
+```
+
+````
+
+````{py:method} count(value)
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.count
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.count
+```
+
+````
+
+````{py:method} set_target(name: str, val: trilium_alchemy.core.note.note.Note, inheritable: bool = False)
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.set_target
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.relations.BaseWriteableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.set_target
+```
+
+````
+
+````{py:method} set_targets(name: str, vals: list[trilium_alchemy.core.note.note.Note], inheritable: bool = False)
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.set_targets
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.relations.BaseWriteableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.set_targets
+```
+
+````
+
+````{py:method} append_target(name: str, val: trilium_alchemy.core.note.note.Note, inheritable: bool = False)
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.append_target
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.relations.BaseWriteableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.append_target
+```
+
+````
+
+````{py:method} get_target(name: str) -> trilium_alchemy.core.attribute.relation.Relation | None
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.get_target
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.relations.BaseReadableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.get_target
+```
+
+````
+
+````{py:method} get_targets(name: str) -> list[trilium_alchemy.core.note.note.Note]
+:canonical: trilium_alchemy.core.note.attributes.OwnedRelations.get_targets
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.relations.BaseReadableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.OwnedRelations.get_targets
+```
+
+````
+
+`````
+
+`````{py:class} InheritedRelations(note: trilium_alchemy.core.note.note.Note)
+:canonical: trilium_alchemy.core.note.attributes.InheritedRelations
+
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedRelations.__init__
+```
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.core.note.attributes._filters.BaseInheritedFilteredAttributes`\
+{py:obj}`trilium_alchemy.core.note.attributes.relations.BaseReadableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedRelations
+```
+
+````{py:method} get(name: str) -> AttributeT | None
+:canonical: trilium_alchemy.core.note.attributes.InheritedRelations.get
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedRelations.get
+```
+
+````
+
+````{py:method} get_all(name: str) -> list[AttributeT]
+:canonical: trilium_alchemy.core.note.attributes.InheritedRelations.get_all
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes._filters.AttributeListMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedRelations.get_all
+```
+
+````
+
+````{py:method} index(value, start=0, stop=None)
+:canonical: trilium_alchemy.core.note.attributes.InheritedRelations.index
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedRelations.index
+```
+
+````
+
+````{py:method} count(value)
+:canonical: trilium_alchemy.core.note.attributes.InheritedRelations.count
+*Inherited from:* {obj}`collections.abc.Sequence`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedRelations.count
+```
+
+````
+
+````{py:method} get_target(name: str) -> trilium_alchemy.core.attribute.relation.Relation | None
+:canonical: trilium_alchemy.core.note.attributes.InheritedRelations.get_target
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.relations.BaseReadableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedRelations.get_target
+```
+
+````
+
+````{py:method} get_targets(name: str) -> list[trilium_alchemy.core.note.note.Note]
+:canonical: trilium_alchemy.core.note.attributes.InheritedRelations.get_targets
+*Inherited from:* {obj}`trilium_alchemy.core.note.attributes.relations.BaseReadableRelationMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.attributes.InheritedRelations.get_targets
 ```
 
 ````

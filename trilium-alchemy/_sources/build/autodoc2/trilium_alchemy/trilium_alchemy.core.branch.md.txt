@@ -28,7 +28,7 @@
 
 ### Symbols
 
-`````{py:class} Branch(parent: trilium_alchemy.core.note.Note = None, child: trilium_alchemy.core.note.Note = None, prefix: str = '', expanded: bool = False, session: trilium_alchemy.core.session.Session = None, **kwargs)
+`````{py:class} Branch(parent: trilium_alchemy.core.note.note.Note = None, child: trilium_alchemy.core.note.note.Note = None, prefix: str = '', expanded: bool = False, session: trilium_alchemy.core.session.Session = None, **kwargs)
 :canonical: trilium_alchemy.core.branch.Branch
 
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.__init__
@@ -44,70 +44,63 @@
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch
 ```
 
-````{py:attribute} branch_id
+````{py:property} branch_id
 :canonical: trilium_alchemy.core.branch.Branch.branch_id
-:type: str
-   {obj}`EntityIdDescriptor() <trilium_alchemy.core.entity.EntityIdDescriptor>`
+:type: str | None
 
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.branch_id
 ```
 
 ````
 
-````{py:attribute} parent
+````{py:property} parent
 :canonical: trilium_alchemy.core.branch.Branch.parent
-:type: trilium_alchemy.core.note.Note
-   {obj}`WriteOnceDescriptor() <trilium_alchemy.core.entity.WriteOnceDescriptor>`
+:type: trilium_alchemy.core.note.note.Note | None
 
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.parent
 ```
 
 ````
 
-````{py:attribute} child
+````{py:property} child
 :canonical: trilium_alchemy.core.branch.Branch.child
-:type: trilium_alchemy.core.note.Note
-   {obj}`WriteOnceDescriptor() <trilium_alchemy.core.entity.WriteOnceDescriptor>`
+:type: trilium_alchemy.core.note.note.Note | None
 
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.child
 ```
 
 ````
 
-````{py:attribute} prefix
+````{py:property} prefix
 :canonical: trilium_alchemy.core.branch.Branch.prefix
 :type: str
-   {obj}`FieldDescriptor() <trilium_alchemy.core.entity.FieldDescriptor>`
 
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.prefix
 ```
 
 ````
 
-````{py:attribute} expanded
+````{py:property} expanded
 :canonical: trilium_alchemy.core.branch.Branch.expanded
 :type: bool
-   {obj}`FieldDescriptor() <trilium_alchemy.core.entity.FieldDescriptor>`
 
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.expanded
 ```
 
 ````
 
-````{py:attribute} utc_date_modified
+````{py:property} utc_date_modified
 :canonical: trilium_alchemy.core.branch.Branch.utc_date_modified
 :type: str
-   {obj}`ReadOnlyFieldDescriptor() <trilium_alchemy.core.entity.ReadOnlyFieldDescriptor>`
 
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.utc_date_modified
 ```
 
 ````
 
-````{py:attribute} position
+````{py:property} position
 :canonical: trilium_alchemy.core.branch.Branch.position
 :type: int
-   {obj}`ReadOnlyDescriptor() <trilium_alchemy.core.entity.ReadOnlyDescriptor>`
 
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.position
 ```
@@ -174,6 +167,14 @@
 :canonical: trilium_alchemy.core.branch.Branch.delete
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.delete
+```
+
+````
+
+````{py:method} refresh()
+:canonical: trilium_alchemy.core.branch.Branch.refresh
+*Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
+```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.refresh
 ```
 
 ````

@@ -68,7 +68,7 @@
 
 ### Symbols
 
-`````{py:class} BaseEntity(*, entity_id: str | None = None, session: trilium_alchemy.core.session.Session | None = None, model_backing: trilium_alchemy.core.entity.entity.ModelT | None = None, create: bool | None = None)
+`````{py:class} BaseEntity(*, entity_id: str | None = None, session: trilium_alchemy.core.session.Session | None = None, model_backing: ModelT | None = None, create: bool | None = None)
 :canonical: trilium_alchemy.core.entity.BaseEntity
 
 ```{autodoc2-docstring} trilium_alchemy.core.entity.BaseEntity.__init__
@@ -78,8 +78,7 @@
 ```
 {py:obj}`abc.ABC`\
 {py:obj}`trilium_alchemy.core.session.SessionContainer`\
-{py:obj}`trilium_alchemy.core.entity.model.ModelContainer`\
-{py:obj}`typing.Generic`
+{py:obj}`trilium_alchemy.core.entity.model.ModelContainer`
 ```{rubric} Aliases:
 ```
 `trilium_alchemy.BaseEntity`\
@@ -140,6 +139,13 @@
 ````{py:method} delete() -> None
 :canonical: trilium_alchemy.core.entity.BaseEntity.delete
 ```{autodoc2-docstring} trilium_alchemy.core.entity.BaseEntity.delete
+```
+
+````
+
+````{py:method} refresh()
+:canonical: trilium_alchemy.core.entity.BaseEntity.refresh
+```{autodoc2-docstring} trilium_alchemy.core.entity.BaseEntity.refresh
 ```
 
 ````

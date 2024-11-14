@@ -39,12 +39,6 @@ trilium_alchemy.sync
     :summary:
     ```
 
-* - {py:obj}`BaseNoteMixin <trilium_alchemy.core.note.BaseNoteMixin>`
-  - {py:obj}`core.note <trilium_alchemy.core.note>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.note.BaseNoteMixin
-    :summary:
-    ```
-
 * - {py:obj}`BaseAttribute <trilium_alchemy.core.attribute.BaseAttribute>`
   - {py:obj}`core.attribute <trilium_alchemy.core.attribute>`
   - ```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute
@@ -66,6 +60,18 @@ trilium_alchemy.sync
 * - {py:obj}`Branch <trilium_alchemy.core.branch.Branch>`
   - {py:obj}`core.branch <trilium_alchemy.core.branch>`
   - ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch
+    :summary:
+    ```
+
+* - {py:obj}`BaseDeclarativeNote <trilium_alchemy.core.declarative.base.BaseDeclarativeNote>`
+  - {py:obj}`core.declarative.base <trilium_alchemy.core.declarative.base>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.base.BaseDeclarativeNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseDeclarativeMixin <trilium_alchemy.core.declarative.base.BaseDeclarativeMixin>`
+  - {py:obj}`core.declarative.base <trilium_alchemy.core.declarative.base>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.base.BaseDeclarativeMixin
     :summary:
     ```
 
@@ -117,75 +123,75 @@ trilium_alchemy.sync
     :summary:
     ```
 
-* - {py:obj}`Template <trilium_alchemy.ext.helpers.Template>`
+* - {py:obj}`BaseTemplateNote <trilium_alchemy.ext.helpers.BaseTemplateNote>`
   - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.Template
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseTemplateNote
     :summary:
     ```
 
-* - {py:obj}`WorkspaceTemplate <trilium_alchemy.ext.helpers.WorkspaceTemplate>`
+* - {py:obj}`BaseWorkspaceTemplateNote <trilium_alchemy.ext.helpers.BaseWorkspaceTemplateNote>`
   - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.WorkspaceTemplate
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseWorkspaceTemplateNote
     :summary:
     ```
 
-* - {py:obj}`Workspace <trilium_alchemy.ext.helpers.Workspace>`
+* - {py:obj}`BaseWorkspaceNote <trilium_alchemy.ext.helpers.BaseWorkspaceNote>`
   - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.Workspace
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseWorkspaceNote
     :summary:
     ```
 
-* - {py:obj}`AppCss <trilium_alchemy.ext.helpers.AppCss>`
+* - {py:obj}`BaseAppCssNote <trilium_alchemy.ext.helpers.BaseAppCssNote>`
   - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.AppCss
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseAppCssNote
     :summary:
     ```
 
-* - {py:obj}`Theme <trilium_alchemy.ext.helpers.Theme>`
+* - {py:obj}`BaseThemeNote <trilium_alchemy.ext.helpers.BaseThemeNote>`
   - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.Theme
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseThemeNote
     :summary:
     ```
 
-* - {py:obj}`Widget <trilium_alchemy.ext.helpers.Widget>`
+* - {py:obj}`BaseWidgetNote <trilium_alchemy.ext.helpers.BaseWidgetNote>`
   - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.Widget
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseWidgetNote
     :summary:
     ```
 
-* - {py:obj}`FrontendScript <trilium_alchemy.ext.helpers.FrontendScript>`
+* - {py:obj}`BaseFrontendScriptNote <trilium_alchemy.ext.helpers.BaseFrontendScriptNote>`
   - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.FrontendScript
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseFrontendScriptNote
     :summary:
     ```
 
-* - {py:obj}`BackendScript <trilium_alchemy.ext.helpers.BackendScript>`
+* - {py:obj}`BaseBackendScriptNote <trilium_alchemy.ext.helpers.BaseBackendScriptNote>`
   - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BackendScript
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseBackendScriptNote
     :summary:
     ```
 
-* - {py:obj}`BaseSystem <trilium_alchemy.ext.helpers.BaseSystem>`
+* - {py:obj}`BaseSystemNote <trilium_alchemy.ext.helpers.BaseSystemNote>`
   - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystem
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseSystemNote
     :summary:
     ```
 
-* - {py:obj}`BaseWorkspaceRoot <trilium_alchemy.ext.helpers.BaseWorkspaceRoot>`
+* - {py:obj}`BaseWorkspaceRootNote <trilium_alchemy.ext.helpers.BaseWorkspaceRootNote>`
   - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseWorkspaceRoot
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseWorkspaceRootNote
     :summary:
     ```
 
-* - {py:obj}`BaseRootSystem <trilium_alchemy.ext.helpers.BaseRootSystem>`
+* - {py:obj}`BaseRootSystemNote <trilium_alchemy.ext.helpers.BaseRootSystemNote>`
   - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystem
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootSystemNote
     :summary:
     ```
 
-* - {py:obj}`BaseRoot <trilium_alchemy.ext.helpers.BaseRoot>`
+* - {py:obj}`BaseRootNote <trilium_alchemy.ext.helpers.BaseRootNote>`
   - {py:obj}`ext.helpers <trilium_alchemy.ext.helpers>`
-  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRoot
+  - ```{autodoc2-docstring} trilium_alchemy.ext.helpers.BaseRootNote
     :summary:
     ```
 
@@ -202,39 +208,39 @@ trilium_alchemy.sync
 :class: autosummary longtable
 :align: left
 
-* - {py:obj}`label <trilium_alchemy.core.declarative.label>`
-  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.label
+* - {py:obj}`label <trilium_alchemy.core.declarative.decorators.label>`
+  - {py:obj}`core.declarative.decorators <trilium_alchemy.core.declarative.decorators>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.decorators.label
     :summary:
     ```
 
-* - {py:obj}`relation <trilium_alchemy.core.declarative.relation>`
-  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.relation
+* - {py:obj}`relation <trilium_alchemy.core.declarative.decorators.relation>`
+  - {py:obj}`core.declarative.decorators <trilium_alchemy.core.declarative.decorators>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.decorators.relation
     :summary:
     ```
 
-* - {py:obj}`label_def <trilium_alchemy.core.declarative.label_def>`
-  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.label_def
+* - {py:obj}`label_def <trilium_alchemy.core.declarative.decorators.label_def>`
+  - {py:obj}`core.declarative.decorators <trilium_alchemy.core.declarative.decorators>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.decorators.label_def
     :summary:
     ```
 
-* - {py:obj}`relation_def <trilium_alchemy.core.declarative.relation_def>`
-  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.relation_def
+* - {py:obj}`relation_def <trilium_alchemy.core.declarative.decorators.relation_def>`
+  - {py:obj}`core.declarative.decorators <trilium_alchemy.core.declarative.decorators>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.decorators.relation_def
     :summary:
     ```
 
-* - {py:obj}`children <trilium_alchemy.core.declarative.children>`
-  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.children
+* - {py:obj}`children <trilium_alchemy.core.declarative.decorators.children>`
+  - {py:obj}`core.declarative.decorators <trilium_alchemy.core.declarative.decorators>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.decorators.children
     :summary:
     ```
 
-* - {py:obj}`child <trilium_alchemy.core.declarative.child>`
-  - {py:obj}`core.declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.child
+* - {py:obj}`child <trilium_alchemy.core.declarative.decorators.child>`
+  - {py:obj}`core.declarative.decorators <trilium_alchemy.core.declarative.decorators>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.decorators.child
     :summary:
     ```
 

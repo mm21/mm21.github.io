@@ -52,12 +52,6 @@ trilium_alchemy.core.exceptions
     :summary:
     ```
 
-* - {py:obj}`BaseNoteMixin <trilium_alchemy.core.note.BaseNoteMixin>`
-  - {py:obj}`note <trilium_alchemy.core.note>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.note.BaseNoteMixin
-    :summary:
-    ```
-
 * - {py:obj}`BaseAttribute <trilium_alchemy.core.attribute.BaseAttribute>`
   - {py:obj}`attribute <trilium_alchemy.core.attribute>`
   - ```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute
@@ -79,6 +73,18 @@ trilium_alchemy.core.exceptions
 * - {py:obj}`Branch <trilium_alchemy.core.branch.Branch>`
   - {py:obj}`branch <trilium_alchemy.core.branch>`
   - ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch
+    :summary:
+    ```
+
+* - {py:obj}`BaseDeclarativeNote <trilium_alchemy.core.declarative.base.BaseDeclarativeNote>`
+  - {py:obj}`declarative.base <trilium_alchemy.core.declarative.base>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.base.BaseDeclarativeNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseDeclarativeMixin <trilium_alchemy.core.declarative.base.BaseDeclarativeMixin>`
+  - {py:obj}`declarative.base <trilium_alchemy.core.declarative.base>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.base.BaseDeclarativeMixin
     :summary:
     ```
 
@@ -107,39 +113,39 @@ trilium_alchemy.core.exceptions
 :class: autosummary longtable
 :align: left
 
-* - {py:obj}`label <trilium_alchemy.core.declarative.label>`
-  - {py:obj}`declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.label
+* - {py:obj}`label <trilium_alchemy.core.declarative.decorators.label>`
+  - {py:obj}`declarative.decorators <trilium_alchemy.core.declarative.decorators>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.decorators.label
     :summary:
     ```
 
-* - {py:obj}`relation <trilium_alchemy.core.declarative.relation>`
-  - {py:obj}`declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.relation
+* - {py:obj}`relation <trilium_alchemy.core.declarative.decorators.relation>`
+  - {py:obj}`declarative.decorators <trilium_alchemy.core.declarative.decorators>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.decorators.relation
     :summary:
     ```
 
-* - {py:obj}`label_def <trilium_alchemy.core.declarative.label_def>`
-  - {py:obj}`declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.label_def
+* - {py:obj}`label_def <trilium_alchemy.core.declarative.decorators.label_def>`
+  - {py:obj}`declarative.decorators <trilium_alchemy.core.declarative.decorators>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.decorators.label_def
     :summary:
     ```
 
-* - {py:obj}`relation_def <trilium_alchemy.core.declarative.relation_def>`
-  - {py:obj}`declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.relation_def
+* - {py:obj}`relation_def <trilium_alchemy.core.declarative.decorators.relation_def>`
+  - {py:obj}`declarative.decorators <trilium_alchemy.core.declarative.decorators>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.decorators.relation_def
     :summary:
     ```
 
-* - {py:obj}`children <trilium_alchemy.core.declarative.children>`
-  - {py:obj}`declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.children
+* - {py:obj}`children <trilium_alchemy.core.declarative.decorators.children>`
+  - {py:obj}`declarative.decorators <trilium_alchemy.core.declarative.decorators>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.decorators.children
     :summary:
     ```
 
-* - {py:obj}`child <trilium_alchemy.core.declarative.child>`
-  - {py:obj}`declarative <trilium_alchemy.core.declarative>`
-  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.child
+* - {py:obj}`child <trilium_alchemy.core.declarative.decorators.child>`
+  - {py:obj}`declarative.decorators <trilium_alchemy.core.declarative.decorators>`
+  - ```{autodoc2-docstring} trilium_alchemy.core.declarative.decorators.child
     :summary:
     ```
 
@@ -189,7 +195,7 @@ trilium_alchemy.core.exceptions
 
 ````{py:property} root
 :canonical: trilium_alchemy.core.Session.root
-:type: trilium_alchemy.core.note.Note
+:type: trilium_alchemy.core.note.note.Note
 
 ```{autodoc2-docstring} trilium_alchemy.core.Session.root
 ```
@@ -207,7 +213,7 @@ trilium_alchemy.core.exceptions
 
 ````{py:property} dirty_set
 :canonical: trilium_alchemy.core.Session.dirty_set
-:type: set[trilium_alchemy.core.entity.BaseEntity]
+:type: set[trilium_alchemy.core.entity.entity.BaseEntity]
 
 ```{autodoc2-docstring} trilium_alchemy.core.Session.dirty_set
 ```
@@ -216,7 +222,7 @@ trilium_alchemy.core.exceptions
 
 ````{py:property} dirty_map
 :canonical: trilium_alchemy.core.Session.dirty_map
-:type: dict[trilium_alchemy.core.entity.types.State, set[trilium_alchemy.core.entity.BaseEntity]]
+:type: dict[trilium_alchemy.core.entity.types.State, set[trilium_alchemy.core.entity.entity.BaseEntity]]
 
 ```{autodoc2-docstring} trilium_alchemy.core.Session.dirty_map
 ```
@@ -241,14 +247,14 @@ trilium_alchemy.core.exceptions
 
 ````
 
-````{py:method} flush(entities: collections.abc.Iterable[trilium_alchemy.core.entity.BaseEntity] | None = None)
+````{py:method} flush(entities: collections.abc.Iterable[trilium_alchemy.core.entity.entity.BaseEntity] | None = None)
 :canonical: trilium_alchemy.core.Session.flush
 ```{autodoc2-docstring} trilium_alchemy.core.Session.flush
 ```
 
 ````
 
-````{py:method} search(query: str, order_by: str | None = None, order_direction: typing.Literal[asc, desc] | None = None, limit: int | None = None, fast_search: bool = False, include_archived_notes: bool = False, ancestor_note: trilium_alchemy.core.note.Note | None = None, ancestor_depth: int | None = None, debug: bool = False) -> list[trilium_alchemy.core.note.Note]
+````{py:method} search(query: str, order_by: str | None = None, order_direction: typing.Literal[asc, desc] | None = None, limit: int | None = None, fast_search: bool = False, include_archived_notes: bool = False, ancestor_note: trilium_alchemy.core.note.note.Note | None = None, ancestor_depth: int | None = None, debug: bool = False) -> list[trilium_alchemy.core.note.note.Note]
 :canonical: trilium_alchemy.core.Session.search
 ```{autodoc2-docstring} trilium_alchemy.core.Session.search
 ```
@@ -262,56 +268,42 @@ trilium_alchemy.core.exceptions
 
 ````
 
-````{py:method} export_zip(note: trilium_alchemy.core.note.Note, dest_path: str, export_format: typing.Literal[html, markdown] = 'html')
-:canonical: trilium_alchemy.core.Session.export_zip
-```{autodoc2-docstring} trilium_alchemy.core.Session.export_zip
-```
-
-````
-
-````{py:method} import_zip(note: trilium_alchemy.core.note.Note, src_path: str)
-:canonical: trilium_alchemy.core.Session.import_zip
-```{autodoc2-docstring} trilium_alchemy.core.Session.import_zip
-```
-
-````
-
-````{py:method} get_today_note() -> trilium_alchemy.core.note.Note
+````{py:method} get_today_note() -> trilium_alchemy.core.note.note.Note
 :canonical: trilium_alchemy.core.Session.get_today_note
 ```{autodoc2-docstring} trilium_alchemy.core.Session.get_today_note
 ```
 
 ````
 
-````{py:method} get_day_note(date: datetime.date) -> trilium_alchemy.core.note.Note
+````{py:method} get_day_note(date: datetime.date) -> trilium_alchemy.core.note.note.Note
 :canonical: trilium_alchemy.core.Session.get_day_note
 ```{autodoc2-docstring} trilium_alchemy.core.Session.get_day_note
 ```
 
 ````
 
-````{py:method} get_week_note(date: datetime.date) -> trilium_alchemy.core.note.Note
+````{py:method} get_week_note(date: datetime.date) -> trilium_alchemy.core.note.note.Note
 :canonical: trilium_alchemy.core.Session.get_week_note
 ```{autodoc2-docstring} trilium_alchemy.core.Session.get_week_note
 ```
 
 ````
 
-````{py:method} get_month_note(month: str) -> trilium_alchemy.core.note.Note
+````{py:method} get_month_note(month: str) -> trilium_alchemy.core.note.note.Note
 :canonical: trilium_alchemy.core.Session.get_month_note
 ```{autodoc2-docstring} trilium_alchemy.core.Session.get_month_note
 ```
 
 ````
 
-````{py:method} get_year_note(year: str) -> trilium_alchemy.core.note.Note
+````{py:method} get_year_note(year: str) -> trilium_alchemy.core.note.note.Note
 :canonical: trilium_alchemy.core.Session.get_year_note
 ```{autodoc2-docstring} trilium_alchemy.core.Session.get_year_note
 ```
 
 ````
 
-````{py:method} get_inbox_note(date: datetime.date) -> trilium_alchemy.core.note.Note
+````{py:method} get_inbox_note(date: datetime.date) -> trilium_alchemy.core.note.note.Note
 :canonical: trilium_alchemy.core.Session.get_inbox_note
 ```{autodoc2-docstring} trilium_alchemy.core.Session.get_inbox_note
 ```
@@ -325,7 +317,7 @@ trilium_alchemy.core.exceptions
 
 ````
 
-````{py:method} refresh_note_ordering(note: trilium_alchemy.core.note.Note) -> None
+````{py:method} refresh_note_ordering(note: trilium_alchemy.core.note.note.Note) -> None
 :canonical: trilium_alchemy.core.Session.refresh_note_ordering
 ```{autodoc2-docstring} trilium_alchemy.core.Session.refresh_note_ordering
 ```

@@ -33,7 +33,7 @@
 
 ### Symbols
 
-````{py:class} Content(entity: trilium_alchemy.core.entity.BaseEntity)
+`````{py:class} Content(entity: trilium_alchemy.core.entity.BaseEntity)
 :canonical: trilium_alchemy.core.note.content.Content
 
 ```{autodoc2-docstring} trilium_alchemy.core.note.content.Content.__init__
@@ -45,7 +45,16 @@
 ```{autodoc2-docstring} trilium_alchemy.core.note.content.Content
 ```
 
+````{py:property} blob_id
+:canonical: trilium_alchemy.core.note.content.Content.blob_id
+:type: str
+
+```{autodoc2-docstring} trilium_alchemy.core.note.content.Content.blob_id
+```
+
 ````
+
+`````
 
 ````{py:class} ContentDescriptor(attr: str)
 :canonical: trilium_alchemy.core.note.content.ContentDescriptor
