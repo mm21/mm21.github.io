@@ -317,7 +317,7 @@ trilium_alchemy.core.exceptions
 
 ````
 
-````{py:method} refresh_note_ordering(note: trilium_alchemy.core.note.note.Note) -> None
+````{py:method} refresh_note_ordering(note: trilium_alchemy.core.note.note.Note)
 :canonical: trilium_alchemy.core.Session.refresh_note_ordering
 ```{autodoc2-docstring} trilium_alchemy.core.Session.refresh_note_ordering
 ```

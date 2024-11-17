@@ -122,21 +122,21 @@
 
 ````
 
-````{py:method} flush() -> None
+````{py:method} flush()
 :canonical: trilium_alchemy.core.entity.BaseEntity.flush
 ```{autodoc2-docstring} trilium_alchemy.core.entity.BaseEntity.flush
 ```
 
 ````
 
-````{py:method} invalidate() -> None
+````{py:method} invalidate()
 :canonical: trilium_alchemy.core.entity.BaseEntity.invalidate
 ```{autodoc2-docstring} trilium_alchemy.core.entity.BaseEntity.invalidate
 ```
 
 ````
 
-````{py:method} delete() -> None
+````{py:method} delete()
 :canonical: trilium_alchemy.core.entity.BaseEntity.delete
 ```{autodoc2-docstring} trilium_alchemy.core.entity.BaseEntity.delete
 ```

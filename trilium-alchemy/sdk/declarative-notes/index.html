@@ -7,7 +7,7 @@
         <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/sdk/declarative-notes/index.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2023.09.10 -->
-        <title>Declarative notes: Notes as code - TriliumAlchemy 0.3.0</title>
+        <title>Declarative notes: Notes as code - TriliumAlchemy 0.4.0</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -126,7 +126,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">TriliumAlchemy 0.3.0</div></a>
+      <a href="../../index.html"><div class="brand">TriliumAlchemy 0.4.0</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -153,7 +153,7 @@
     <img class="sidebar-logo only-dark" src="../../_static/logo-dark.svg" alt="Dark Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">TriliumAlchemy 0.3.0</span>
+  <span class="sidebar-brand-text">TriliumAlchemy 0.4.0</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -211,12 +211,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.exceptions.html"><code class="docutils literal notranslate"><span class="pre">exceptions</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.ext.html"><code class="docutils literal notranslate"><span class="pre">ext</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of ext</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.ext.types.html"><code class="docutils literal notranslate"><span class="pre">types</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.ext.helpers.html"><code class="docutils literal notranslate"><span class="pre">helpers</span></code></a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.lib.html"><code class="docutils literal notranslate"><span class="pre">lib</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of lib</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.lib.note_types.html"><code class="docutils literal notranslate"><span class="pre">note_types</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.lib.extension_types.html"><code class="docutils literal notranslate"><span class="pre">extension_types</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.lib.system_types.html"><code class="docutils literal notranslate"><span class="pre">system_types</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.sync.html"><code class="docutils literal notranslate"><span class="pre">sync</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.tools.html"><code class="docutils literal notranslate"><span class="pre">tools</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -268,67 +269,14 @@
 <p>One of the goals of this project is to enable building, maintaining, and sharing complex note hierarchies using Python. This approach is declarative in nature, inspired by SQLAlchemy’s <a class="reference external" href="https://docs.sqlalchemy.org/en/20/orm/mapping_styles.html#orm-declarative-mapping">declarative mapping</a> approach.</p>
 <p>The general idea of declarative programming is that you specify the desired end state, not the steps needed to reach it.</p>
 <p>For a fully-featured example of a note hierarchy designed using this approach, see <a class="reference internal" href="event-tracker.html#event-tracker"><span class="std std-ref">Example: Event tracker</span></a>.</p>
-<section id="note-classes">
-<h2>Note classes<a class="headerlink" href="#note-classes" title="Link to this heading">¶</a></h2>
+<section id="note-subclasses">
+<h2>Note subclasses<a class="headerlink" href="#note-subclasses" title="Link to this heading">¶</a></h2>
 <p>The basic technique is to subclass <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeNote" title="trilium_alchemy.core.declarative.base.BaseDeclarativeNote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeNote</span></code></a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="k">pass</span>
 </pre></div>
 </div>
 <p>When you subclass <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeNote" title="trilium_alchemy.core.declarative.base.BaseDeclarativeNote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeNote</span></code></a>, you’re saying that attributes and child branches will be maintained by the class definition itself. Therefore any existing attributes or children will be deleted or modified to reflect the class.</p>
-<section id="icon-helper">
-<h3>Icon helper<a class="headerlink" href="#icon-helper" title="Link to this heading">¶</a></h3>
-<p>To set an icon (label <code class="docutils literal notranslate"><span class="pre">#iconClass</span></code>), simply set the <code class="docutils literal notranslate"><span class="pre">icon</span></code> attribute:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyTask</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
-    <span class="n">icon</span> <span class="o">=</span> <span class="s2">&quot;bx bx-task&quot;</span>
-</pre></div>
-</div>
-</section>
-</section>
-<section id="adding-labels">
-<h2>Adding labels<a class="headerlink" href="#adding-labels" title="Link to this heading">¶</a></h2>
-<p>Use the decorator <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.label" title="trilium_alchemy.core.declarative.decorators.label"><code class="xref py py-obj docutils literal notranslate"><span class="pre">label</span></code></a> to add a label:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;sorted&quot;</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">MySortedNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-<span class="n">my_sorted_note</span> <span class="o">=</span> <span class="n">MySortedNote</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>This is equivalent to the following imperative approach:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_sorted_note</span> <span class="o">=</span> <span class="n">Note</span><span class="p">()</span>
-<span class="n">my_sorted_note</span> <span class="o">+=</span> <span class="n">Label</span><span class="p">(</span><span class="s2">&quot;sorted&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<section id="promoted-attributes">
-<h3>Promoted attributes<a class="headerlink" href="#promoted-attributes" title="Link to this heading">¶</a></h3>
-<p>A special type of label is one which defines a <a class="reference external" href="https://github.com/zadam/trilium/wiki/Promoted-attributes">promoted attribute</a>. Decorators <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.label_def" title="trilium_alchemy.core.declarative.decorators.label_def"><code class="xref py py-obj docutils literal notranslate"><span class="pre">label_def</span></code></a> and <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.relation_def" title="trilium_alchemy.core.declarative.decorators.relation_def"><code class="xref py py-obj docutils literal notranslate"><span class="pre">relation_def</span></code></a> are provided for convenience.</p>
-<p>The following creates a workspace template with an icon and a few labels:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;person&quot;</span><span class="p">)</span>
-<span class="nd">@label_def</span><span class="p">(</span><span class="s2">&quot;altName&quot;</span><span class="p">,</span> <span class="n">multi</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="nd">@label_def</span><span class="p">(</span><span class="s2">&quot;birthday&quot;</span><span class="p">,</span> <span class="n">value_type</span><span class="o">=</span><span class="s2">&quot;date&quot;</span><span class="p">)</span>
-<span class="nd">@relation_def</span><span class="p">(</span><span class="s2">&quot;livesAt&quot;</span><span class="p">)</span>
-<span class="nd">@relation_def</span><span class="p">(</span><span class="s2">&quot;livedAt&quot;</span><span class="p">,</span> <span class="n">multi</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">Person</span><span class="p">(</span><span class="n">BaseWorkspaceTemplateNote</span><span class="p">):</span>
-    <span class="n">icon</span> <span class="o">=</span> <span class="s2">&quot;bx bxs-user-circle&quot;</span>
-</pre></div>
-</div>
-</section>
-</section>
-<section id="mixin-classes">
-<h2>Mixin classes<a class="headerlink" href="#mixin-classes" title="Link to this heading">¶</a></h2>
-<p>Sometimes you want to logically group and reuse attributes and/or children, but don’t need a fully-featured <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeNote" title="trilium_alchemy.core.declarative.base.BaseDeclarativeNote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeNote</span></code></a>. In those cases you can use a <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeMixin" title="trilium_alchemy.core.declarative.base.BaseDeclarativeMixin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeMixin</span></code></a>.</p>
-<p>The basic technique is to subclass <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeMixin" title="trilium_alchemy.core.declarative.base.BaseDeclarativeMixin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeMixin</span></code></a>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;sorted&quot;</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">SortedMixin</span><span class="p">(</span><span class="n">BaseDeclarativeMixin</span><span class="p">):</span>
-    <span class="k">pass</span>
-</pre></div>
-</div>
-<p>Now you can simply inherit from this mixin if you want a note’s children to be sorted:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MySortedNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">,</span> <span class="n">SortedMixin</span><span class="p">):</span>
-    <span class="k">pass</span>
-</pre></div>
-</div>
 </section>
 <section id="setting-fields">
 <h2>Setting fields<a class="headerlink" href="#setting-fields" title="Link to this heading">¶</a></h2>
@@ -345,6 +293,91 @@
     <span class="n">note_type_</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span>
     <span class="n">mime_</span> <span class="o">=</span> <span class="s2">&quot;text/html&quot;</span>
     <span class="n">content_</span> <span class="o">=</span> <span class="s2">&quot;&lt;p&gt;Hello, world!&lt;/p&gt;&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="adding-attributes">
+<h2>Adding attributes<a class="headerlink" href="#adding-attributes" title="Link to this heading">¶</a></h2>
+<p>To add attributes, use the decorators <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.label" title="trilium_alchemy.core.declarative.decorators.label"><code class="xref py py-obj docutils literal notranslate"><span class="pre">label</span></code></a> and <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.relation" title="trilium_alchemy.core.declarative.decorators.relation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">relation</span></code></a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Root</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+    <span class="n">note_id_</span> <span class="o">=</span> <span class="s2">&quot;root&quot;</span>
+
+<span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;myLabel&quot;</span><span class="p">)</span>
+<span class="nd">@relation</span><span class="p">(</span><span class="s2">&quot;myRelation&quot;</span><span class="p">,</span> <span class="n">Root</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">MyNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="n">my_note</span> <span class="o">=</span> <span class="n">MyNote</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This is equivalent to the following imperative approach:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_note</span> <span class="o">=</span> <span class="n">Note</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;MyNote&quot;</span><span class="p">)</span>
+<span class="n">my_note</span> <span class="o">+=</span> <span class="p">[</span>
+    <span class="n">Label</span><span class="p">(</span><span class="s2">&quot;myLabel&quot;</span><span class="p">),</span>
+    <span class="n">Relation</span><span class="p">(</span><span class="s2">&quot;myRelation&quot;</span><span class="p">,</span> <span class="n">Note</span><span class="p">(</span><span class="n">note_id</span><span class="o">=</span><span class="s2">&quot;root&quot;</span><span class="p">)),</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<section id="icon-helper">
+<h3>Icon helper<a class="headerlink" href="#icon-helper" title="Link to this heading">¶</a></h3>
+<p>To set an icon (label <code class="docutils literal notranslate"><span class="pre">#iconClass</span></code>), simply set the <code class="docutils literal notranslate"><span class="pre">icon</span></code> attribute:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyTask</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+    <span class="n">icon</span> <span class="o">=</span> <span class="s2">&quot;bx bx-task&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="promoted-attributes">
+<h3>Promoted attributes<a class="headerlink" href="#promoted-attributes" title="Link to this heading">¶</a></h3>
+<p>A special type of label is one which defines a <a class="reference external" href="https://github.com/zadam/trilium/wiki/Promoted-attributes">promoted attribute</a>. Decorators <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.label_def" title="trilium_alchemy.core.declarative.decorators.label_def"><code class="xref py py-obj docutils literal notranslate"><span class="pre">label_def</span></code></a> and <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.relation_def" title="trilium_alchemy.core.declarative.decorators.relation_def"><code class="xref py py-obj docutils literal notranslate"><span class="pre">relation_def</span></code></a> are provided for convenience.</p>
+<p>The following creates a workspace template with an icon and a few promoted attributes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;person&quot;</span><span class="p">)</span>
+<span class="nd">@label_def</span><span class="p">(</span><span class="s2">&quot;altName&quot;</span><span class="p">,</span> <span class="n">multi</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nd">@label_def</span><span class="p">(</span><span class="s2">&quot;birthday&quot;</span><span class="p">,</span> <span class="n">value_type</span><span class="o">=</span><span class="s2">&quot;date&quot;</span><span class="p">)</span>
+<span class="nd">@relation_def</span><span class="p">(</span><span class="s2">&quot;livesAt&quot;</span><span class="p">)</span>
+<span class="nd">@relation_def</span><span class="p">(</span><span class="s2">&quot;livedAt&quot;</span><span class="p">,</span> <span class="n">multi</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Person</span><span class="p">(</span><span class="n">BaseWorkspaceTemplateNote</span><span class="p">):</span>
+    <span class="n">icon</span> <span class="o">=</span> <span class="s2">&quot;bx bxs-user-circle&quot;</span>
+</pre></div>
+</div>
+<p><img alt="Screenshot" src="../../_images/template-screenshot.png" /></p>
+</section>
+</section>
+<section id="adding-children">
+<h2>Adding children<a class="headerlink" href="#adding-children" title="Link to this heading">¶</a></h2>
+<p>Use <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.children" title="trilium_alchemy.core.declarative.decorators.children"><code class="xref py py-obj docutils literal notranslate"><span class="pre">children</span></code></a> or <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.child" title="trilium_alchemy.core.declarative.decorators.child"><code class="xref py py-obj docutils literal notranslate"><span class="pre">child</span></code></a> to add children:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child1</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
+<span class="k">class</span> <span class="nc">Child2</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
+<span class="k">class</span> <span class="nc">Child3</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
+
+<span class="nd">@children</span><span class="p">(</span><span class="n">Child1</span><span class="p">,</span> <span class="n">Child2</span><span class="p">)</span> <span class="c1"># add children with no branch prefix</span>
+<span class="nd">@child</span><span class="p">(</span><span class="n">Child3</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;My prefix&quot;</span><span class="p">)</span> <span class="c1"># add child with branch prefix</span>
+<span class="k">class</span> <span class="nc">Parent</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
+
+<span class="n">my_note</span> <span class="o">=</span> <span class="n">Parent</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This is equivalent to the following imperative approach:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_note</span> <span class="o">=</span> <span class="n">Note</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Parent&quot;</span><span class="p">)</span>
+<span class="n">my_note</span> <span class="o">+=</span> <span class="p">[</span>
+    <span class="n">Note</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Child1&quot;</span><span class="p">),</span>
+    <span class="n">Note</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Child2&quot;</span><span class="p">),</span>
+    <span class="n">Branch</span><span class="p">(</span><span class="n">child</span><span class="o">=</span><span class="n">Note</span><span class="p">(</span><span class="s2">&quot;Child3&quot;</span><span class="p">),</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;My prefix&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="mixin-subclasses">
+<h2>Mixin subclasses<a class="headerlink" href="#mixin-subclasses" title="Link to this heading">¶</a></h2>
+<p>Sometimes you want to logically group and reuse attributes and/or children, but don’t need a fully-featured <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeNote" title="trilium_alchemy.core.declarative.base.BaseDeclarativeNote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeNote</span></code></a>. In those cases you can use a <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeMixin" title="trilium_alchemy.core.declarative.base.BaseDeclarativeMixin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeMixin</span></code></a>.</p>
+<p>The basic technique is to subclass <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeMixin" title="trilium_alchemy.core.declarative.base.BaseDeclarativeMixin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeMixin</span></code></a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;sorted&quot;</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">SortedMixin</span><span class="p">(</span><span class="n">BaseDeclarativeMixin</span><span class="p">):</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Now you can simply inherit from this mixin if you want a note’s children to be sorted:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MySortedNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">,</span> <span class="n">SortedMixin</span><span class="p">):</span>
+    <span class="k">pass</span>
 </pre></div>
 </div>
 </section>
@@ -438,19 +471,6 @@
 </pre></div>
 </div>
 </section>
-<section id="adding-children">
-<h2>Adding children<a class="headerlink" href="#adding-children" title="Link to this heading">¶</a></h2>
-<p>Use <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.children" title="trilium_alchemy.core.declarative.decorators.children"><code class="xref py py-obj docutils literal notranslate"><span class="pre">children</span></code></a> or <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.child" title="trilium_alchemy.core.declarative.decorators.child"><code class="xref py py-obj docutils literal notranslate"><span class="pre">child</span></code></a> to add children:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child1</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
-<span class="k">class</span> <span class="nc">Child2</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
-<span class="k">class</span> <span class="nc">Child3</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
-
-<span class="nd">@children</span><span class="p">(</span><span class="n">Child1</span><span class="p">,</span> <span class="n">Child2</span><span class="p">)</span> <span class="c1"># add children with no branch prefix</span>
-<span class="nd">@child</span><span class="p">(</span><span class="n">Child3</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;My prefix&quot;</span><span class="p">)</span> <span class="c1"># add child with branch prefix</span>
-<span class="k">class</span> <span class="nc">Parent</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
-</pre></div>
-</div>
-</section>
 <section id="custom-initializer-to-add-attributes-and-children">
 <h2>Custom initializer to add attributes and children<a class="headerlink" href="#custom-initializer-to-add-attributes-and-children" title="Link to this heading">¶</a></h2>
 <p>Implement <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeMixin.init" title="trilium_alchemy.core.declarative.base.BaseDeclarativeMixin.init"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeMixin.init</span></code></a> to add attributes and children dynamically. Use the following APIs to add attributes and children:</p>
@@ -498,7 +518,7 @@
 </pre></div>
 </div>
 <p>Now, assuming it has been placed in your hierarchy, you can access your contact list by simply instantiating <code class="docutils literal notranslate"><span class="pre">Contacts</span></code>.</p>
-<p>If <code class="code docutils literal highlight highlight-python"><span class="kc">False</span></code> and <code class="docutils literal notranslate"><span class="pre">note_id</span></code> is deterministically generated (e.g. it’s a singleton or child of a singleton), a label <code class="docutils literal notranslate"><span class="pre">#cssClass=triliumAlchemyDeclarative</span></code> is added by TriliumAlchemy. This enables hiding of the “Add child note” button in Trilium’s UI via the <code class="xref py py-obj docutils literal notranslate"><span class="pre">AppCss</span></code> note added by <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.ext.helpers.html#trilium_alchemy.ext.helpers.BaseRootSystemNote" title="trilium_alchemy.ext.helpers.BaseRootSystemNote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseRootSystemNote</span></code></a>.</p>
+<p>If <code class="code docutils literal highlight highlight-python"><span class="kc">False</span></code> and <code class="docutils literal notranslate"><span class="pre">note_id</span></code> is deterministically generated (e.g. it’s a singleton or child of a singleton), a label <code class="docutils literal notranslate"><span class="pre">#cssClass=triliumAlchemyDeclarative</span></code> is added by TriliumAlchemy. This enables hiding of the “Add child note” button in Trilium’s UI via the <code class="xref py py-obj docutils literal notranslate"><span class="pre">AppCss</span></code> note added by <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.lib.system_types.html#trilium_alchemy.lib.system_types.BaseRootSystemNote" title="trilium_alchemy.lib.system_types.BaseRootSystemNote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseRootSystemNote</span></code></a>.</p>
 </section>
 </section>
 
@@ -558,16 +578,15 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Declarative notes: Notes as code</a><ul>
-<li><a class="reference internal" href="#note-classes">Note classes</a><ul>
+<li><a class="reference internal" href="#note-subclasses">Note subclasses</a></li>
+<li><a class="reference internal" href="#setting-fields">Setting fields</a></li>
+<li><a class="reference internal" href="#adding-attributes">Adding attributes</a><ul>
 <li><a class="reference internal" href="#icon-helper">Icon helper</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#adding-labels">Adding labels</a><ul>
 <li><a class="reference internal" href="#promoted-attributes">Promoted attributes</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#mixin-classes">Mixin classes</a></li>
-<li><a class="reference internal" href="#setting-fields">Setting fields</a></li>
+<li><a class="reference internal" href="#adding-children">Adding children</a></li>
+<li><a class="reference internal" href="#mixin-subclasses">Mixin subclasses</a></li>
 <li><a class="reference internal" href="#setting-content-from-file">Setting content from file</a></li>
 <li><a class="reference internal" href="#singleton-notes">Singleton notes</a><ul>
 <li><a class="reference internal" href="#setting-singleton">Setting <code class="docutils literal notranslate"><span class="pre">singleton</span></code></a></li>
@@ -579,7 +598,6 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#adding-relations">Adding relations</a></li>
-<li><a class="reference internal" href="#adding-children">Adding children</a></li>
 <li><a class="reference internal" href="#custom-initializer-to-add-attributes-and-children">Custom initializer to add attributes and children</a></li>
 <li><a class="reference internal" href="#leaf-notes">Leaf notes</a></li>
 </ul>
@@ -593,7 +611,7 @@
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=e259d695"></script>
+</div><script src="../../_static/documentation_options.js?v=6c02275b"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>

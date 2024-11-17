@@ -1,0 +1,407 @@
+(trilium_alchemy.lib.extension_types)=
+# `extension_types`
+
+```{py:module} trilium_alchemy.lib.extension_types
+```
+
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types
+:allowtitles:
+```
+
+### Class index
+
+:::symbol-category
+```{rubric} Canonical
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`BaseTemplateNote <trilium_alchemy.lib.extension_types.BaseTemplateNote>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseTemplateNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseWorkspaceTemplateNote <trilium_alchemy.lib.extension_types.BaseWorkspaceTemplateNote>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseWorkspaceTemplateNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseAppCssNote <trilium_alchemy.lib.extension_types.BaseAppCssNote>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseAppCssNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseThemeNote <trilium_alchemy.lib.extension_types.BaseThemeNote>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseThemeNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseWidgetNote <trilium_alchemy.lib.extension_types.BaseWidgetNote>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseWidgetNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseFrontendScriptNote <trilium_alchemy.lib.extension_types.BaseFrontendScriptNote>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseFrontendScriptNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseBackendScriptNote <trilium_alchemy.lib.extension_types.BaseBackendScriptNote>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseBackendScriptNote
+    :summary:
+    ```
+
+````
+
+### Symbols
+
+`````{py:class} BaseTemplateNote
+:canonical: trilium_alchemy.lib.extension_types.BaseTemplateNote
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.lib.extension_types._BaseTemplateNote`
+```{rubric} Aliases:
+```
+`trilium_alchemy.BaseTemplateNote`\
+`trilium_alchemy.lib.BaseTemplateNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseTemplateNote
+```
+
+````{py:attribute} idempotent
+:canonical: trilium_alchemy.lib.extension_types.BaseTemplateNote.idempotent
+   `True`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.extension_types._BaseTemplateNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseTemplateNote.idempotent
+```
+
+````
+
+````{py:method} new_instance(*args, **kwargs)
+:canonical: trilium_alchemy.lib.extension_types.BaseTemplateNote.new_instance
+:classmethod:
+*Inherited from:* {obj}`trilium_alchemy.lib.extension_types._BaseTemplateNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseTemplateNote.new_instance
+```
+
+````
+
+`````
+
+`````{py:class} BaseWorkspaceTemplateNote
+:canonical: trilium_alchemy.lib.extension_types.BaseWorkspaceTemplateNote
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.lib.extension_types._BaseTemplateNote`
+```{rubric} Aliases:
+```
+`trilium_alchemy.BaseWorkspaceTemplateNote`\
+`trilium_alchemy.lib.BaseWorkspaceTemplateNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseWorkspaceTemplateNote
+```
+
+````{py:attribute} idempotent
+:canonical: trilium_alchemy.lib.extension_types.BaseWorkspaceTemplateNote.idempotent
+   `True`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.extension_types._BaseTemplateNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseWorkspaceTemplateNote.idempotent
+```
+
+````
+
+````{py:method} new_instance(*args, **kwargs)
+:canonical: trilium_alchemy.lib.extension_types.BaseWorkspaceTemplateNote.new_instance
+:classmethod:
+*Inherited from:* {obj}`trilium_alchemy.lib.extension_types._BaseTemplateNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseWorkspaceTemplateNote.new_instance
+```
+
+````
+
+`````
+
+`````{py:class} BaseAppCssNote
+:canonical: trilium_alchemy.lib.extension_types.BaseAppCssNote
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.lib.note_types.CssNote`
+```{rubric} Aliases:
+```
+`trilium_alchemy.BaseAppCssNote`\
+`trilium_alchemy.lib.BaseAppCssNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseAppCssNote
+```
+
+````{py:attribute} singleton
+:canonical: trilium_alchemy.lib.extension_types.BaseAppCssNote.singleton
+   `True`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseAppCssNote.singleton
+```
+
+````
+
+````{py:attribute} mime_
+:canonical: trilium_alchemy.lib.extension_types.BaseAppCssNote.mime_
+   `"text/css"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.CssNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseAppCssNote.mime_
+```
+
+````
+
+````{py:attribute} icon
+:canonical: trilium_alchemy.lib.extension_types.BaseAppCssNote.icon
+   `"bx bxs-file-css"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.CssNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseAppCssNote.icon
+```
+
+````
+
+````{py:attribute} note_type_
+:canonical: trilium_alchemy.lib.extension_types.BaseAppCssNote.note_type_
+   `"code"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.CodeNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseAppCssNote.note_type_
+```
+
+````
+
+`````
+
+`````{py:class} BaseThemeNote
+:canonical: trilium_alchemy.lib.extension_types.BaseThemeNote
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.lib.note_types.CssNote`
+```{rubric} Aliases:
+```
+`trilium_alchemy.BaseThemeNote`\
+`trilium_alchemy.lib.BaseThemeNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseThemeNote
+```
+
+````{py:attribute} singleton
+:canonical: trilium_alchemy.lib.extension_types.BaseThemeNote.singleton
+   `True`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseThemeNote.singleton
+```
+
+````
+
+````{py:attribute} theme_name
+:canonical: trilium_alchemy.lib.extension_types.BaseThemeNote.theme_name
+:type: str | None
+   `None`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseThemeNote.theme_name
+```
+
+````
+
+````{py:attribute} mime_
+:canonical: trilium_alchemy.lib.extension_types.BaseThemeNote.mime_
+   `"text/css"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.CssNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseThemeNote.mime_
+```
+
+````
+
+````{py:attribute} icon
+:canonical: trilium_alchemy.lib.extension_types.BaseThemeNote.icon
+   `"bx bxs-file-css"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.CssNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseThemeNote.icon
+```
+
+````
+
+````{py:attribute} note_type_
+:canonical: trilium_alchemy.lib.extension_types.BaseThemeNote.note_type_
+   `"code"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.CodeNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseThemeNote.note_type_
+```
+
+````
+
+`````
+
+`````{py:class} BaseWidgetNote
+:canonical: trilium_alchemy.lib.extension_types.BaseWidgetNote
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.lib.note_types.JsFrontendNote`
+```{rubric} Aliases:
+```
+`trilium_alchemy.BaseWidgetNote`\
+`trilium_alchemy.lib.BaseWidgetNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseWidgetNote
+```
+
+````{py:attribute} singleton
+:canonical: trilium_alchemy.lib.extension_types.BaseWidgetNote.singleton
+   `True`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseWidgetNote.singleton
+```
+
+````
+
+````{py:attribute} mime_
+:canonical: trilium_alchemy.lib.extension_types.BaseWidgetNote.mime_
+   `"application/javascript;env=frontend"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.JsFrontendNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseWidgetNote.mime_
+```
+
+````
+
+````{py:attribute} icon
+:canonical: trilium_alchemy.lib.extension_types.BaseWidgetNote.icon
+   `"bx bxl-javascript"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.JsFrontendNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseWidgetNote.icon
+```
+
+````
+
+````{py:attribute} note_type_
+:canonical: trilium_alchemy.lib.extension_types.BaseWidgetNote.note_type_
+   `"code"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.CodeNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseWidgetNote.note_type_
+```
+
+````
+
+`````
+
+`````{py:class} BaseFrontendScriptNote
+:canonical: trilium_alchemy.lib.extension_types.BaseFrontendScriptNote
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.lib.note_types.JsFrontendNote`
+```{rubric} Aliases:
+```
+`trilium_alchemy.BaseFrontendScriptNote`\
+`trilium_alchemy.lib.BaseFrontendScriptNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseFrontendScriptNote
+```
+
+````{py:attribute} singleton
+:canonical: trilium_alchemy.lib.extension_types.BaseFrontendScriptNote.singleton
+   `True`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseFrontendScriptNote.singleton
+```
+
+````
+
+````{py:attribute} mime_
+:canonical: trilium_alchemy.lib.extension_types.BaseFrontendScriptNote.mime_
+   `"application/javascript;env=frontend"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.JsFrontendNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseFrontendScriptNote.mime_
+```
+
+````
+
+````{py:attribute} icon
+:canonical: trilium_alchemy.lib.extension_types.BaseFrontendScriptNote.icon
+   `"bx bxl-javascript"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.JsFrontendNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseFrontendScriptNote.icon
+```
+
+````
+
+````{py:attribute} note_type_
+:canonical: trilium_alchemy.lib.extension_types.BaseFrontendScriptNote.note_type_
+   `"code"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.CodeNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseFrontendScriptNote.note_type_
+```
+
+````
+
+`````
+
+`````{py:class} BaseBackendScriptNote
+:canonical: trilium_alchemy.lib.extension_types.BaseBackendScriptNote
+
+```{rubric} Bases:
+```
+{py:obj}`trilium_alchemy.lib.note_types.JsBackendNote`
+```{rubric} Aliases:
+```
+`trilium_alchemy.BaseBackendScriptNote`\
+`trilium_alchemy.lib.BaseBackendScriptNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseBackendScriptNote
+```
+
+````{py:attribute} singleton
+:canonical: trilium_alchemy.lib.extension_types.BaseBackendScriptNote.singleton
+   `True`{l=python}
+
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseBackendScriptNote.singleton
+```
+
+````
+
+````{py:attribute} mime_
+:canonical: trilium_alchemy.lib.extension_types.BaseBackendScriptNote.mime_
+   `"application/javascript;env=backend"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.JsBackendNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseBackendScriptNote.mime_
+```
+
+````
+
+````{py:attribute} icon
+:canonical: trilium_alchemy.lib.extension_types.BaseBackendScriptNote.icon
+   `"bx bxl-javascript"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.JsBackendNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseBackendScriptNote.icon
+```
+
+````
+
+````{py:attribute} note_type_
+:canonical: trilium_alchemy.lib.extension_types.BaseBackendScriptNote.note_type_
+   `"code"`{l=python}
+
+*Inherited from:* {obj}`trilium_alchemy.lib.note_types.CodeNote`
+```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseBackendScriptNote.note_type_
+```
+
+````
+
+`````

@@ -149,7 +149,7 @@
 
 ````
 
-````{py:method} flush() -> None
+````{py:method} flush()
 :canonical: trilium_alchemy.core.attribute.BaseAttribute.flush
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.flush
@@ -157,7 +157,7 @@
 
 ````
 
-````{py:method} invalidate() -> None
+````{py:method} invalidate()
 :canonical: trilium_alchemy.core.attribute.BaseAttribute.invalidate
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.invalidate
@@ -165,7 +165,7 @@
 
 ````
 
-````{py:method} delete() -> None
+````{py:method} delete()
 :canonical: trilium_alchemy.core.attribute.BaseAttribute.delete
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.BaseAttribute.delete
@@ -308,7 +308,7 @@
 
 ````
 
-````{py:method} flush() -> None
+````{py:method} flush()
 :canonical: trilium_alchemy.core.attribute.Label.flush
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.flush
@@ -316,7 +316,7 @@
 
 ````
 
-````{py:method} invalidate() -> None
+````{py:method} invalidate()
 :canonical: trilium_alchemy.core.attribute.Label.invalidate
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.invalidate
@@ -324,7 +324,7 @@
 
 ````
 
-````{py:method} delete() -> None
+````{py:method} delete()
 :canonical: trilium_alchemy.core.attribute.Label.delete
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Label.delete
@@ -476,7 +476,7 @@
 
 ````
 
-````{py:method} flush() -> None
+````{py:method} flush()
 :canonical: trilium_alchemy.core.attribute.Relation.flush
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.flush
@@ -484,7 +484,7 @@
 
 ````
 
-````{py:method} invalidate() -> None
+````{py:method} invalidate()
 :canonical: trilium_alchemy.core.attribute.Relation.invalidate
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.invalidate
@@ -492,7 +492,7 @@
 
 ````
 
-````{py:method} delete() -> None
+````{py:method} delete()
 :canonical: trilium_alchemy.core.attribute.Relation.delete
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.attribute.Relation.delete

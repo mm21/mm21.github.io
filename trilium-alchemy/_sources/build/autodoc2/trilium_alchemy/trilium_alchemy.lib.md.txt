@@ -1,0 +1,132 @@
+(trilium_alchemy.lib)=
+# `lib`
+
+```{py:module} trilium_alchemy.lib
+```
+
+```{autodoc2-docstring} trilium_alchemy.lib
+:allowtitles:
+```
+
+```{toctree}
+:hidden:
+
+trilium_alchemy.lib.note_types
+trilium_alchemy.lib.extension_types
+trilium_alchemy.lib.system_types
+```
+
+### Class index
+
+:::symbol-category
+```{rubric} Imported
+```
+:::
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`CodeNote <trilium_alchemy.lib.note_types.CodeNote>`
+  - {py:obj}`note_types <trilium_alchemy.lib.note_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.note_types.CodeNote
+    :summary:
+    ```
+
+* - {py:obj}`CssNote <trilium_alchemy.lib.note_types.CssNote>`
+  - {py:obj}`note_types <trilium_alchemy.lib.note_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.note_types.CssNote
+    :summary:
+    ```
+
+* - {py:obj}`HtmlNote <trilium_alchemy.lib.note_types.HtmlNote>`
+  - {py:obj}`note_types <trilium_alchemy.lib.note_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.note_types.HtmlNote
+    :summary:
+    ```
+
+* - {py:obj}`JsBackendNote <trilium_alchemy.lib.note_types.JsBackendNote>`
+  - {py:obj}`note_types <trilium_alchemy.lib.note_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.note_types.JsBackendNote
+    :summary:
+    ```
+
+* - {py:obj}`JsFrontendNote <trilium_alchemy.lib.note_types.JsFrontendNote>`
+  - {py:obj}`note_types <trilium_alchemy.lib.note_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.note_types.JsFrontendNote
+    :summary:
+    ```
+
+* - {py:obj}`TextNote <trilium_alchemy.lib.note_types.TextNote>`
+  - {py:obj}`note_types <trilium_alchemy.lib.note_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.note_types.TextNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseTemplateNote <trilium_alchemy.lib.extension_types.BaseTemplateNote>`
+  - {py:obj}`extension_types <trilium_alchemy.lib.extension_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseTemplateNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseWorkspaceTemplateNote <trilium_alchemy.lib.extension_types.BaseWorkspaceTemplateNote>`
+  - {py:obj}`extension_types <trilium_alchemy.lib.extension_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseWorkspaceTemplateNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseAppCssNote <trilium_alchemy.lib.extension_types.BaseAppCssNote>`
+  - {py:obj}`extension_types <trilium_alchemy.lib.extension_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseAppCssNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseThemeNote <trilium_alchemy.lib.extension_types.BaseThemeNote>`
+  - {py:obj}`extension_types <trilium_alchemy.lib.extension_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseThemeNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseWidgetNote <trilium_alchemy.lib.extension_types.BaseWidgetNote>`
+  - {py:obj}`extension_types <trilium_alchemy.lib.extension_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseWidgetNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseFrontendScriptNote <trilium_alchemy.lib.extension_types.BaseFrontendScriptNote>`
+  - {py:obj}`extension_types <trilium_alchemy.lib.extension_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseFrontendScriptNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseBackendScriptNote <trilium_alchemy.lib.extension_types.BaseBackendScriptNote>`
+  - {py:obj}`extension_types <trilium_alchemy.lib.extension_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.extension_types.BaseBackendScriptNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseWorkspaceNote <trilium_alchemy.lib.system_types.BaseWorkspaceNote>`
+  - {py:obj}`system_types <trilium_alchemy.lib.system_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.system_types.BaseWorkspaceNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseSystemNote <trilium_alchemy.lib.system_types.BaseSystemNote>`
+  - {py:obj}`system_types <trilium_alchemy.lib.system_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.system_types.BaseSystemNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseRootSystemNote <trilium_alchemy.lib.system_types.BaseRootSystemNote>`
+  - {py:obj}`system_types <trilium_alchemy.lib.system_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.system_types.BaseRootSystemNote
+    :summary:
+    ```
+
+* - {py:obj}`BaseRootNote <trilium_alchemy.lib.system_types.BaseRootNote>`
+  - {py:obj}`system_types <trilium_alchemy.lib.system_types>`
+  - ```{autodoc2-docstring} trilium_alchemy.lib.system_types.BaseRootNote
+    :summary:
+    ```
+
+````

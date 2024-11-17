@@ -7,7 +7,7 @@
         <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.attributes.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2023.09.10 -->
-        <title>attributes - TriliumAlchemy 0.3.0</title>
+        <title>attributes - TriliumAlchemy 0.4.0</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -126,7 +126,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">TriliumAlchemy 0.3.0</div></a>
+      <a href="../../../index.html"><div class="brand">TriliumAlchemy 0.4.0</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -153,7 +153,7 @@
     <img class="sidebar-logo only-dark" src="../../../_static/logo-dark.svg" alt="Dark Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">TriliumAlchemy 0.3.0</span>
+  <span class="sidebar-brand-text">TriliumAlchemy 0.4.0</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -211,12 +211,13 @@
 <li class="toctree-l4"><a class="reference internal" href="trilium_alchemy.core.exceptions.html"><code class="docutils literal notranslate"><span class="pre">exceptions</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="trilium_alchemy.ext.html"><code class="docutils literal notranslate"><span class="pre">ext</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of ext</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l4"><a class="reference internal" href="trilium_alchemy.ext.types.html"><code class="docutils literal notranslate"><span class="pre">types</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="trilium_alchemy.ext.helpers.html"><code class="docutils literal notranslate"><span class="pre">helpers</span></code></a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="trilium_alchemy.lib.html"><code class="docutils literal notranslate"><span class="pre">lib</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of lib</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="trilium_alchemy.lib.note_types.html"><code class="docutils literal notranslate"><span class="pre">note_types</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="trilium_alchemy.lib.extension_types.html"><code class="docutils literal notranslate"><span class="pre">extension_types</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="trilium_alchemy.lib.system_types.html"><code class="docutils literal notranslate"><span class="pre">system_types</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="trilium_alchemy.sync.html"><code class="docutils literal notranslate"><span class="pre">sync</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="trilium_alchemy.tools.html"><code class="docutils literal notranslate"><span class="pre">tools</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -316,6 +317,11 @@
 <code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.attributes.inherited</span></code> are the sources of truth
 for owned and inherited attributes respectively.</p>
 <p>For type-safe accesses, use <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.labels" title="trilium_alchemy.core.note.Note.labels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.labels</span></code></a> or <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.relations" title="trilium_alchemy.core.note.Note.relations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.relations</span></code></a>.</p>
+<dl class="myst field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="trilium_alchemy.core.exceptions.html#trilium_alchemy.core.exceptions.ReadOnlyError" title="trilium_alchemy.core.exceptions.ReadOnlyError"><strong>ReadOnlyError</strong></a> – Upon attempt to modify</p>
+</dd>
+</dl>
 <dl class="py property">
 <dt class="sig sig-object py" id="trilium_alchemy.core.note.attributes.Attributes.owned">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">owned</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#trilium_alchemy.core.note.attributes.OwnedAttributes" title="trilium_alchemy.core.note.attributes.OwnedAttributes"><span class="pre">OwnedAttributes</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attributes.Attributes.owned" title="Link to this definition">¶</a></dt>
@@ -1224,7 +1230,7 @@ recommended.</p>
       
     </aside>
   </div>
-</div><script src="../../../_static/documentation_options.js?v=e259d695"></script>
+</div><script src="../../../_static/documentation_options.js?v=6c02275b"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/furo.js?v=32e29ea5"></script>

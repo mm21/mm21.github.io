@@ -290,16 +290,23 @@ trilium_alchemy.core.note.content
 
 ````
 
-````{py:method} get(name: str, default: typing.Any = None) -> str | None
+````{py:method} get(name: str, default: str | None = None) -> str | None
 :canonical: trilium_alchemy.core.note.Note.get
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.get
 ```
 
 ````
 
-````{py:method} copy(deep: bool = False, content: bool = False) -> trilium_alchemy.core.note.note.Note
+````{py:method} copy(deep: bool = False) -> trilium_alchemy.core.note.note.Note
 :canonical: trilium_alchemy.core.note.Note.copy
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.copy
+```
+
+````
+
+````{py:method} sync_template(template: trilium_alchemy.core.note.note.Note)
+:canonical: trilium_alchemy.core.note.Note.sync_template
+```{autodoc2-docstring} trilium_alchemy.core.note.Note.sync_template
 ```
 
 ````
@@ -332,7 +339,7 @@ trilium_alchemy.core.note.content
 
 ````
 
-````{py:method} invalidate() -> None
+````{py:method} invalidate()
 :canonical: trilium_alchemy.core.note.Note.invalidate
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.invalidate
@@ -340,7 +347,7 @@ trilium_alchemy.core.note.content
 
 ````
 
-````{py:method} delete() -> None
+````{py:method} delete()
 :canonical: trilium_alchemy.core.note.Note.delete
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.note.Note.delete

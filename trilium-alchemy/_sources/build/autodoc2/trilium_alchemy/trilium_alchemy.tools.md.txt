@@ -1,0 +1,9 @@
+(trilium_alchemy.tools)=
+# `tools`
+
+```{py:module} trilium_alchemy.tools
+```
+
+```{autodoc2-docstring} trilium_alchemy.tools
+:allowtitles:
+```

@@ -147,7 +147,7 @@
 
 ````
 
-````{py:method} flush() -> None
+````{py:method} flush()
 :canonical: trilium_alchemy.core.branch.Branch.flush
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.flush
@@ -155,7 +155,7 @@
 
 ````
 
-````{py:method} invalidate() -> None
+````{py:method} invalidate()
 :canonical: trilium_alchemy.core.branch.Branch.invalidate
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.invalidate
@@ -163,7 +163,7 @@
 
 ````
 
-````{py:method} delete() -> None
+````{py:method} delete()
 :canonical: trilium_alchemy.core.branch.Branch.delete
 *Inherited from:* {obj}`trilium_alchemy.core.entity.BaseEntity`
 ```{autodoc2-docstring} trilium_alchemy.core.branch.Branch.delete

@@ -57,7 +57,7 @@
 ```{rubric} Bases:
 ```
 {py:obj}`trilium_alchemy.core.note.extension.NoteExtension`\
-{py:obj}`trilium_alchemy.core.note.branches.BranchLookup`
+{py:obj}`trilium_alchemy.core.note.branches.BranchLookupMixin`
 ```{autodoc2-docstring} trilium_alchemy.core.note.branches.Branches
 ```
 
@@ -79,10 +79,10 @@
 
 ````
 
-````{py:method} lookup(note: trilium_alchemy.core.note.Note) -> trilium_alchemy.core.branch.Branch
-:canonical: trilium_alchemy.core.note.branches.Branches.lookup
-*Inherited from:* {obj}`trilium_alchemy.core.note.branches.BranchLookup`
-```{autodoc2-docstring} trilium_alchemy.core.note.branches.Branches.lookup
+````{py:method} lookup_branch(note: trilium_alchemy.core.note.Note) -> trilium_alchemy.core.branch.Branch | None
+:canonical: trilium_alchemy.core.note.branches.Branches.lookup_branch
+*Inherited from:* {obj}`trilium_alchemy.core.note.branches.BranchLookupMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.Branches.lookup_branch
 ```
 
 ````
@@ -98,7 +98,7 @@
 ```{rubric} Bases:
 ```
 {py:obj}`trilium_alchemy.core.note.extension.BaseEntitySet`\
-{py:obj}`trilium_alchemy.core.note.branches.BranchLookup`
+{py:obj}`trilium_alchemy.core.note.branches.BranchLookupMixin`
 ```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches
 ```
 
@@ -150,10 +150,10 @@
 
 ````
 
-````{py:method} lookup(note: trilium_alchemy.core.note.Note) -> trilium_alchemy.core.branch.Branch
-:canonical: trilium_alchemy.core.note.branches.ParentBranches.lookup
-*Inherited from:* {obj}`trilium_alchemy.core.note.branches.BranchLookup`
-```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches.lookup
+````{py:method} lookup_branch(note: trilium_alchemy.core.note.Note) -> trilium_alchemy.core.branch.Branch | None
+:canonical: trilium_alchemy.core.note.branches.ParentBranches.lookup_branch
+*Inherited from:* {obj}`trilium_alchemy.core.note.branches.BranchLookupMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentBranches.lookup_branch
 ```
 
 ````
@@ -169,7 +169,7 @@
 ```{rubric} Bases:
 ```
 {py:obj}`trilium_alchemy.core.note.extension.BaseEntityList`\
-{py:obj}`trilium_alchemy.core.note.branches.BranchLookup`
+{py:obj}`trilium_alchemy.core.note.branches.BranchLookupMixin`
 ```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches
 ```
 
@@ -245,10 +245,10 @@
 
 ````
 
-````{py:method} lookup(note: trilium_alchemy.core.note.Note) -> trilium_alchemy.core.branch.Branch
-:canonical: trilium_alchemy.core.note.branches.ChildBranches.lookup
-*Inherited from:* {obj}`trilium_alchemy.core.note.branches.BranchLookup`
-```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.lookup
+````{py:method} lookup_branch(note: trilium_alchemy.core.note.Note) -> trilium_alchemy.core.branch.Branch | None
+:canonical: trilium_alchemy.core.note.branches.ChildBranches.lookup_branch
+*Inherited from:* {obj}`trilium_alchemy.core.note.branches.BranchLookupMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildBranches.lookup_branch
 ```
 
 ````
@@ -264,7 +264,8 @@
 ```{rubric} Bases:
 ```
 {py:obj}`trilium_alchemy.core.note.extension.NoteExtension`\
-{py:obj}`collections.abc.MutableSet`
+{py:obj}`collections.abc.MutableSet`\
+{py:obj}`trilium_alchemy.core.note.branches.NoteLookupMixin`
 ```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentNotes
 ```
 
@@ -314,6 +315,14 @@
 
 ````
 
+````{py:method} lookup_note(title: str) -> trilium_alchemy.core.note.Note | None
+:canonical: trilium_alchemy.core.note.branches.ParentNotes.lookup_note
+*Inherited from:* {obj}`trilium_alchemy.core.note.branches.NoteLookupMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ParentNotes.lookup_note
+```
+
+````
+
 `````
 
 `````{py:class} ChildNotes(entity: trilium_alchemy.core.entity.entity.BaseEntity)
@@ -325,7 +334,8 @@
 ```{rubric} Bases:
 ```
 {py:obj}`trilium_alchemy.core.note.extension.NoteExtension`\
-{py:obj}`collections.abc.MutableSequence`
+{py:obj}`collections.abc.MutableSequence`\
+{py:obj}`trilium_alchemy.core.note.branches.NoteLookupMixin`
 ```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildNotes
 ```
 
@@ -396,6 +406,14 @@
 :canonical: trilium_alchemy.core.note.branches.ChildNotes.count
 *Inherited from:* {obj}`collections.abc.Sequence`
 ```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildNotes.count
+```
+
+````
+
+````{py:method} lookup_note(title: str) -> trilium_alchemy.core.note.Note | None
+:canonical: trilium_alchemy.core.note.branches.ChildNotes.lookup_note
+*Inherited from:* {obj}`trilium_alchemy.core.note.branches.NoteLookupMixin`
+```{autodoc2-docstring} trilium_alchemy.core.note.branches.ChildNotes.lookup_note
 ```
 
 ````
