@@ -7,7 +7,7 @@
         <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/sdk/declarative-notes/index.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2023.09.10 -->
-        <title>Declarative notes: Notes as code - TriliumAlchemy 0.4.0</title>
+        <title>Declarative notes: Notes as code - TriliumAlchemy 0.4.2</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -126,7 +126,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">TriliumAlchemy 0.4.0</div></a>
+      <a href="../../index.html"><div class="brand">TriliumAlchemy 0.4.2</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -153,7 +153,7 @@
     <img class="sidebar-logo only-dark" src="../../_static/logo-dark.svg" alt="Dark Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">TriliumAlchemy 0.4.0</span>
+  <span class="sidebar-brand-text">TriliumAlchemy 0.4.2</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -345,13 +345,20 @@
 <section id="adding-children">
 <h2>Adding children<a class="headerlink" href="#adding-children" title="Link to this heading">¶</a></h2>
 <p>Use <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.children" title="trilium_alchemy.core.declarative.decorators.children"><code class="xref py py-obj docutils literal notranslate"><span class="pre">children</span></code></a> or <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.child" title="trilium_alchemy.core.declarative.decorators.child"><code class="xref py py-obj docutils literal notranslate"><span class="pre">child</span></code></a> to add children:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child1</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
-<span class="k">class</span> <span class="nc">Child2</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
-<span class="k">class</span> <span class="nc">Child3</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child1</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+    <span class="k">pass</span>
+<span class="k">class</span> <span class="nc">Child2</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+    <span class="k">pass</span>
+<span class="k">class</span> <span class="nc">Child3</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+    <span class="k">pass</span>
 
-<span class="nd">@children</span><span class="p">(</span><span class="n">Child1</span><span class="p">,</span> <span class="n">Child2</span><span class="p">)</span> <span class="c1"># add children with no branch prefix</span>
-<span class="nd">@child</span><span class="p">(</span><span class="n">Child3</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;My prefix&quot;</span><span class="p">)</span> <span class="c1"># add child with branch prefix</span>
-<span class="k">class</span> <span class="nc">Parent</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
+<span class="nd">@children</span><span class="p">(</span> <span class="c1"># implicit branch prefix</span>
+    <span class="n">Child1</span><span class="p">,</span> 
+    <span class="p">(</span><span class="n">Child2</span><span class="p">,</span> <span class="s2">&quot;My prefix&quot;</span><span class="p">),</span>
+<span class="p">)</span> 
+<span class="nd">@child</span><span class="p">(</span><span class="n">Child3</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;My prefix&quot;</span><span class="p">,</span> <span class="n">expanded</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># explicit branch params</span>
+<span class="k">class</span> <span class="nc">Parent</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+    <span class="k">pass</span>
 
 <span class="n">my_note</span> <span class="o">=</span> <span class="n">Parent</span><span class="p">()</span>
 </pre></div>
@@ -360,8 +367,8 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_note</span> <span class="o">=</span> <span class="n">Note</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Parent&quot;</span><span class="p">)</span>
 <span class="n">my_note</span> <span class="o">+=</span> <span class="p">[</span>
     <span class="n">Note</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Child1&quot;</span><span class="p">),</span>
-    <span class="n">Note</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Child2&quot;</span><span class="p">),</span>
-    <span class="n">Branch</span><span class="p">(</span><span class="n">child</span><span class="o">=</span><span class="n">Note</span><span class="p">(</span><span class="s2">&quot;Child3&quot;</span><span class="p">),</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;My prefix&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="n">Note</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Child2&quot;</span><span class="p">),</span> <span class="s2">&quot;My prefix&quot;</span><span class="p">),</span>
+    <span class="n">Branch</span><span class="p">(</span><span class="n">child</span><span class="o">=</span><span class="n">Note</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Child3&quot;</span><span class="p">),</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;My prefix&quot;</span><span class="p">,</span> <span class="n">expanded</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
 <span class="p">]</span>
 </pre></div>
 </div>
@@ -518,7 +525,7 @@
 </pre></div>
 </div>
 <p>Now, assuming it has been placed in your hierarchy, you can access your contact list by simply instantiating <code class="docutils literal notranslate"><span class="pre">Contacts</span></code>.</p>
-<p>If <code class="code docutils literal highlight highlight-python"><span class="kc">False</span></code> and <code class="docutils literal notranslate"><span class="pre">note_id</span></code> is deterministically generated (e.g. it’s a singleton or child of a singleton), a label <code class="docutils literal notranslate"><span class="pre">#cssClass=triliumAlchemyDeclarative</span></code> is added by TriliumAlchemy. This enables hiding of the “Add child note” button in Trilium’s UI via the <code class="xref py py-obj docutils literal notranslate"><span class="pre">AppCss</span></code> note added by <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.lib.system_types.html#trilium_alchemy.lib.system_types.BaseRootSystemNote" title="trilium_alchemy.lib.system_types.BaseRootSystemNote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseRootSystemNote</span></code></a>.</p>
+<p>If <code class="code docutils literal highlight highlight-python"><span class="n">leaf</span> <span class="ow">is</span> <span class="kc">False</span></code> and <code class="docutils literal notranslate"><span class="pre">note_id</span></code> is deterministically generated (e.g. it’s a singleton or child of a singleton), a label <code class="docutils literal notranslate"><span class="pre">#cssClass=triliumAlchemyDeclarative</span></code> is added by TriliumAlchemy. This enables hiding of the “Add child note” button in Trilium’s UI via the <code class="xref py py-obj docutils literal notranslate"><span class="pre">AppCss</span></code> note added by <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.lib.system_types.html#trilium_alchemy.lib.system_types.BaseRootSystemNote" title="trilium_alchemy.lib.system_types.BaseRootSystemNote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseRootSystemNote</span></code></a>.</p>
 </section>
 </section>
 
@@ -611,7 +618,7 @@
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=6c02275b"></script>
+</div><script src="../../_static/documentation_options.js?v=ff822928"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>
