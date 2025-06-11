@@ -3,11 +3,11 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Sessions" href="sessions.html" /><link rel="prev" title="Introduction" href="../intro.html" />
-        <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/sdk/working-with-notes/index.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Example: Event tracker" href="event-tracker.html" /><link rel="prev" title="Declarative notes: Notes as code" href="index.html" />
+        <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/sdk/declarative-notes/template-notes.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2023.09.10 -->
-        <title>Working with notes - TriliumAlchemy 0.7.0</title>
+        <title>Example: Template notes - TriliumAlchemy 0.7.0</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -170,16 +170,16 @@
 <ul class="current">
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">User guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of User guide</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../intro.html">Introduction</a></li>
-<li class="toctree-l2 current has-children current-page"><a class="current reference internal" href="#">Working with notes</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Working with notes</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="sessions.html">Sessions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="notes.html">Notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="attributes.html">Attributes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="branches.html">Branches</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../working-with-notes/index.html">Working with notes</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Working with notes</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../working-with-notes/sessions.html">Sessions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../working-with-notes/notes.html">Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../working-with-notes/attributes.html">Attributes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../working-with-notes/branches.html">Branches</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../declarative-notes/index.html">Declarative notes: Notes as code</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Declarative notes: Notes as code</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../declarative-notes/template-notes.html">Example: Template notes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../declarative-notes/event-tracker.html">Example: Event tracker</a></li>
+<li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">Declarative notes: Notes as code</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Declarative notes: Notes as code</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Example: Template notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="event-tracker.html">Example: Event tracker</a></li>
 </ul>
 </li>
 </ul>
@@ -262,25 +262,19 @@
           </label>
         </div>
         <article role="main">
-          <section id="working-with-notes">
-<h1>Working with notes<a class="headerlink" href="#working-with-notes" title="Link to this heading">¶</a></h1>
-<div class="toctree-wrapper compound">
+          <section id="example-template-notes">
+<h1>Example: Template notes<a class="headerlink" href="#example-template-notes" title="Link to this heading">¶</a></h1>
+<p>A number of helper classes are provided for facilitating development of extensions. See <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.lib.extension_types.html#module-trilium_alchemy.lib.extension_types" title="trilium_alchemy.lib.extension_types"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.lib.extension_types</span></code></a> for a full list.</p>
+<p>For example, to create a template called <code class="docutils literal notranslate"><span class="pre">Task</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Task</span><span class="p">(</span><span class="n">BaseTemplateNote</span><span class="p">):</span>
+    <span class="n">icon</span> <span class="o">=</span> <span class="s2">&quot;bx bx-task&quot;</span>
+</pre></div>
 </div>
-<p>This section describes how to work with notes imperatively, i.e. by performing step-by-step note operations.</p>
-<p>Following is a brief, self-explanatory example of what will be covered:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">Session</span><span class="p">(</span><span class="n">HOST</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="n">TOKEN</span><span class="p">)</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
-    
-    <span class="c1"># lookup task template</span>
-    <span class="n">task_template</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;#template #task&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-
-    <span class="c1"># create a new high priority task</span>
-    <span class="n">task</span> <span class="o">=</span> <span class="n">Note</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Buy cookies&quot;</span><span class="p">,</span> <span class="n">template</span><span class="o">=</span><span class="n">task_template</span><span class="p">)</span>
-    <span class="n">task</span><span class="o">.</span><span class="n">content</span> <span class="o">=</span> <span class="s2">&quot;&lt;p&gt;Chocolate chip&lt;/p&gt;&quot;</span>
-    <span class="n">task</span><span class="p">[</span><span class="s2">&quot;priority&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;10&quot;</span>
-
-    <span class="c1"># place it under today&#39;s day note</span>
-    <span class="n">today</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">get_today_note</span><span class="p">()</span>
-    <span class="n">today</span> <span class="o">+=</span> <span class="n">task</span>
+<p>This is equivalent to:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;template&quot;</span><span class="p">)</span>
+<span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;iconClass&quot;</span><span class="p">,</span> <span class="s2">&quot;bx bx-task&quot;</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Task</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+    <span class="k">pass</span>
 </pre></div>
 </div>
 </section>
@@ -290,23 +284,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="sessions.html">
+          <a class="next-page" href="event-tracker.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Sessions</div>
+                <div class="title">Example: Event tracker</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../intro.html">
+          <a class="prev-page" href="index.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Introduction</div>
+                <div class="title">Declarative notes: Notes as code</div>
                 
               </div>
             </a>
