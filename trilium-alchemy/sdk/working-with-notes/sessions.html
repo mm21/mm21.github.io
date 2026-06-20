@@ -7,8 +7,8 @@
         <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/sdk/working-with-notes/sessions.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2023.09.10 -->
-        <title>Sessions - TriliumAlchemy 0.7.0</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+        <title>Sessions - TriliumAlchemy 0.8.0</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=0855384a" />
@@ -126,7 +126,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">TriliumAlchemy 0.7.0</div></a>
+      <a href="../../index.html"><div class="brand">TriliumAlchemy 0.8.0</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -153,7 +153,7 @@
     <img class="sidebar-logo only-dark" src="../../_static/logo-dark.svg" alt="Dark Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">TriliumAlchemy 0.7.0</span>
+  <span class="sidebar-brand-text">TriliumAlchemy 0.8.0</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -290,7 +290,7 @@ Trilium’s implementation and this project (see <a class="reference internal" h
 <section id="basic-usage">
 <h2>Basic usage<a class="headerlink" href="#basic-usage" title="Link to this heading">¶</a></h2>
 <p>Instantiate a <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.session.html#trilium_alchemy.core.session.Session" title="trilium_alchemy.core.session.Session"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Session</span></code></a> as follows:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">trilium_alchemy</span> <span class="kn">import</span> <span class="n">Session</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">trilium_alchemy</span><span class="w"> </span><span class="kn">import</span> <span class="n">Session</span>
 
 <span class="c1"># your host here</span>
 <span class="n">HOST</span> <span class="o">=</span> <span class="s2">&quot;http://localhost:8080&quot;</span>
@@ -305,7 +305,7 @@ Trilium’s implementation and this project (see <a class="reference internal" h
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">todo_list</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;#todo&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Then <a class="reference external" href="https://github.com/zadam/trilium/wiki/Cloning-notes">clone</a> them to today’s <a class="reference external" href="https://github.com/zadam/trilium/wiki/Day-notes">Day note</a> using <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.session.html#trilium_alchemy.core.session.Session.get_today_note" title="trilium_alchemy.core.session.Session.get_today_note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Session.get_today_note</span></code></a>:</p>
+<p>Then <a class="reference external" href="https://docs.triliumnotes.org/user-guide/concepts/notes/cloning">clone</a> them to today’s <a class="reference external" href="https://docs.triliumnotes.org/user-guide/advanced-usage/advanced-showcases/day-notes">Day note</a> using <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.session.html#trilium_alchemy.core.session.Session.get_today_note" title="trilium_alchemy.core.session.Session.get_today_note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Session.get_today_note</span></code></a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">today</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">get_today_note</span><span class="p">()</span>
 
 <span class="n">today</span> <span class="o">+=</span> <span class="n">todo_list</span>
@@ -410,7 +410,7 @@ Trilium’s implementation and this project (see <a class="reference internal" h
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=fe7df9b0"></script>
+</div><script src="../../_static/documentation_options.js?v=486e5634"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>

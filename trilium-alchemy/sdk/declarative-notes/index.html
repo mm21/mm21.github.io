@@ -7,8 +7,8 @@
         <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/sdk/declarative-notes/index.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2023.09.10 -->
-        <title>Declarative notes: Notes as code - TriliumAlchemy 0.7.0</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+        <title>Declarative notes: Notes as code - TriliumAlchemy 0.8.0</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=0855384a" />
@@ -126,7 +126,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">TriliumAlchemy 0.7.0</div></a>
+      <a href="../../index.html"><div class="brand">TriliumAlchemy 0.8.0</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -153,7 +153,7 @@
     <img class="sidebar-logo only-dark" src="../../_static/logo-dark.svg" alt="Dark Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">TriliumAlchemy 0.7.0</span>
+  <span class="sidebar-brand-text">TriliumAlchemy 0.8.0</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -272,7 +272,7 @@
 <section id="note-subclasses">
 <h2>Note subclasses<a class="headerlink" href="#note-subclasses" title="Link to this heading">¶</a></h2>
 <p>The basic technique is to subclass <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeNote" title="trilium_alchemy.core.declarative.base.BaseDeclarativeNote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeNote</span></code></a>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="k">pass</span>
 </pre></div>
 </div>
@@ -288,7 +288,7 @@
 <li><p><a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeNote.content_" title="trilium_alchemy.core.declarative.base.BaseDeclarativeNote.content_"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeNote.content_</span></code></a></p></li>
 </ul>
 <p>For example:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="n">title_</span> <span class="o">=</span> <span class="s2">&quot;My title&quot;</span>
     <span class="n">note_type_</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span>
     <span class="n">mime_</span> <span class="o">=</span> <span class="s2">&quot;text/html&quot;</span>
@@ -299,12 +299,12 @@
 <section id="adding-attributes">
 <h2>Adding attributes<a class="headerlink" href="#adding-attributes" title="Link to this heading">¶</a></h2>
 <p>To add attributes, use the decorators <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.label" title="trilium_alchemy.core.declarative.decorators.label"><code class="xref py py-obj docutils literal notranslate"><span class="pre">label</span></code></a> and <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.relation" title="trilium_alchemy.core.declarative.decorators.relation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">relation</span></code></a>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Root</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Root</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="n">note_id_</span> <span class="o">=</span> <span class="s2">&quot;root&quot;</span>
 
 <span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;myLabel&quot;</span><span class="p">)</span>
 <span class="nd">@relation</span><span class="p">(</span><span class="s2">&quot;myRelation&quot;</span><span class="p">,</span> <span class="n">Root</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">MyNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="k">pass</span>
 
 <span class="n">my_note</span> <span class="o">=</span> <span class="n">MyNote</span><span class="p">()</span>
@@ -321,21 +321,21 @@
 <section id="icon-helper">
 <h3>Icon helper<a class="headerlink" href="#icon-helper" title="Link to this heading">¶</a></h3>
 <p>To set an icon (label <code class="docutils literal notranslate"><span class="pre">#iconClass</span></code>), simply set the <code class="docutils literal notranslate"><span class="pre">icon</span></code> attribute:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyTask</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyTask</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="n">icon</span> <span class="o">=</span> <span class="s2">&quot;bx bx-task&quot;</span>
 </pre></div>
 </div>
 </section>
 <section id="promoted-attributes">
 <h3>Promoted attributes<a class="headerlink" href="#promoted-attributes" title="Link to this heading">¶</a></h3>
-<p>A special type of label is one which defines a <a class="reference external" href="https://github.com/zadam/trilium/wiki/Promoted-attributes">promoted attribute</a>. Decorators <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.label_def" title="trilium_alchemy.core.declarative.decorators.label_def"><code class="xref py py-obj docutils literal notranslate"><span class="pre">label_def</span></code></a> and <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.relation_def" title="trilium_alchemy.core.declarative.decorators.relation_def"><code class="xref py py-obj docutils literal notranslate"><span class="pre">relation_def</span></code></a> are provided for convenience.</p>
+<p>A special type of label is one which defines a <a class="reference external" href="https://docs.triliumnotes.org/user-guide/advanced-usage/attributes/promoted-attributes">promoted attribute</a>. Decorators <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.label_def" title="trilium_alchemy.core.declarative.decorators.label_def"><code class="xref py py-obj docutils literal notranslate"><span class="pre">label_def</span></code></a> and <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.relation_def" title="trilium_alchemy.core.declarative.decorators.relation_def"><code class="xref py py-obj docutils literal notranslate"><span class="pre">relation_def</span></code></a> are provided for convenience.</p>
 <p>The following creates a workspace template with an icon and a few promoted attributes:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;person&quot;</span><span class="p">)</span>
 <span class="nd">@label_def</span><span class="p">(</span><span class="s2">&quot;altName&quot;</span><span class="p">,</span> <span class="n">multi</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="nd">@label_def</span><span class="p">(</span><span class="s2">&quot;birthday&quot;</span><span class="p">,</span> <span class="n">value_type</span><span class="o">=</span><span class="s2">&quot;date&quot;</span><span class="p">)</span>
 <span class="nd">@relation_def</span><span class="p">(</span><span class="s2">&quot;livesAt&quot;</span><span class="p">)</span>
 <span class="nd">@relation_def</span><span class="p">(</span><span class="s2">&quot;livedAt&quot;</span><span class="p">,</span> <span class="n">multi</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">Person</span><span class="p">(</span><span class="n">BaseWorkspaceTemplateNote</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Person</span><span class="p">(</span><span class="n">BaseWorkspaceTemplateNote</span><span class="p">):</span>
     <span class="n">icon</span> <span class="o">=</span> <span class="s2">&quot;bx bxs-user-circle&quot;</span>
 </pre></div>
 </div>
@@ -345,11 +345,11 @@
 <section id="adding-children">
 <h2>Adding children<a class="headerlink" href="#adding-children" title="Link to this heading">¶</a></h2>
 <p>Use <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.children" title="trilium_alchemy.core.declarative.decorators.children"><code class="xref py py-obj docutils literal notranslate"><span class="pre">children</span></code></a> or <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.child" title="trilium_alchemy.core.declarative.decorators.child"><code class="xref py py-obj docutils literal notranslate"><span class="pre">child</span></code></a> to add children:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child1</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Child1</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="k">pass</span>
-<span class="k">class</span> <span class="nc">Child2</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Child2</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="k">pass</span>
-<span class="k">class</span> <span class="nc">Child3</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Child3</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="k">pass</span>
 
 <span class="nd">@children</span><span class="p">(</span> <span class="c1"># implicit branch prefix</span>
@@ -357,7 +357,7 @@
     <span class="p">(</span><span class="n">Child2</span><span class="p">,</span> <span class="s2">&quot;My prefix&quot;</span><span class="p">),</span>
 <span class="p">)</span> 
 <span class="nd">@child</span><span class="p">(</span><span class="n">Child3</span><span class="p">,</span> <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;My prefix&quot;</span><span class="p">,</span> <span class="n">expanded</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># explicit branch params</span>
-<span class="k">class</span> <span class="nc">Parent</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Parent</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="k">pass</span>
 
 <span class="n">my_note</span> <span class="o">=</span> <span class="n">Parent</span><span class="p">()</span>
@@ -378,12 +378,12 @@
 <p>Sometimes you want to logically group and reuse attributes and/or children, but don’t need a fully-featured <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeNote" title="trilium_alchemy.core.declarative.base.BaseDeclarativeNote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeNote</span></code></a>. In those cases you can use a <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeMixin" title="trilium_alchemy.core.declarative.base.BaseDeclarativeMixin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeMixin</span></code></a>.</p>
 <p>The basic technique is to subclass <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeMixin" title="trilium_alchemy.core.declarative.base.BaseDeclarativeMixin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeMixin</span></code></a>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;sorted&quot;</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">SortedMixin</span><span class="p">(</span><span class="n">BaseDeclarativeMixin</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">SortedMixin</span><span class="p">(</span><span class="n">BaseDeclarativeMixin</span><span class="p">):</span>
     <span class="k">pass</span>
 </pre></div>
 </div>
 <p>Now you can simply inherit from this mixin if you want a note’s children to be sorted:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MySortedNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">,</span> <span class="n">SortedMixin</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MySortedNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">,</span> <span class="n">SortedMixin</span><span class="p">):</span>
     <span class="k">pass</span>
 </pre></div>
 </div>
@@ -391,7 +391,7 @@
 <section id="setting-content-from-file">
 <h2>Setting content from file<a class="headerlink" href="#setting-content-from-file" title="Link to this heading">¶</a></h2>
 <p>Set note content from a file by setting <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeNote.content_file" title="trilium_alchemy.core.declarative.base.BaseDeclarativeNote.content_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeNote.content_file</span></code></a>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyFrontendScript</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyFrontendScript</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="n">note_type_</span> <span class="o">=</span> <span class="s2">&quot;code&quot;</span>
     <span class="n">mime_</span> <span class="o">=</span> <span class="s2">&quot;application/javascript;env=frontend&quot;</span>
     <span class="n">content_file</span> <span class="o">=</span> <span class="s2">&quot;assets/myFrontendScript.js&quot;</span>
@@ -400,7 +400,7 @@
 <p>The filename is relative to the package or subpackage the class is defined in. Currently accessing parent paths (<code class="docutils literal notranslate"><span class="pre">&quot;..&quot;</span></code>) is not supported.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you use <a class="reference external" href="https://python-poetry.org/">Poetry</a> and want to publish a Python note hierarchy with content from a file, no additional steps are needed to package these files if they reside in your project. If you use setuptools, you’ll need to use <code class="docutils literal notranslate"><span class="pre">package_data</span></code> or <code class="docutils literal notranslate"><span class="pre">data_files</span></code> to include them (however using setuptools for this is currently untested).</p>
+<p>If you use <a class="reference external" href="https://docs.astral.sh/uv/">uv</a> and want to publish a Python note hierarchy with content from a file, no additional steps are needed to package these files if they reside within your package. If you use setuptools, you’ll need to use <code class="docutils literal notranslate"><span class="pre">package_data</span></code> or <code class="docutils literal notranslate"><span class="pre">data_files</span></code> to include them (however using setuptools for this is currently untested).</p>
 </div>
 </section>
 <section id="singleton-notes">
@@ -416,7 +416,7 @@
 <p>The following creates a template note for a task:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;template&quot;</span><span class="p">)</span>
 <span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;iconClass&quot;</span><span class="p">,</span> <span class="s2">&quot;bx bx-task&quot;</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">Task</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Task</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="n">singleton</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
@@ -428,7 +428,7 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># note_id won&#39;t change if we move the class to a different module</span>
 <span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;template&quot;</span><span class="p">)</span>
 <span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;iconClass&quot;</span><span class="p">,</span> <span class="s2">&quot;bx bx-task&quot;</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">Task</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Task</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="n">idempotent</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
@@ -440,7 +440,7 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># note_id won&#39;t change if we rename the class or move it to a different module</span>
 <span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;template&quot;</span><span class="p">)</span>
 <span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;iconClass&quot;</span><span class="p">,</span> <span class="s2">&quot;bx bx-task&quot;</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">Task</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Task</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="n">note_id_seed</span> <span class="o">=</span> <span class="s2">&quot;Task&quot;</span>
 </pre></div>
 </div>
@@ -448,7 +448,7 @@
 <section id="setting-note-id">
 <h3>Setting <code class="docutils literal notranslate"><span class="pre">note_id</span></code><a class="headerlink" href="#setting-note-id" title="Link to this heading">¶</a></h3>
 <p>When <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeNote.note_id_" title="trilium_alchemy.core.declarative.base.BaseDeclarativeNote.note_id_"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeNote.note_id_</span></code></a> is set, the provided value is used as <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.note_id" title="trilium_alchemy.core.note.Note.note_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.note_id</span></code></a> directly.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="n">note_id_</span> <span class="o">=</span> <span class="s2">&quot;my_note_id&quot;</span>
 </pre></div>
 </div>
@@ -468,7 +468,7 @@
 <p>You can declaratively add a relation to another note, as long as the target note is a singleton.</p>
 <p>For example, to create a <code class="docutils literal notranslate"><span class="pre">~template</span></code> relation:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@relation</span><span class="p">(</span><span class="s2">&quot;template&quot;</span><span class="p">,</span> <span class="n">Task</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">TaskInstance</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">TaskInstance</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span> <span class="k">pass</span>
 </pre></div>
 </div>
 <p>Now you can create a task by simply instantiating <code class="docutils literal notranslate"><span class="pre">TaskInstance</span></code>, and it will automatically have <code class="docutils literal notranslate"><span class="pre">~template=Task</span></code>.</p>
@@ -488,20 +488,20 @@
 </ul>
 <p>These APIs are required for singleton notes to generate a deterministic id for attributes and children, generating the same subtree every time the <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeNote" title="trilium_alchemy.core.declarative.base.BaseDeclarativeNote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeNote</span></code></a> subclass is instantiated.</p>
 <p>For example, a mixin which provides a convenient way to set an attribute <code class="docutils literal notranslate"><span class="pre">#myLabel</span></code> to a given value:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyMixin</span><span class="p">(</span><span class="n">BaseDeclarativeMixin</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyMixin</span><span class="p">(</span><span class="n">BaseDeclarativeMixin</span><span class="p">):</span>
 
     <span class="n">my_label</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    If set, add label `myLabel` with provided value.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attributes</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Attribute</span><span class="p">],</span> <span class="n">children</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Branch</span><span class="p">]):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attributes</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Attribute</span><span class="p">],</span> <span class="n">children</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Branch</span><span class="p">]):</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">my_label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">attributes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">create_declarative_label</span><span class="p">(</span><span class="s2">&quot;myLabel&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">my_label</span><span class="p">)</span>
             <span class="p">)</span>
 
-<span class="k">class</span> <span class="nc">MyNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">,</span> <span class="n">MyMixin</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyNote</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">,</span> <span class="n">MyMixin</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This note will automatically have the label `#myLabel=my-label-value`.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -518,7 +518,7 @@
 <p>If you design a note hierarchy using this approach, you might want to designate some “folder” notes to hold notes maintained in the UI. Set <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.base.html#trilium_alchemy.core.declarative.base.BaseDeclarativeNote.leaf" title="trilium_alchemy.core.declarative.base.BaseDeclarativeNote.leaf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseDeclarativeNote.leaf</span></code></a> to indicate this, in which case existing children are kept intact and using <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.children" title="trilium_alchemy.core.declarative.decorators.children"><code class="xref py py-obj docutils literal notranslate"><span class="pre">children</span></code></a> or <a class="reference internal" href="../../build/autodoc2/trilium_alchemy/trilium_alchemy.core.declarative.decorators.html#trilium_alchemy.core.declarative.decorators.child" title="trilium_alchemy.core.declarative.decorators.child"><code class="xref py py-obj docutils literal notranslate"><span class="pre">child</span></code></a> will raise an exception.</p>
 <p>For example, this would be necessary for a list of contacts:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@label</span><span class="p">(</span><span class="s2">&quot;sorted&quot;</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">Contacts</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Contacts</span><span class="p">(</span><span class="n">BaseDeclarativeNote</span><span class="p">):</span>
     <span class="n">icon</span> <span class="o">=</span> <span class="s2">&quot;bx bx-group&quot;</span>
     <span class="n">singleton</span> <span class="o">=</span> <span class="kc">True</span>
     <span class="n">leaf</span> <span class="o">=</span> <span class="kc">True</span>
@@ -618,7 +618,7 @@
       
     </aside>
   </div>
-</div><script src="../../_static/documentation_options.js?v=fe7df9b0"></script>
+</div><script src="../../_static/documentation_options.js?v=486e5634"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=32e29ea5"></script>

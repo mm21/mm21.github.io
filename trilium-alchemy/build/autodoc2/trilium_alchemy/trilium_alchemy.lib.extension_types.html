@@ -7,8 +7,8 @@
         <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/build/autodoc2/trilium_alchemy/trilium_alchemy.lib.extension_types.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2023.09.10 -->
-        <title>extension_types - TriliumAlchemy 0.7.0</title>
-      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+        <title>extension_types - TriliumAlchemy 0.8.0</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=0855384a" />
@@ -126,7 +126,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">TriliumAlchemy 0.7.0</div></a>
+      <a href="../../../index.html"><div class="brand">TriliumAlchemy 0.8.0</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -153,7 +153,7 @@
     <img class="sidebar-logo only-dark" src="../../../_static/logo-dark.svg" alt="Dark Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">TriliumAlchemy 0.7.0</span>
+  <span class="sidebar-brand-text">TriliumAlchemy 0.8.0</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -425,7 +425,7 @@ constructor args.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="trilium_alchemy.lib.extension_types.BaseThemeNote.theme_name">
-<span class="sig-name descname"><span class="pre">theme_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.extension_types.BaseThemeNote.theme_name" title="Link to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">theme_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.extension_types.BaseThemeNote.theme_name" title="Link to this definition">¶</a></dt>
 <dd><p><code class="code docutils literal highlight highlight-python"><span class="kc">None</span></code></p>
 <p>Name of theme, or <code class="code docutils literal highlight highlight-python"><span class="kc">None</span></code> to use class name.</p>
 </dd></dl>
@@ -505,11 +505,11 @@ constructor args.</p>
 <code class="docutils literal notranslate"><span class="pre">trilium_alchemy.lib.BaseFrontendScriptNote</span></code></p>
 <p>Defines a frontend script.</p>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyFunction</span><span class="p">(</span><span class="n">FrontendScript</span><span class="p">):</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyFunction</span><span class="p">(</span><span class="n">FrontendScript</span><span class="p">):</span>
     <span class="n">content_file</span> <span class="o">=</span> <span class="s1">&#39;assets/myFunction.js&#39;</span>
 
 <span class="nd">@children</span><span class="p">(</span><span class="n">MyFunction</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">MyWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span> <span class="k">pass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyWidget</span><span class="p">(</span><span class="n">Widget</span><span class="p">):</span> <span class="k">pass</span>
 </pre></div>
 </div>
 <dl class="py attribute">
@@ -551,12 +551,12 @@ constructor args.</p>
 <code class="docutils literal notranslate"><span class="pre">trilium_alchemy.lib.BaseBackendScriptNote</span></code></p>
 <p>Defines a backend script.</p>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpdateSomeOtherAttribute</span><span class="p">(</span><span class="n">BackendScript</span><span class="p">):</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">UpdateSomeOtherAttribute</span><span class="p">(</span><span class="n">BackendScript</span><span class="p">):</span>
     <span class="n">content_file</span> <span class="o">=</span> <span class="s1">&#39;assets/updateSomeOtherAttribute.js&#39;</span>
 
 <span class="nd">@relation</span><span class="p">(</span><span class="s1">&#39;runOnAttributeCreation&#39;</span><span class="p">,</span> <span class="n">UpdateSomeOtherAttribute</span><span class="p">)</span>
 <span class="nd">@relation</span><span class="p">(</span><span class="s1">&#39;runOnAttributeChange&#39;</span><span class="p">,</span> <span class="n">UpdateSomeOtherAttribute</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">MyTemplate</span><span class="p">(</span><span class="n">Template</span><span class="p">):</span> <span class="k">pass</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyTemplate</span><span class="p">(</span><span class="n">Template</span><span class="p">):</span> <span class="k">pass</span>
 </pre></div>
 </div>
 <dl class="py attribute">
@@ -708,7 +708,7 @@ constructor args.</p>
       
     </aside>
   </div>
-</div><script src="../../../_static/documentation_options.js?v=fe7df9b0"></script>
+</div><script src="../../../_static/documentation_options.js?v=486e5634"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/furo.js?v=32e29ea5"></script>
