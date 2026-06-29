@@ -269,21 +269,11 @@
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-left">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachments" title="trilium_alchemy.core.note.attachments.Attachments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Attachments</span></code></a></p></td>
-<td><p>Interface to a note’s attachments, modeled as a list.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="symbol-category docutils">
-<p class="rubric">Imported</p>
-</div>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-left">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Attachment" title="trilium_alchemy.core.note.Attachment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Attachment</span></code></a></p></td>
-<td><p><a class="reference internal" href="trilium_alchemy.core.note.html#module-trilium_alchemy.core.note" title="trilium_alchemy.core.note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment" title="trilium_alchemy.core.note.attachments.Attachment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Attachment</span></code></a></p></td>
 <td><p>Encapsulates an attachment, a named binary blob owned by a <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachments" title="trilium_alchemy.core.note.attachments.Attachments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Attachments</span></code></a></p></td>
+<td><p>Interface to a note’s attachments, modeled as a list.</p></td>
 </tr>
 </tbody>
 </table>
@@ -292,14 +282,164 @@
 <section id="symbols">
 <h2>Symbols<a class="headerlink" href="#symbols" title="Link to this heading">¶</a></h2>
 <dl class="py class">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trilium_alchemy.core.note.attachments.</span></span><span class="sig-name descname"><span class="pre">Attachment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.14)"><span class="pre">bytes</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.IO" title="(in Python v3.14)"><span class="pre">IO</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.14)"><span class="pre">bytes</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">pathlib.Path</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">role</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'image'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mime</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">session</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="trilium_alchemy.core.session.html#trilium_alchemy.core.session.Session" title="trilium_alchemy.core.session.Session"><span class="pre">Session</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment" title="Link to this definition">¶</a></dt>
+<dd><p class="rubric">Bases:</p>
+<p><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.entity.OrderedEntity</span></code></p>
+<p class="rubric">Aliases:</p>
+<p><code class="docutils literal notranslate"><span class="pre">trilium_alchemy.Attachment</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">trilium_alchemy.core.Attachment</span></code><br />
+<code class="docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.Attachment</span></code></p>
+<p>Encapsulates an attachment, a named binary blob owned by a <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note</span></code></a>.</p>
+<p>Trilium only supports image attachments.</p>
+<p>Add to a note using its <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.attachments" title="trilium_alchemy.core.note.Note.attachments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.attachments</span></code></a> list. An attachment can be
+created from raw <code class="code docutils literal highlight highlight-python"><span class="nb">bytes</span></code> (requires a <code class="code docutils literal highlight highlight-python"><span class="n">title</span></code>), a
+<a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>, or a binary file handle:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">note</span><span class="o">.</span><span class="n">attachments</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">Attachment</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;image.png&quot;</span><span class="p">,</span> <span class="n">content</span><span class="o">=</span><span class="sa">b</span><span class="s2">&quot;...&quot;</span><span class="p">),</span>
+    <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;image.png&quot;</span><span class="p">),</span>
+    <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;image.png&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.attachment_id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">attachment_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.attachment_id" title="Link to this definition">¶</a></dt>
+<dd><p>Getter for <code class="docutils literal notranslate"><span class="pre">attachmentId</span></code>, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if not created yet.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.note">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">note</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><span class="pre">Note</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.note" title="Link to this definition">¶</a></dt>
+<dd><p>Getter for note which owns this attachment.</p>
+<dl class="myst field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.14)"><strong>ValueError</strong></a> – If note has not been set</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.role">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">role</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.role" title="Link to this definition">¶</a></dt>
+<dd><p>Getter/setter for attachment role, e.g. <code class="code docutils literal highlight highlight-python"><span class="s2">&quot;image&quot;</span></code>.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.mime">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.mime" title="Link to this definition">¶</a></dt>
+<dd><p>Getter/setter for MIME type.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.title">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.title" title="Link to this definition">¶</a></dt>
+<dd><p>Getter/setter for attachment title.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.content">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">content</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.14)"><span class="pre">bytes</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.content" title="Link to this definition">¶</a></dt>
+<dd><p>Getter/setter for attachment content as <code class="code docutils literal highlight highlight-python"><span class="nb">bytes</span></code>.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.blob_id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">blob_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.blob_id" title="Link to this definition">¶</a></dt>
+<dd><p>Getter for <code class="docutils literal notranslate"><span class="pre">blobId</span></code>, a digest of the attachment content.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.utc_date_modified">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">utc_date_modified</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.utc_date_modified" title="Link to this definition">¶</a></dt>
+<dd><p>UTC modified datetime, e.g. <code class="docutils literal notranslate"><span class="pre">2021-12-31</span> <span class="pre">19:18:11.939Z</span></code>.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.position">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">position</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.position" title="Link to this definition">¶</a></dt>
+<dd><p>Getter for position of this attachment.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is maintained automatically based on the order of this attachment
+in its note’s <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note.attachments" title="trilium_alchemy.core.note.Note.attachments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Note.attachments</span></code></a> list.</p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.state">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.State" title="trilium_alchemy.core.entity.State"><span class="pre">State</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.state" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Current state.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.session">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">session</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="trilium_alchemy.core.session.html#trilium_alchemy.core.session.Session" title="trilium_alchemy.core.session.Session"><span class="pre">Session</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.session" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Session to which this entity belongs.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.str_short">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_short</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.str_short" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a short description of this entity.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.str_summary">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_summary</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.str_summary" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a summary of this entity, including its current state and model values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><span class="pre">pathlib.Path</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.save" title="Link to this definition">¶</a></dt>
+<dd><p>Write attachment content to the provided path.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.flush">
+<span class="sig-name descname"><span class="pre">flush</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.flush" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Commit changes to Trilium for this entity and its dependencies.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.invalidate">
+<span class="sig-name descname"><span class="pre">invalidate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.invalidate" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Discard cached contents and user-provided data for this object.</p>
+<p>Upon next access, data will be fetched from Trilium.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.delete" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Mark this entity for pending delete.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachment.refresh">
+<span class="sig-name descname"><span class="pre">refresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachment.refresh" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Update value from Trilium, discarding any local changes.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachments">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trilium_alchemy.core.note.attachments.</span></span><span class="sig-name descname"><span class="pre">Attachments</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><span class="pre">BaseEntity</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.note.attachments.Attachments" title="Link to this definition">¶</a></dt>
 <dd><p class="rubric">Bases:</p>
 <p><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.extension.BaseEntityList</span></code></p>
 <p>Interface to a note’s attachments, modeled as a list.</p>
-<p>Items assigned may be an <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Attachment" title="trilium_alchemy.core.note.Attachment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Attachment</span></code></a>, a <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>, or a binary file
+<p>Items assigned may be an <a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment" title="trilium_alchemy.core.note.attachments.Attachment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Attachment</span></code></a>, a <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pathlib.Path</span></code></a>, or a binary file
 handle with a <code class="code docutils literal highlight highlight-python"><span class="o">.</span><span class="n">name</span></code>. Raw <code class="code docutils literal highlight highlight-python"><span class="nb">bytes</span></code> is not accepted here since a
-title can’t be derived; construct an <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Attachment" title="trilium_alchemy.core.note.Attachment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Attachment</span></code></a> explicitly with a title
+title can’t be derived; construct an <a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment" title="trilium_alchemy.core.note.attachments.Attachment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Attachment</span></code></a> explicitly with a title
 instead.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="trilium_alchemy.core.note.attachments.Attachments.insert">
@@ -431,6 +571,27 @@ recommended.</p>
 <li><a class="reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">attachments</span></code></a><ul>
 <li><a class="reference internal" href="#class-index">Class index</a></li>
 <li><a class="reference internal" href="#symbols">Symbols</a><ul>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment"><code class="docutils literal notranslate"><span class="pre">Attachment</span></code></a><ul>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.attachment_id"><code class="docutils literal notranslate"><span class="pre">attachment_id</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.note"><code class="docutils literal notranslate"><span class="pre">note</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.role"><code class="docutils literal notranslate"><span class="pre">role</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.mime"><code class="docutils literal notranslate"><span class="pre">mime</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.title"><code class="docutils literal notranslate"><span class="pre">title</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.content"><code class="docutils literal notranslate"><span class="pre">content</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.blob_id"><code class="docutils literal notranslate"><span class="pre">blob_id</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.utc_date_modified"><code class="docutils literal notranslate"><span class="pre">utc_date_modified</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.position"><code class="docutils literal notranslate"><span class="pre">position</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.state"><code class="docutils literal notranslate"><span class="pre">state</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.session"><code class="docutils literal notranslate"><span class="pre">session</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.str_short"><code class="docutils literal notranslate"><span class="pre">str_short</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.str_summary"><code class="docutils literal notranslate"><span class="pre">str_summary</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.save"><code class="docutils literal notranslate"><span class="pre">save()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.flush"><code class="docutils literal notranslate"><span class="pre">flush()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.invalidate"><code class="docutils literal notranslate"><span class="pre">invalidate()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.delete"><code class="docutils literal notranslate"><span class="pre">delete()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachment.refresh"><code class="docutils literal notranslate"><span class="pre">refresh()</span></code></a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachments"><code class="docutils literal notranslate"><span class="pre">Attachments</span></code></a><ul>
 <li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachments.insert"><code class="docutils literal notranslate"><span class="pre">insert()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.core.note.attachments.Attachments.append"><code class="docutils literal notranslate"><span class="pre">append()</span></code></a></li>
