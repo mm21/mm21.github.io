@@ -1,0 +1,13 @@
+/*
+ * sphinx-better-fieldlist
+ *
+ * Terms are styled as inline signatures (classes "sig sig-inline") for a monospace
+ * font; keep them at the size of the surrounding text rather than of inline code.
+ */
+
+dl.bfl-list > dt > .sig-inline {
+  font-size: unset;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+}
