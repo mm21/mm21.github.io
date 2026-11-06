@@ -254,20 +254,27 @@
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span> <span class="pre">doit</span> <span class="pre">test</span></code> runs the test suite against the locked, latest Sphinx version.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span> <span class="pre">nox</span></code> runs it against each supported Python version, plus the older Sphinx
-versions in the <code class="docutils literal notranslate"><span class="pre">compat</span></code> sessions.</p></li>
+versions (8.2 and 7.4) in the <code class="docutils literal notranslate"><span class="pre">compat</span></code> sessions; these are supported on a best-effort
+basis.</p></li>
 </ul>
 </section>
 <section id="snapshots">
 <h2>Snapshots<a class="headerlink" href="#snapshots" title="Link to this heading">¶</a></h2>
-<p>Snapshot tests compare the field lists generated for an example module, via autodoc and
-autodoc2, against pseudo-XML stored in <code class="docutils literal notranslate"><span class="pre">test/snapshots/</span></code>. They only run with the latest
-Sphinx version, given by <code class="docutils literal notranslate"><span class="pre">LATEST_SPHINX</span></code> in <code class="docutils literal notranslate"><span class="pre">test/bfl_testing.py</span></code>.</p>
-<p>When output changes intentionally, or after upgrading Sphinx (updating <code class="docutils literal notranslate"><span class="pre">LATEST_SPHINX</span></code>
-for a new minor version), regenerate them with:</p>
+<p>Snapshot tests in <code class="docutils literal notranslate"><span class="pre">test/test_integration.py</span></code> compare the field lists generated for an
+example module, via autodoc and autodoc2, against pseudo-XML stored in
+<code class="docutils literal notranslate"><span class="pre">test/snapshots/</span></code>. They only run with the latest Sphinx version, given by
+<code class="docutils literal notranslate"><span class="pre">LATEST_SPHINX</span></code> in <code class="docutils literal notranslate"><span class="pre">test/bfl_testing.py</span></code>, and are skipped for older versions.</p>
+<p>Regenerate them when output changes intentionally, or after upgrading Sphinx:</p>
+<ol class="arabic">
+<li><p>If Sphinx was upgraded to a new minor version, update <code class="docutils literal notranslate"><span class="pre">LATEST_SPHINX</span></code> to match.</p></li>
+<li><p>Regenerate the snapshots:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">BFL_UPDATE_SNAPSHOTS</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>uv<span class="w"> </span>run<span class="w"> </span>pytest<span class="w"> </span>-k<span class="w"> </span>snapshot
 </pre></div>
 </div>
-<p>Then review the changes with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span> <span class="pre">test/snapshots/</span></code>.</p>
+</li>
+<li><p>Review the changes with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span> <span class="pre">test/snapshots/</span></code> to confirm they’re expected.</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span> <span class="pre">doit</span> <span class="pre">test</span></code> to confirm the snapshots pass.</p></li>
+</ol>
 </section>
 <section id="documentation">
 <h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading">¶</a></h2>
