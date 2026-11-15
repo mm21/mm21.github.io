@@ -7,7 +7,7 @@
         <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/build/autodoc2/trilium_alchemy/trilium_alchemy.core.entity.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2023.09.10 -->
-        <title>entity - TriliumAlchemy 0.10.2</title>
+        <title>entity - TriliumAlchemy 0.10.3</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -127,7 +127,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">TriliumAlchemy 0.10.2</div></a>
+      <a href="../../../index.html"><div class="brand">TriliumAlchemy 0.10.3</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -154,7 +154,7 @@
     <img class="sidebar-logo only-dark" src="../../../_static/logo-dark.svg" alt="Dark Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">TriliumAlchemy 0.10.2</span>
+  <span class="sidebar-brand-text">TriliumAlchemy 0.10.3</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -273,9 +273,6 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseEntity</span></code></a></p></td>
 <td><p>Base class for Trilium entities.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#trilium_alchemy.core.entity.State" title="trilium_alchemy.core.entity.State"><code class="xref py py-obj docutils literal notranslate"><span class="pre">State</span></code></a></p></td>
-<td><p>Entity state.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -284,16 +281,15 @@
 <h2>Symbols<a class="headerlink" href="#symbols" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="trilium_alchemy.core.entity.BaseEntity">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trilium_alchemy.core.entity.</span></span><span class="sig-name descname"><span class="pre">BaseEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="trilium_alchemy.core.session.html#trilium_alchemy.core.session.Session" title="trilium_alchemy.core.session.Session"><span class="pre">Session</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backing_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">EtapiModelT</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#bool" title="(in Python v3.15)"><span class="pre">bool</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.entity.BaseEntity" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trilium_alchemy.core.entity.</span></span><span class="sig-name descname"><span class="pre">BaseEntity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SessionT</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backing_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BackingT</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">create</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#bool" title="(in Python v3.15)"><span class="pre">bool</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.entity.BaseEntity" title="Link to this definition">¶</a></dt>
 <dd><p class="rubric">Bases:</p>
-<p><a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.15)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abc.ABC</span></code></a><br />
-<code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.session.SessionContainer</span></code><br />
-<code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.model.ModelContainer</span></code></p>
+<p><code class="xref py py-obj docutils literal notranslate"><span class="pre">alchemizer.BaseEntity</span></code><br />
+<a class="reference external" href="https://docs.python.org/3/library/abc.html#abc.ABC" title="(in Python v3.15)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abc.ABC</span></code></a></p>
 <p>Base class for Trilium entities.</p>
 <p>Should not be instantiated by user, but published for reference.</p>
 <dl class="py property">
 <dt class="sig sig-object py" id="trilium_alchemy.core.entity.BaseEntity.state">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#trilium_alchemy.core.entity.State" title="trilium_alchemy.core.entity.State"><span class="pre">State</span></a></em><a class="headerlink" href="#trilium_alchemy.core.entity.BaseEntity.state" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">State</span></em><a class="headerlink" href="#trilium_alchemy.core.entity.BaseEntity.state" title="Link to this definition">¶</a></dt>
 <dd><p>Current state.</p>
 </dd></dl>
 
@@ -338,59 +334,6 @@
 <dt class="sig sig-object py" id="trilium_alchemy.core.entity.BaseEntity.refresh">
 <span class="sig-name descname"><span class="pre">refresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.entity.BaseEntity.refresh" title="Link to this definition">¶</a></dt>
 <dd><p>Update value from Trilium, discarding any local changes.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="trilium_alchemy.core.entity.State">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">trilium_alchemy.core.entity.</span></span><span class="sig-name descname"><span class="pre">State</span></span><a class="headerlink" href="#trilium_alchemy.core.entity.State" title="Link to this definition">¶</a></dt>
-<dd><p class="rubric">Bases:</p>
-<p><a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.15)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enum.Enum</span></code></a></p>
-<p class="rubric">Aliases:</p>
-<p><code class="docutils literal notranslate"><span class="pre">trilium_alchemy.State</span></code><br />
-<code class="docutils literal notranslate"><span class="pre">trilium_alchemy.core.State</span></code></p>
-<p>Entity state.</p>
-<p>Maintained automatically based on the user’s updates and object’s current state in
-Trilium.</p>
-<p>For example, state will change from <a class="reference internal" href="#trilium_alchemy.core.entity.State.UPDATE" title="trilium_alchemy.core.entity.State.UPDATE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">State.UPDATE</span></code></a> back to <a class="reference internal" href="#trilium_alchemy.core.entity.State.CLEAN" title="trilium_alchemy.core.entity.State.CLEAN"><code class="xref py py-obj docutils literal notranslate"><span class="pre">State.CLEAN</span></code></a>
-if the user reverts changes.</p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="trilium_alchemy.core.entity.State.CLEAN">
-<span class="sig-name descname"><span class="pre">CLEAN</span></span><a class="headerlink" href="#trilium_alchemy.core.entity.State.CLEAN" title="Link to this definition">¶</a></dt>
-<dd><p>No pending changes.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="trilium_alchemy.core.entity.State.CREATE">
-<span class="sig-name descname"><span class="pre">CREATE</span></span><a class="headerlink" href="#trilium_alchemy.core.entity.State.CREATE" title="Link to this definition">¶</a></dt>
-<dd><p>Pending create.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="trilium_alchemy.core.entity.State.UPDATE">
-<span class="sig-name descname"><span class="pre">UPDATE</span></span><a class="headerlink" href="#trilium_alchemy.core.entity.State.UPDATE" title="Link to this definition">¶</a></dt>
-<dd><p>Pending update.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="trilium_alchemy.core.entity.State.DELETE">
-<span class="sig-name descname"><span class="pre">DELETE</span></span><a class="headerlink" href="#trilium_alchemy.core.entity.State.DELETE" title="Link to this definition">¶</a></dt>
-<dd><p>Pending delete.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="trilium_alchemy.core.entity.State.name">
-<span class="sig-name descname"><span class="pre">name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.entity.State.name" title="Link to this definition">¶</a></dt>
-<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.15)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enum.Enum</span></code></a></p>
-<p>The name of the Enum member.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="trilium_alchemy.core.entity.State.value">
-<span class="sig-name descname"><span class="pre">value</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.core.entity.State.value" title="Link to this definition">¶</a></dt>
-<dd><p><em>Inherited from:</em> <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.15)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enum.Enum</span></code></a></p>
-<p>The value of the Enum member.</p>
 </dd></dl>
 
 </dd></dl>
@@ -467,15 +410,6 @@ if the user reverts changes.</p>
 <li><a class="reference internal" href="#trilium_alchemy.core.entity.BaseEntity.refresh"><code class="docutils literal notranslate"><span class="pre">refresh()</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#trilium_alchemy.core.entity.State"><code class="docutils literal notranslate"><span class="pre">State</span></code></a><ul>
-<li><a class="reference internal" href="#trilium_alchemy.core.entity.State.CLEAN"><code class="docutils literal notranslate"><span class="pre">CLEAN</span></code></a></li>
-<li><a class="reference internal" href="#trilium_alchemy.core.entity.State.CREATE"><code class="docutils literal notranslate"><span class="pre">CREATE</span></code></a></li>
-<li><a class="reference internal" href="#trilium_alchemy.core.entity.State.UPDATE"><code class="docutils literal notranslate"><span class="pre">UPDATE</span></code></a></li>
-<li><a class="reference internal" href="#trilium_alchemy.core.entity.State.DELETE"><code class="docutils literal notranslate"><span class="pre">DELETE</span></code></a></li>
-<li><a class="reference internal" href="#trilium_alchemy.core.entity.State.name"><code class="docutils literal notranslate"><span class="pre">name()</span></code></a></li>
-<li><a class="reference internal" href="#trilium_alchemy.core.entity.State.value"><code class="docutils literal notranslate"><span class="pre">value()</span></code></a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -489,7 +423,7 @@ if the user reverts changes.</p>
       
     </aside>
   </div>
-</div><script src="../../../_static/documentation_options.js?v=11e62b30"></script>
+</div><script src="../../../_static/documentation_options.js?v=b59eaf29"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/furo.js?v=32e29ea5"></script>

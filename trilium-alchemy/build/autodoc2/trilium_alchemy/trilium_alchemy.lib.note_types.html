@@ -7,7 +7,7 @@
         <link rel="canonical" href="https://mm21.github.com/trilium-alchemy/build/autodoc2/trilium_alchemy/trilium_alchemy.lib.note_types.html" />
 
     <!-- Generated with Sphinx 7.4.7 and Furo 2023.09.10 -->
-        <title>note_types - TriliumAlchemy 0.10.2</title>
+        <title>note_types - TriliumAlchemy 0.10.3</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -127,7 +127,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">TriliumAlchemy 0.10.2</div></a>
+      <a href="../../../index.html"><div class="brand">TriliumAlchemy 0.10.3</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -154,7 +154,7 @@
     <img class="sidebar-logo only-dark" src="../../../_static/logo-dark.svg" alt="Dark Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">TriliumAlchemy 0.10.2</span>
+  <span class="sidebar-brand-text">TriliumAlchemy 0.10.3</span>
   
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -675,6 +675,34 @@ an <a class="reference internal" href="trilium_alchemy.core.note.attachments.htm
 <p>Get list of paths to this note, where each path is a string like <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&gt;</span> <span class="pre">B</span> <span class="pre">&gt;</span> <span class="pre">C</span></code>.</p>
 </dd></dl>
 
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CodeNote.state">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">State</span></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.CodeNote.state" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Current state.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CodeNote.session">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">session</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="trilium_alchemy.core.session.html#trilium_alchemy.core.session.Session" title="trilium_alchemy.core.session.Session"><span class="pre">Session</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.CodeNote.session" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Session to which this entity belongs.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CodeNote.str_short">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_short</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.CodeNote.str_short" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a short description of this entity.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CodeNote.str_summary">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_summary</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.CodeNote.str_summary" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a summary of this entity, including its current state and model values.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CodeNote.get">
 <span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#trilium_alchemy.lib.note_types.CodeNote.get" title="Link to this definition">¶</a></dt>
@@ -770,6 +798,28 @@ note and returning it.</p>
 <span class="sig-name descname"><span class="pre">flush</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.CodeNote.flush" title="Link to this definition">¶</a></dt>
 <dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.Note</span></code></a></p>
 <p>Flush note along with its owned attributes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CodeNote.invalidate">
+<span class="sig-name descname"><span class="pre">invalidate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.CodeNote.invalidate" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Discard cached contents and user-provided data for this object.</p>
+<p>Upon next access, data will be fetched from Trilium.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CodeNote.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.CodeNote.delete" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Mark this entity for pending delete.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CodeNote.refresh">
+<span class="sig-name descname"><span class="pre">refresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.CodeNote.refresh" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Update value from Trilium, discarding any local changes.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1229,6 +1279,34 @@ an <a class="reference internal" href="trilium_alchemy.core.note.attachments.htm
 <p>Get list of paths to this note, where each path is a string like <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&gt;</span> <span class="pre">B</span> <span class="pre">&gt;</span> <span class="pre">C</span></code>.</p>
 </dd></dl>
 
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CssNote.state">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">State</span></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.CssNote.state" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Current state.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CssNote.session">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">session</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="trilium_alchemy.core.session.html#trilium_alchemy.core.session.Session" title="trilium_alchemy.core.session.Session"><span class="pre">Session</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.CssNote.session" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Session to which this entity belongs.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CssNote.str_short">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_short</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.CssNote.str_short" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a short description of this entity.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CssNote.str_summary">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_summary</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.CssNote.str_summary" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a summary of this entity, including its current state and model values.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CssNote.get">
 <span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#trilium_alchemy.lib.note_types.CssNote.get" title="Link to this definition">¶</a></dt>
@@ -1324,6 +1402,28 @@ note and returning it.</p>
 <span class="sig-name descname"><span class="pre">flush</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.CssNote.flush" title="Link to this definition">¶</a></dt>
 <dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.Note</span></code></a></p>
 <p>Flush note along with its owned attributes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CssNote.invalidate">
+<span class="sig-name descname"><span class="pre">invalidate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.CssNote.invalidate" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Discard cached contents and user-provided data for this object.</p>
+<p>Upon next access, data will be fetched from Trilium.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CssNote.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.CssNote.delete" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Mark this entity for pending delete.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.CssNote.refresh">
+<span class="sig-name descname"><span class="pre">refresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.CssNote.refresh" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Update value from Trilium, discarding any local changes.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1783,6 +1883,34 @@ an <a class="reference internal" href="trilium_alchemy.core.note.attachments.htm
 <p>Get list of paths to this note, where each path is a string like <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&gt;</span> <span class="pre">B</span> <span class="pre">&gt;</span> <span class="pre">C</span></code>.</p>
 </dd></dl>
 
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.HtmlNote.state">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">State</span></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.HtmlNote.state" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Current state.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.HtmlNote.session">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">session</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="trilium_alchemy.core.session.html#trilium_alchemy.core.session.Session" title="trilium_alchemy.core.session.Session"><span class="pre">Session</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.HtmlNote.session" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Session to which this entity belongs.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.HtmlNote.str_short">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_short</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.HtmlNote.str_short" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a short description of this entity.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.HtmlNote.str_summary">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_summary</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.HtmlNote.str_summary" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a summary of this entity, including its current state and model values.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.HtmlNote.get">
 <span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#trilium_alchemy.lib.note_types.HtmlNote.get" title="Link to this definition">¶</a></dt>
@@ -1878,6 +2006,28 @@ note and returning it.</p>
 <span class="sig-name descname"><span class="pre">flush</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.HtmlNote.flush" title="Link to this definition">¶</a></dt>
 <dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.Note</span></code></a></p>
 <p>Flush note along with its owned attributes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.HtmlNote.invalidate">
+<span class="sig-name descname"><span class="pre">invalidate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.HtmlNote.invalidate" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Discard cached contents and user-provided data for this object.</p>
+<p>Upon next access, data will be fetched from Trilium.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.HtmlNote.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.HtmlNote.delete" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Mark this entity for pending delete.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.HtmlNote.refresh">
+<span class="sig-name descname"><span class="pre">refresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.HtmlNote.refresh" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Update value from Trilium, discarding any local changes.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -2337,6 +2487,34 @@ an <a class="reference internal" href="trilium_alchemy.core.note.attachments.htm
 <p>Get list of paths to this note, where each path is a string like <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&gt;</span> <span class="pre">B</span> <span class="pre">&gt;</span> <span class="pre">C</span></code>.</p>
 </dd></dl>
 
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsBackendNote.state">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">State</span></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsBackendNote.state" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Current state.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsBackendNote.session">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">session</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="trilium_alchemy.core.session.html#trilium_alchemy.core.session.Session" title="trilium_alchemy.core.session.Session"><span class="pre">Session</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsBackendNote.session" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Session to which this entity belongs.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsBackendNote.str_short">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_short</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsBackendNote.str_short" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a short description of this entity.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsBackendNote.str_summary">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_summary</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsBackendNote.str_summary" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a summary of this entity, including its current state and model values.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsBackendNote.get">
 <span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsBackendNote.get" title="Link to this definition">¶</a></dt>
@@ -2432,6 +2610,28 @@ note and returning it.</p>
 <span class="sig-name descname"><span class="pre">flush</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsBackendNote.flush" title="Link to this definition">¶</a></dt>
 <dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.Note</span></code></a></p>
 <p>Flush note along with its owned attributes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsBackendNote.invalidate">
+<span class="sig-name descname"><span class="pre">invalidate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsBackendNote.invalidate" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Discard cached contents and user-provided data for this object.</p>
+<p>Upon next access, data will be fetched from Trilium.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsBackendNote.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsBackendNote.delete" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Mark this entity for pending delete.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsBackendNote.refresh">
+<span class="sig-name descname"><span class="pre">refresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsBackendNote.refresh" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Update value from Trilium, discarding any local changes.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -2891,6 +3091,34 @@ an <a class="reference internal" href="trilium_alchemy.core.note.attachments.htm
 <p>Get list of paths to this note, where each path is a string like <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&gt;</span> <span class="pre">B</span> <span class="pre">&gt;</span> <span class="pre">C</span></code>.</p>
 </dd></dl>
 
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsFrontendNote.state">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">State</span></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsFrontendNote.state" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Current state.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsFrontendNote.session">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">session</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="trilium_alchemy.core.session.html#trilium_alchemy.core.session.Session" title="trilium_alchemy.core.session.Session"><span class="pre">Session</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsFrontendNote.session" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Session to which this entity belongs.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsFrontendNote.str_short">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_short</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsFrontendNote.str_short" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a short description of this entity.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsFrontendNote.str_summary">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_summary</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsFrontendNote.str_summary" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a summary of this entity, including its current state and model values.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsFrontendNote.get">
 <span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsFrontendNote.get" title="Link to this definition">¶</a></dt>
@@ -2986,6 +3214,28 @@ note and returning it.</p>
 <span class="sig-name descname"><span class="pre">flush</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsFrontendNote.flush" title="Link to this definition">¶</a></dt>
 <dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.Note</span></code></a></p>
 <p>Flush note along with its owned attributes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsFrontendNote.invalidate">
+<span class="sig-name descname"><span class="pre">invalidate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsFrontendNote.invalidate" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Discard cached contents and user-provided data for this object.</p>
+<p>Upon next access, data will be fetched from Trilium.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsFrontendNote.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsFrontendNote.delete" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Mark this entity for pending delete.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.JsFrontendNote.refresh">
+<span class="sig-name descname"><span class="pre">refresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.JsFrontendNote.refresh" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Update value from Trilium, discarding any local changes.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -3445,6 +3695,34 @@ an <a class="reference internal" href="trilium_alchemy.core.note.attachments.htm
 <p>Get list of paths to this note, where each path is a string like <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&gt;</span> <span class="pre">B</span> <span class="pre">&gt;</span> <span class="pre">C</span></code>.</p>
 </dd></dl>
 
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.TextNote.state">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">State</span></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.TextNote.state" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Current state.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.TextNote.session">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">session</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="trilium_alchemy.core.session.html#trilium_alchemy.core.session.Session" title="trilium_alchemy.core.session.Session"><span class="pre">Session</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.TextNote.session" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Session to which this entity belongs.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.TextNote.str_short">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_short</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.TextNote.str_short" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a short description of this entity.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.TextNote.str_summary">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">str_summary</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></em><a class="headerlink" href="#trilium_alchemy.lib.note_types.TextNote.str_summary" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Get a summary of this entity, including its current state and model values.</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.TextNote.get">
 <span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#str" title="(in Python v3.15)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/builtins/constants.html#None" title="(in Python v3.15)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#trilium_alchemy.lib.note_types.TextNote.get" title="Link to this definition">¶</a></dt>
@@ -3540,6 +3818,28 @@ note and returning it.</p>
 <span class="sig-name descname"><span class="pre">flush</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.TextNote.flush" title="Link to this definition">¶</a></dt>
 <dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.note.html#trilium_alchemy.core.note.Note" title="trilium_alchemy.core.note.Note"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.note.Note</span></code></a></p>
 <p>Flush note along with its owned attributes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.TextNote.invalidate">
+<span class="sig-name descname"><span class="pre">invalidate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.TextNote.invalidate" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Discard cached contents and user-provided data for this object.</p>
+<p>Upon next access, data will be fetched from Trilium.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.TextNote.delete">
+<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.TextNote.delete" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Mark this entity for pending delete.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="trilium_alchemy.lib.note_types.TextNote.refresh">
+<span class="sig-name descname"><span class="pre">refresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trilium_alchemy.lib.note_types.TextNote.refresh" title="Link to this definition">¶</a></dt>
+<dd><p><em>Inherited from:</em> <a class="reference internal" href="trilium_alchemy.core.entity.html#trilium_alchemy.core.entity.BaseEntity" title="trilium_alchemy.core.entity.BaseEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">trilium_alchemy.core.entity.BaseEntity</span></code></a></p>
+<p>Update value from Trilium, discarding any local changes.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -3720,6 +4020,10 @@ instantiation. This is the case for non-singleton subclasses.</p>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.is_string"><code class="docutils literal notranslate"><span class="pre">is_string</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.paths"><code class="docutils literal notranslate"><span class="pre">paths</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.paths_str"><code class="docutils literal notranslate"><span class="pre">paths_str</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.state"><code class="docutils literal notranslate"><span class="pre">state</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.session"><code class="docutils literal notranslate"><span class="pre">session</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.str_short"><code class="docutils literal notranslate"><span class="pre">str_short</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.str_summary"><code class="docutils literal notranslate"><span class="pre">str_summary</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.get"><code class="docutils literal notranslate"><span class="pre">get()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.copy"><code class="docutils literal notranslate"><span class="pre">copy()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.sync_template"><code class="docutils literal notranslate"><span class="pre">sync_template()</span></code></a></li>
@@ -3728,6 +4032,9 @@ instantiation. This is the case for non-singleton subclasses.</p>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.import_zip"><code class="docutils literal notranslate"><span class="pre">import_zip()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.walk"><code class="docutils literal notranslate"><span class="pre">walk()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.flush"><code class="docutils literal notranslate"><span class="pre">flush()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.invalidate"><code class="docutils literal notranslate"><span class="pre">invalidate()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.delete"><code class="docutils literal notranslate"><span class="pre">delete()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.refresh"><code class="docutils literal notranslate"><span class="pre">refresh()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.init"><code class="docutils literal notranslate"><span class="pre">init()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.create_declarative_label"><code class="docutils literal notranslate"><span class="pre">create_declarative_label()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CodeNote.create_declarative_relation"><code class="docutils literal notranslate"><span class="pre">create_declarative_relation()</span></code></a></li>
@@ -3773,6 +4080,10 @@ instantiation. This is the case for non-singleton subclasses.</p>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.is_string"><code class="docutils literal notranslate"><span class="pre">is_string</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.paths"><code class="docutils literal notranslate"><span class="pre">paths</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.paths_str"><code class="docutils literal notranslate"><span class="pre">paths_str</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.state"><code class="docutils literal notranslate"><span class="pre">state</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.session"><code class="docutils literal notranslate"><span class="pre">session</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.str_short"><code class="docutils literal notranslate"><span class="pre">str_short</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.str_summary"><code class="docutils literal notranslate"><span class="pre">str_summary</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.get"><code class="docutils literal notranslate"><span class="pre">get()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.copy"><code class="docutils literal notranslate"><span class="pre">copy()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.sync_template"><code class="docutils literal notranslate"><span class="pre">sync_template()</span></code></a></li>
@@ -3781,6 +4092,9 @@ instantiation. This is the case for non-singleton subclasses.</p>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.import_zip"><code class="docutils literal notranslate"><span class="pre">import_zip()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.walk"><code class="docutils literal notranslate"><span class="pre">walk()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.flush"><code class="docutils literal notranslate"><span class="pre">flush()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.invalidate"><code class="docutils literal notranslate"><span class="pre">invalidate()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.delete"><code class="docutils literal notranslate"><span class="pre">delete()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.refresh"><code class="docutils literal notranslate"><span class="pre">refresh()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.init"><code class="docutils literal notranslate"><span class="pre">init()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.create_declarative_label"><code class="docutils literal notranslate"><span class="pre">create_declarative_label()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.CssNote.create_declarative_relation"><code class="docutils literal notranslate"><span class="pre">create_declarative_relation()</span></code></a></li>
@@ -3826,6 +4140,10 @@ instantiation. This is the case for non-singleton subclasses.</p>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.is_string"><code class="docutils literal notranslate"><span class="pre">is_string</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.paths"><code class="docutils literal notranslate"><span class="pre">paths</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.paths_str"><code class="docutils literal notranslate"><span class="pre">paths_str</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.state"><code class="docutils literal notranslate"><span class="pre">state</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.session"><code class="docutils literal notranslate"><span class="pre">session</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.str_short"><code class="docutils literal notranslate"><span class="pre">str_short</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.str_summary"><code class="docutils literal notranslate"><span class="pre">str_summary</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.get"><code class="docutils literal notranslate"><span class="pre">get()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.copy"><code class="docutils literal notranslate"><span class="pre">copy()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.sync_template"><code class="docutils literal notranslate"><span class="pre">sync_template()</span></code></a></li>
@@ -3834,6 +4152,9 @@ instantiation. This is the case for non-singleton subclasses.</p>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.import_zip"><code class="docutils literal notranslate"><span class="pre">import_zip()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.walk"><code class="docutils literal notranslate"><span class="pre">walk()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.flush"><code class="docutils literal notranslate"><span class="pre">flush()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.invalidate"><code class="docutils literal notranslate"><span class="pre">invalidate()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.delete"><code class="docutils literal notranslate"><span class="pre">delete()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.refresh"><code class="docutils literal notranslate"><span class="pre">refresh()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.init"><code class="docutils literal notranslate"><span class="pre">init()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.create_declarative_label"><code class="docutils literal notranslate"><span class="pre">create_declarative_label()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.HtmlNote.create_declarative_relation"><code class="docutils literal notranslate"><span class="pre">create_declarative_relation()</span></code></a></li>
@@ -3879,6 +4200,10 @@ instantiation. This is the case for non-singleton subclasses.</p>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.is_string"><code class="docutils literal notranslate"><span class="pre">is_string</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.paths"><code class="docutils literal notranslate"><span class="pre">paths</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.paths_str"><code class="docutils literal notranslate"><span class="pre">paths_str</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.state"><code class="docutils literal notranslate"><span class="pre">state</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.session"><code class="docutils literal notranslate"><span class="pre">session</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.str_short"><code class="docutils literal notranslate"><span class="pre">str_short</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.str_summary"><code class="docutils literal notranslate"><span class="pre">str_summary</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.get"><code class="docutils literal notranslate"><span class="pre">get()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.copy"><code class="docutils literal notranslate"><span class="pre">copy()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.sync_template"><code class="docutils literal notranslate"><span class="pre">sync_template()</span></code></a></li>
@@ -3887,6 +4212,9 @@ instantiation. This is the case for non-singleton subclasses.</p>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.import_zip"><code class="docutils literal notranslate"><span class="pre">import_zip()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.walk"><code class="docutils literal notranslate"><span class="pre">walk()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.flush"><code class="docutils literal notranslate"><span class="pre">flush()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.invalidate"><code class="docutils literal notranslate"><span class="pre">invalidate()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.delete"><code class="docutils literal notranslate"><span class="pre">delete()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.refresh"><code class="docutils literal notranslate"><span class="pre">refresh()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.init"><code class="docutils literal notranslate"><span class="pre">init()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.create_declarative_label"><code class="docutils literal notranslate"><span class="pre">create_declarative_label()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsBackendNote.create_declarative_relation"><code class="docutils literal notranslate"><span class="pre">create_declarative_relation()</span></code></a></li>
@@ -3932,6 +4260,10 @@ instantiation. This is the case for non-singleton subclasses.</p>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.is_string"><code class="docutils literal notranslate"><span class="pre">is_string</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.paths"><code class="docutils literal notranslate"><span class="pre">paths</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.paths_str"><code class="docutils literal notranslate"><span class="pre">paths_str</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.state"><code class="docutils literal notranslate"><span class="pre">state</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.session"><code class="docutils literal notranslate"><span class="pre">session</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.str_short"><code class="docutils literal notranslate"><span class="pre">str_short</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.str_summary"><code class="docutils literal notranslate"><span class="pre">str_summary</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.get"><code class="docutils literal notranslate"><span class="pre">get()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.copy"><code class="docutils literal notranslate"><span class="pre">copy()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.sync_template"><code class="docutils literal notranslate"><span class="pre">sync_template()</span></code></a></li>
@@ -3940,6 +4272,9 @@ instantiation. This is the case for non-singleton subclasses.</p>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.import_zip"><code class="docutils literal notranslate"><span class="pre">import_zip()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.walk"><code class="docutils literal notranslate"><span class="pre">walk()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.flush"><code class="docutils literal notranslate"><span class="pre">flush()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.invalidate"><code class="docutils literal notranslate"><span class="pre">invalidate()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.delete"><code class="docutils literal notranslate"><span class="pre">delete()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.refresh"><code class="docutils literal notranslate"><span class="pre">refresh()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.init"><code class="docutils literal notranslate"><span class="pre">init()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.create_declarative_label"><code class="docutils literal notranslate"><span class="pre">create_declarative_label()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.JsFrontendNote.create_declarative_relation"><code class="docutils literal notranslate"><span class="pre">create_declarative_relation()</span></code></a></li>
@@ -3985,6 +4320,10 @@ instantiation. This is the case for non-singleton subclasses.</p>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.is_string"><code class="docutils literal notranslate"><span class="pre">is_string</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.paths"><code class="docutils literal notranslate"><span class="pre">paths</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.paths_str"><code class="docutils literal notranslate"><span class="pre">paths_str</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.state"><code class="docutils literal notranslate"><span class="pre">state</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.session"><code class="docutils literal notranslate"><span class="pre">session</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.str_short"><code class="docutils literal notranslate"><span class="pre">str_short</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.str_summary"><code class="docutils literal notranslate"><span class="pre">str_summary</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.get"><code class="docutils literal notranslate"><span class="pre">get()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.copy"><code class="docutils literal notranslate"><span class="pre">copy()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.sync_template"><code class="docutils literal notranslate"><span class="pre">sync_template()</span></code></a></li>
@@ -3993,6 +4332,9 @@ instantiation. This is the case for non-singleton subclasses.</p>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.import_zip"><code class="docutils literal notranslate"><span class="pre">import_zip()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.walk"><code class="docutils literal notranslate"><span class="pre">walk()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.flush"><code class="docutils literal notranslate"><span class="pre">flush()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.invalidate"><code class="docutils literal notranslate"><span class="pre">invalidate()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.delete"><code class="docutils literal notranslate"><span class="pre">delete()</span></code></a></li>
+<li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.refresh"><code class="docutils literal notranslate"><span class="pre">refresh()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.init"><code class="docutils literal notranslate"><span class="pre">init()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.create_declarative_label"><code class="docutils literal notranslate"><span class="pre">create_declarative_label()</span></code></a></li>
 <li><a class="reference internal" href="#trilium_alchemy.lib.note_types.TextNote.create_declarative_relation"><code class="docutils literal notranslate"><span class="pre">create_declarative_relation()</span></code></a></li>
@@ -4012,7 +4354,7 @@ instantiation. This is the case for non-singleton subclasses.</p>
       
     </aside>
   </div>
-</div><script src="../../../_static/documentation_options.js?v=11e62b30"></script>
+</div><script src="../../../_static/documentation_options.js?v=b59eaf29"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/furo.js?v=32e29ea5"></script>
